@@ -40,3 +40,16 @@
   background-size: 100%;
   background-repeat: no-repeat;
 }
+
+.otp .from-stop {
+  margin-top: 12px;
+}
+
+.otp .label {
+  padding: 0.2em 0.5em 0em;
+}
+
+.otp .option .header .title {
+  font-size: 20px;
+  font-weight: 600;
+}
