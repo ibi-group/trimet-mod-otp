@@ -1,4 +1,9 @@
-.row {
+.otp {
+  font-family: "Hind";
+  font-size: 16px;
+}
+
+.otp .main-row {
   position: fixed;
   top: 52px;
   bottom: 0px;
@@ -7,26 +12,39 @@
   padding: 0px 15px;
 }
 
-.sidebar {
+.otp .sidebar {
   height: 100%;
   padding: 10px;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 
-.map-container {
-  height: 100%;
-  margin: 0px;
-  padding: 0px;
-}
-
-.otp {
-  font-family: "Hind";
-  font-size: 16px;
-}
+/* navigation bar styling */
 
 .otp .navbar {
   background-color: #084c8d;
   border-radius: 0;
+}
+
+.otp .navbar .mobile-header {
+  position: fixed;
+  top: 5px;
+  left: 50px;
+  right: 50px;
+  text-align: center;
+}
+
+.otp .navbar .mobile-header-text {
+  color: white;
+  letter-spacing: 1px;
+  padding-top: 9px;
+}
+
+.otp .navbar .mobile-back {
+  position: fixed;
+  top: 12px;
+  left: 15px;
+  color: white;
+  font-size: 18px;
 }
 
 .otp .navbar-brand {
@@ -39,6 +57,84 @@
   background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%0D%0A%3C%21--%20Generator%3A%20Adobe%20Illustrator%2018.0.0%2C%20SVG%20Export%20Plug-In%20.%20SVG%20Version%3A%206.00%20Build%200%29%20%20--%3E%0D%0A%3C%21DOCTYPE%20svg%20PUBLIC%20%22-//W3C//DTD%20SVG%201.1//EN%22%20%22http%3A//www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd%22%3E%0D%0A%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%20x%3D%220px%22%20y%3D%220px%22%0D%0A%09%20width%3D%221280px%22%20height%3D%22293.3px%22%20viewBox%3D%220%202253.6%201280%20293.3%22%20enable-background%3D%22new%200%202253.6%201280%20293.3%22%20xml%3Aspace%3D%22preserve%22%0D%0A%09%3E%0D%0A%3Cg%3E%0D%0A%09%3Cpolygon%20fill%3D%22%23FFFFFF%22%20points%3D%220%2C2356.9%2033.3%2C2356.9%2033.3%2C2469.3%2065.5%2C2469.3%2065.5%2C2356.9%2098.8%2C2356.9%2098.8%2C2329.7%200%2C2329.7%20%09%22/%3E%0D%0A%09%3Cpath%20fill%3D%22%23FFFFFF%22%20d%3D%22M236.9%2C2372.5c0%2C12.1-8.6%2C19.1-22.2%2C19.1c-3%2C0-6.6%2C0-8.1-0.5v-35.8c2%2C0%2C5.5-0.5%2C8.6-0.5%0D%0A%09%09C230.3%2C2354.4%2C236.9%2C2361.4%2C236.9%2C2372.5z%20M280.2%2C2469.3l-29.2-44.9c-3.5-5-7.1-10.6-10.6-15.6c18.6-4%2C30.7-20.2%2C30.7-38.3%0D%0A%09%09c0-29.7-20.2-41.3-52.4-41.3c-17.1%2C0-31.7%2C0-43.3%2C0.5v139.6h31.7v-54.9h1.5l33.3%2C54.9H280.2z%22/%3E%0D%0A%09%3Cpath%20fill%3D%22%23FFFFFF%22%20d%3D%22M356.3%2C2469.3v-139.6H388v139.6H356.3L356.3%2C2469.3z%22/%3E%0D%0A%09%3Cpath%20fill%3D%22%23FFFFFF%22%20d%3D%22M931.8%2C2469.3l-9.6-58c-2-11.6-3-22.2-4-32.8h-1c-2%2C10.6-4%2C20.7-8.1%2C32.8l-17.1%2C56.9h-31.2l-16.1-51.9%0D%0A%09%09c-3.5-12.1-7.1-25.7-9.1-37.8l0%2C0c-1.5%2C12.6-3%2C23.7-4%2C35.8l-7.1%2C54.9h-32.8l22.2-139.6h36.8l19.1%2C61c3%2C10.1%2C5.5%2C19.1%2C7.1%2C30.7h0.5%0D%0A%09%09c2-11.6%2C4-20.2%2C8.1-30.7l20.2-61h36.3l22.2%2C139.6H931.8z%22/%3E%0D%0A%09%3Cpath%20fill%3D%22%23FFFFFF%22%20d%3D%22M1032.1%2C2469.3v-139.6h79.1v27.2h-46.4v27.7h43.8v26.2h-43.8v30.7h46.4v27.7%0D%0A%09%09C1110.7%2C2469.3%2C1032.1%2C2469.3%2C1032.1%2C2469.3z%22/%3E%0D%0A%09%3Cpath%20fill%3D%22%23FFFFFF%22%20d%3D%22M1246.7%2C2356.9v112.4h-32.3v-112.4h-33.3v-27.7h98.8v27.7H1246.7z%22/%3E%0D%0A%09%3Cg%3E%0D%0A%09%09%3Cpath%20fill%3D%22%23D14727%22%20d%3D%22M743.8%2C2400.3c0%2C81.1-65.5%2C146.6-146.6%2C146.6s-146.6-65.5-146.6-146.6c1-81.1%2C66.5-146.6%2C146.6-146.6%0D%0A%09%09%09C678.3%2C2253.6%2C743.8%2C2319.1%2C743.8%2C2400.3z%22/%3E%0D%0A%09%3C/g%3E%0D%0A%09%3Cpath%20fill%3D%22%23FFFFFF%22%20d%3D%22M674.8%2C2358.9c-3.5-39.3-36.3-70.6-76.6-70.6c-39.8%2C0-73.1%2C30.7-76.6%2C69.5c-20.2%2C15.1-31.2%2C38.3-31.2%2C62%0D%0A%09%09c0%2C12.6%2C3.5%2C26.2%2C10.6%2C38.3c14.1%2C24.7%2C40.3%2C38.3%2C67%2C38.3c10.1%2C0%2C20.7-2%2C29.7-6.6c10.1%2C4%2C20.2%2C6.6%2C30.7%2C6.6l0%2C0%0D%0A%09%09c26.2%2C0%2C52.4-14.1%2C67-38.3c7.1-12.1%2C10.6-25.7%2C10.6-38.3C705.5%2C2397.2%2C694.9%2C2373.5%2C674.8%2C2358.9z%20M598.2%2C2312.6%0D%0A%09%09c22.7%2C0%2C41.8%2C13.6%2C49.9%2C33.3c-6.6-1.5-12.6-3-20.2-3c-27.2%2C0-52.4%2C13.6-67%2C38.3c-3%2C5-5%2C10.6-6.6%2C15.6c-6.6-8.6-10.1-20.2-10.1-31.2%0D%0A%09%09C544.3%2C2336.3%2C567.9%2C2312.6%2C598.2%2C2312.6z%20M613.8%2C2393.7c3.5%2C7.1%2C6.6%2C14.1%2C7.1%2C21.2c-7.1%2C3.5-15.1%2C5-22.7%2C5c-8.6%2C0-16.1-2-23.7-5.5%0D%0A%09%09c0.5-7.1%2C3-14.1%2C7.1-20.7c4-7.1%2C10.1-12.6%2C16.1-17.6C604.2%2C2380.1%2C610.3%2C2386.6%2C613.8%2C2393.7z%20M520.6%2C2447.1%0D%0A%09%09c-5-8.6-7.1-17.6-7.1-27.2c0-11.6%2C3.5-22.7%2C10.6-32.3c9.1%2C32.3%2C39.3%2C54.9%2C74.1%2C54.9c6.6%2C0%2C12.6-0.5%2C19.1-2%0D%0A%09%09c-4%2C10.6-12.1%2C20.2-22.7%2C25.7c-8.6%2C5-17.6%2C7.1-27.2%2C7.1C548.8%2C2473.8%2C530.6%2C2464.8%2C520.6%2C2447.1z%20M674.8%2C2447.6%0D%0A%09%09c-10.1%2C17.1-27.7%2C27.2-46.9%2C27.2c-1.5%2C0-3.5%2C0-5%2C0c14.1-14.1%2C22.2-34.3%2C21.2-53.9c0-12.6-3.5-26.2-10.6-38.3%0D%0A%09%09c-3-5.5-7.1-10.1-11.6-15.1c1.5%2C0%2C3.5%2C0%2C5%2C0c9.1%2C0%2C18.6%2C2%2C27.2%2C7.1c17.1%2C10.1%2C27.2%2C27.7%2C27.2%2C46.9%0D%0A%09%09C681.8%2C2430%2C679.8%2C2439.1%2C674.8%2C2447.6z%22/%3E%0D%0A%3C/g%3E%0D%0A%3C/svg%3E%0D%0A');
   background-size: 100%;
   background-repeat: no-repeat;
+  margin: auto;
+}
+
+/* form styling */
+
+.Select-control {
+  border-radius: 0px;
+  border: 0px;
+  border-bottom: 1px solid black;
+}
+
+.otp .date-time-selector select {
+  background: #aaa;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-radius: 0px;
+  text-align-last: center;
+}
+
+.otp .date-time-selector .date-selector {
+  border-radius: 0px;
+  border: 0px;
+  border-bottom: 1px solid black;
+}
+
+.otp .date-time-selector .time-selector {
+  border-radius: 0px;
+  border: 0px;
+  border-bottom: 1px solid black;
+}
+
+.otp .mode-selector select {
+  background: #aaa;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-radius: 0px;
+  text-align-last: center;
+}
+
+/* map styling */
+
+.otp .map-container {
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+.otp .mobile-map-container {
+  position: fixed;
+  top: 60px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.otp .plan-trip-button {
+  background-color: green;
+  border-radius: 0px;
+  border: 0px;
+  color: white;
+  width: 100%;
+  text-align: center;
+  letter-spacing: 2px;
+  font-size: 14px;
+}
+
+/* narrative styling */
+
+.otp .mobile-narrative-container {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: 96px;
 }
 
 .otp .from-stop {
