@@ -17,6 +17,8 @@ module.exports = {
     // only- means to only hot reload for successful updates
     'webpack/hot/only-dev-server',
 
+    path.join(__dirname, 'lib/style.scss'),
+
     path.join(__dirname, 'lib/main.js')
   ],
 
@@ -31,7 +33,7 @@ module.exports = {
     hot: true,
 
     // match the output path
-    contentBase: path.join(__dirname, 'dist/'),
+    contentBase: path.join(__dirname, '/'),
 
     // match the output `publicPath`
     publicPath: '/'
@@ -68,6 +70,10 @@ module.exports = {
       {
         test: /\.css$/,
         use: 'style-loader!css-loader'
+      },
+      {
+        test: /\.scss$/,
+        use: ['style-loader', 'css-loader', 'sass-loader']
       },
       {
         test: /\.png$/,
