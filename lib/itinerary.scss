@@ -1,0 +1,173 @@
+$left-width: 60px;
+
+.otp .line-itin > .header {
+  background-color: black;
+  color: white;
+  padding: 4px 8px;
+}
+
+.otp .line-itin .itin-body {
+  padding: 20px 0px;
+}
+
+.otp .line-itin .time {
+  position: absolute;
+  width: $left-width;
+  font-size: 12px;
+  text-align: right;
+  padding-right: 4px;
+  padding-top: 3px;
+}
+
+/* Place icon */
+
+.otp .line-itin .place-icon-container {
+  position: absolute;
+  left: $left-width;
+  width: 20px;
+  height: 20px;
+  z-index: 20;
+}
+
+.otp .line-itin .place-icon-group {
+  font-size: 18px;
+  margin-left: -8px;
+  margin-top: -8px;
+}
+
+.otp .line-itin .place-name {
+  margin-left: $left-width + 20;
+  font-size: 16px;
+  padding-left: 4px;
+  font-weight: bold;
+}
+
+/* Mode icon to left of line */
+
+.otp .line-itin .leg-mode {
+  position: absolute;
+  width: $left-width;
+  top: 0px;
+  bottom: 0px;
+}
+
+.otp .line-itin .leg-mode .icon {
+  position: absolute;
+  top: 50%;
+  right: 4px;
+  margin-top: -12px;
+  width: 20px;
+  height: 20px;
+  background: lightGray;
+}
+
+/* The line itself */
+
+.otp .line-itin .leg-line-container {
+  position: absolute;
+  left: $left-width;
+  width: 20px;
+  top: -10px;
+  bottom: -10px;
+  z-index: 10;
+}
+
+.otp .line-itin .leg-line-walk {
+  position: absolute;
+  left: 6px;
+  right: 6px;
+  top: 0px;
+  bottom: 0px;
+  background: radial-gradient(ellipse at center, #87cefa 40%, transparent 10%);
+  background-size: 12px 12px;
+  background-repeat: repeat-y;
+  background-position: center -5px;
+}
+
+.otp .line-itin .leg-line-bicycle {
+  position: absolute;
+  left: 7.5px;
+  right: 7.5px;
+  top: 0px;
+  bottom: 0px;
+  background: repeating-linear-gradient(
+    0deg,
+    red,
+    red 8px,
+    white 8px,
+    white 12.5px
+  );
+}
+
+.otp .line-itin .leg-line-transit {
+  position: absolute;
+  left: 4px;
+  right: 4px;
+  top: 0px;
+  bottom: 0px;
+  background-color: gray;
+}
+
+/* Leg body general */
+
+.otp .line-itin .leg-body {
+  margin-left: $left-width + 20;
+  padding: 12px 0px 12px 4px;
+  font-size: 14px;
+}
+
+/* Leg steps (for turn-by-turn) */
+
+.otp .line-itin .leg-body .step-row {
+  font-size: 13px;
+  margin-top: 5px;
+  color: #666;
+}
+
+/* Transit leg details / intermediate stops */
+
+.otp .line-itin .leg-body .route-name {
+  color: #666;
+}
+
+.otp .line-itin .leg-body .route-short-name {
+  display: inline-block;
+  background-color: gray;
+  padding: 3px 4px 0px 5px;
+  border-radius: 3px;
+  line-height: 16px;
+  color: white;
+  font-weight: bold;
+  margin-right: 6px;
+}
+
+.otp .line-itin .leg-body .transit-leg-details {
+  margin-top: 4px;
+}
+
+.otp .line-itin .leg-body .transit-leg-details .header {
+  cursor: pointer;
+}
+
+.otp .line-itin .leg-body .transit-leg-details .intermediate-stops .stop-name {
+  color: gray;
+  font-size: 13px;
+  margin-top: 2px;
+}
+
+/* Transit alerts */
+
+.otp .line-itin .leg-body .transit-alerts {
+  margin-top: 3px;
+}
+
+.otp .line-itin .leg-body .transit-alerts .header {
+  color: darkRed;
+  cursor: pointer;
+}
+
+.otp .line-itin .leg-body .transit-alerts .transit-alert {
+  font-size: 13px;
+  margin-top: 5px;
+  color: #666;
+}
