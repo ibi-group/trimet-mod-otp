@@ -14,7 +14,7 @@
 
 .otp .sidebar {
   height: 100%;
-  padding: 10px;
+  padding: 0px;
   overflow-y: auto;
 }
 
@@ -90,7 +90,7 @@
   border-bottom: 1px solid black;
 }
 
-.otp .mode-selector select {
+/*.otp .mode-selector select {
   background: #aaa;
   color: white;
   text-align: center;
@@ -98,7 +98,62 @@
   letter-spacing: 1px;
   border-radius: 0px;
   text-align-last: center;
+}*/
+
+.otp .settings-bar {
+  height: 64px;
+  background-color: #222;
+  color: white;
+  text-transform: uppercase;
+  padding: 10px 15px;
 }
+
+.otp .settings-bar .selected-modes .some-selected-label {
+  margin-bottom: 4px;
+}
+
+.otp .settings-bar .selected-modes .all-selected {
+  margin-top: 13px;
+}
+
+.otp .settings-button {
+  margin-top: 8px;
+  background-color: #e4322f;
+  color: white;
+  text-transform: uppercase;
+  border: 0px;
+  width: 120px;
+  border-radius: 16px;
+  line-height: 14px;
+  padding-top: 8px;
+  font-size: 13px;
+  letter-spacing: 2px;
+  outline: none;
+}
+
+.otp .settings-selector-panel {
+  padding: 12px;
+}
+
+.otp .settings-selector-panel .button-row .btn {
+  background-color: #ccc;
+  border: 0px;
+  padding-top: 8px;
+}
+
+.otp .settings-selector-panel .button-row .selected {
+  background-color: black;
+  color: white;
+}
+
+.otp .modes-panel .mode-group-row {
+  border-radius: 4px;
+  border: 2px solid #ccc;
+  background-color: white;
+  text-transform: uppercase;
+  font-size: 13px;
+}
+
 
 /* map styling */
 
@@ -145,7 +200,6 @@
   padding: 0.2em 0.5em 0em;
 }
 
-.otp .option .header .title {
-  font-size: 20px;
-  font-weight: 600;
+.otp .options {
+  padding: 0 10px;
 }
