@@ -9,8 +9,9 @@ $line-padding: 5px;
 /* Itinerary header bar */
 
 .otp .line-itin > .header {
-  background-color: black;
+  background-color: #084C8D;
   color: white;
+  font-weight: 200;
   padding: 4px 8px;
   cursor: pointer;
 }
@@ -24,13 +25,13 @@ $line-padding: 5px;
 }
 
 .otp .line-itin .itin-summary .header {
-  font-weight: 700;
-  text-transform: uppercase;
-  font-size: 18px;
+  font-weight: bold;
+  font-size: 22px;
 }
 
 .otp .line-itin .itin-summary .detail {
-  font-size: 12px;
+  font-size: 14px;
+  color: #737373;
 }
 
 .otp .line-itin .itin-summary .routes {
@@ -49,7 +50,7 @@ $line-padding: 5px;
 }
 
 .otp .line-itin .itin-summary .routes .route-preview .short-name {
-  background: black;
+  background: #084C8D;
   color: white;
   font-weight: 700;
   text-align: center;
@@ -72,7 +73,8 @@ $line-padding: 5px;
 .otp .line-itin .time {
   position: absolute;
   width: $left-width;
-  font-size: 12px;
+  font-size: 14px;
+  color: #737373;
   text-align: right;
   padding-right: 4px;
   padding-top: 3px;
@@ -97,9 +99,9 @@ $line-padding: 5px;
 /* Place name */
 .otp .line-itin .place-name {
   margin-left: $left-width + 2 * $line-padding + $line-container-width;
-  font-size: 16px;
+  font-size: 18px;
   padding-left: 4px;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 /* Mode icon to left of line */
@@ -116,8 +118,8 @@ $line-padding: 5px;
   top: 50%;
   right: 4px;
   margin-top: -12px;
-  width: 20px;
-  height: 20px;
+  width: 25px;
+  height: 25px;
 }
 
 /* The line itself */
@@ -173,25 +175,30 @@ $line-padding: 5px;
   margin-left: $left-width + 2 * $line-padding + $line-container-width;
   padding: 12px 0px 12px 4px;
   font-size: 14px;
+  color: #999;
+  font-style: italic;
 }
 
 /* Leg steps (for turn-by-turn) */
 
 .otp .line-itin .leg-body .step-row {
-  font-size: 13px;
+  font-size: 14px;
   margin-top: 5px;
-  color: #666;
+  color: #999;
+  font-style: normal;
 }
 
 /* Transit leg details */
 
 .otp .line-itin .leg-body .route-name {
-  color: #666;
+  color: #084C8D;
+  font-size: 14px;
+  font-style: normal;
 }
 
 .otp .line-itin .leg-body .route-short-name {
   display: inline-block;
-  background-color: gray;
+  background-color: #084C8D;
   padding: 3px 4px 0px 5px;
   border-radius: 3px;
   line-height: 16px;
@@ -206,6 +213,9 @@ $line-padding: 5px;
 
 .otp .line-itin .leg-body .transit-leg-details .header {
   cursor: pointer;
+  color: #999;
+  font-style: italic;
+  font-size: 14px;
 }
 
 /* Intermediate stops */
@@ -222,9 +232,9 @@ $line-padding: 5px;
 }
 
 .otp .line-itin .leg-body .transit-leg-details .intermediate-stops .stop-name {
-  color: gray;
-  font-size: 13px;
-  margin-top: 2px;
+  color: #999;
+  font-size: 14px;
+  margin-top: 3px;
 }
 
 /* Transit alerts */
@@ -234,12 +244,16 @@ $line-padding: 5px;
 }
 
 .otp .line-itin .leg-body .transit-alerts .header {
-  color: darkRed;
+  color: #D14727;
+  font-size: 15px;
+  font-weight: bold;
+  font-style: normal;
   cursor: pointer;
 }
 
 .otp .line-itin .leg-body .transit-alerts .transit-alert {
-  font-size: 13px;
+  font-size: 14px;
   margin-top: 5px;
-  color: #666;
+  color: #999999;
+  font-style: normal;
 }
