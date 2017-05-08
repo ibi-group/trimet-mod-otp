@@ -31,7 +31,7 @@ $line-padding: 5px;
 
 .otp .line-itin .itin-summary .detail {
   font-size: 14px;
-  color: #737373;
+  color: #999999;
 }
 
 .otp .line-itin .itin-summary .routes {
@@ -74,7 +74,7 @@ $line-padding: 5px;
   position: absolute;
   width: $left-width;
   font-size: 14px;
-  color: #737373;
+  color: #999999;
   text-align: right;
   padding-right: 4px;
   padding-top: 3px;
@@ -175,7 +175,7 @@ $line-padding: 5px;
   margin-left: $left-width + 2 * $line-padding + $line-container-width;
   padding: 12px 0px 12px 4px;
   font-size: 14px;
-  color: #737373;
+  color: #999999;
   font-style: italic;
 }
 
@@ -184,14 +184,14 @@ $line-padding: 5px;
 .otp .line-itin .leg-body .step-row {
   font-size: 14px;
   margin-top: 5px;
-  color: #737373;
+  color: #999999;
   font-style: normal;
 }
 
 /* Transit leg details */
 
 .otp .line-itin .leg-body .route-name {
-  color: #737373;
+  color: #999999;
   font-size: 14px;
   font-style: normal;
 }
@@ -213,7 +213,7 @@ $line-padding: 5px;
 
 .otp .line-itin .leg-body .transit-leg-details .header {
   cursor: pointer;
-  color: #737373;
+  color: #999999;
   font-style: italic;
   font-size: 14px;
 }
@@ -232,7 +232,7 @@ $line-padding: 5px;
 }
 
 .otp .line-itin .leg-body .transit-leg-details .intermediate-stops .stop-name {
-  color: #737373;
+  color: #999999;
   font-size: 14px;
   margin-top: 3px;
   font-style: normal;
@@ -255,6 +255,6 @@ $line-padding: 5px;
 .otp .line-itin .leg-body .transit-alerts .transit-alert {
   font-size: 14px;
   margin-top: 5px;
-  color: #737373;
+  color: #999999;
   font-style: normal;
 }
