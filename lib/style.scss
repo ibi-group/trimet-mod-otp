@@ -100,6 +100,36 @@
   text-align-last: center;
 }
 
+.otp .location-field .input-group {
+  border-bottom: 1px solid black;
+}
+
+.otp .location-field .input-group-btn button {
+  border: none;
+  width: 30px;
+  background: none;
+}
+
+.otp .location-field .input-group input {
+  border: none;
+  box-shadow: none;
+  font-size: 17px;
+}
+
+.otp .location-field .input-group-addon {
+  border: none;
+  background: none;
+  color: #888;
+  cursor: pointer;
+}
+
+.otp .location-field .dropdown-header {
+  color: navy;
+  font-weight: 600;
+  font-size: 14px;
+  margin-top: 8px;
+}
+
 /* map styling */
 
 .otp .map-container {
