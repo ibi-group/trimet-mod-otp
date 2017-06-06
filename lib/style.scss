@@ -123,7 +123,17 @@
   margin-top: 30px;
 }
 
-.otp .date-time-preview {
+/* Date/Time Preview Bar */
+
+.otp .date-time-preview.wide {
+  height: 64px;
+  background-color: #222;
+  color: white;
+  padding: 2px 15px;
+  margin-bottom: 10px;
+}
+
+.otp .date-time-preview.compressed {
   text-align: center;
 }
 
@@ -148,43 +158,41 @@
   letter-spacing: 2px;
   outline: none;
 }
-/*.otp .mode-selector select {
-  background: #aaa;
-  color: white;
-  text-align: center;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  border-radius: 0px;
-  text-align-last: center;
-}*/
 
-.otp .settings-bar.wide {
+.otp .date-time-preview.wide .change-button {
+  margin-top: 16px;
+}
+
+/* Setting Preview Bar */
+
+.otp .settings-preview.wide {
   height: 64px;
   background-color: #222;
   color: white;
   text-transform: uppercase;
   padding: 10px 15px;
+  margin-bottom: 15px;
 }
 
-.otp .settings-bar.compressed {
+.otp .settings-preview.compressed {
   height: 95px;
   text-transform: uppercase;
   padding: 10px 15px;
 }
 
-.otp .settings-bar .selected-modes .some-selected-label {
+.otp .settings-preview .selected-modes .some-selected-label {
   margin-bottom: 4px;
 }
 
-.otp .settings-bar .selected-modes .all-selected {
+.otp .settings-preview .selected-modes .all-selected {
   margin-top: 13px;
 }
 
-.otp .settings-bar.wide .selected-modes .mode-icon {
+.otp .settings-preview.wide .selected-modes .mode-icon {
   fill: white;
 }
 
-.otp .settings-button {
+.otp .settings-preview .settings-button {
   margin-top: 8px;
   background-color: #e4322f;
   color: white;
