@@ -49,6 +49,14 @@
   font-size: 18px;
 }
 
+.otp .navbar .mobile-close {
+  position: fixed;
+  top: 12px;
+  right: 15px;
+  color: white;
+  font-size: 18px;
+}
+
 .otp .navbar-brand {
   padding: 7px 10px;
 }
@@ -70,9 +78,8 @@
   border-bottom: 1px solid black;
 }
 
-.otp .locations-date-time {
+.otp .locations {
   padding: 10px 10px 0 10px;
-  height: 201px;
 }
 
 .otp .date-time-selector select {
@@ -97,6 +104,50 @@
   border-bottom: 1px solid black;
 }
 
+.otp .date-time-modal {
+  padding: 10px 15px;
+}
+
+.otp .date-time-modal .button-row .btn {
+  background-color: #ccc;
+  border: 0px;
+  padding-top: 8px;
+}
+
+.otp .date-time-modal .button-row .selected {
+  background-color: black;
+  color: white;
+}
+
+.otp .date-time-modal .main-panel {
+  margin-top: 30px;
+}
+
+.otp .date-time-preview {
+  text-align: center;
+}
+
+.otp .date-time-preview .details {
+  padding-top: 8px;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.otp .date-time-preview .change-button {
+  margin-top: 8px;
+  background-color: #e4322f;
+  color: white;
+  text-transform: uppercase;
+  border: 0px;
+  width: 120px;
+  border-radius: 16px;
+  line-height: 14px;
+  padding-top: 8px;
+  font-size: 13px;
+  letter-spacing: 2px;
+  outline: none;
+}
 /*.otp .mode-selector select {
   background: #aaa;
   color: white;
@@ -107,10 +158,16 @@
   text-align-last: center;
 }*/
 
-.otp .settings-bar {
+.otp .settings-bar.wide {
   height: 64px;
   background-color: #222;
   color: white;
+  text-transform: uppercase;
+  padding: 10px 15px;
+}
+
+.otp .settings-bar.compressed {
+  height: 95px;
   text-transform: uppercase;
   padding: 10px 15px;
 }
@@ -121,6 +178,10 @@
 
 .otp .settings-bar .selected-modes .all-selected {
   margin-top: 13px;
+}
+
+.otp .settings-bar.wide .selected-modes .mode-icon {
+  fill: white;
 }
 
 .otp .settings-button {
@@ -191,6 +252,34 @@
   margin-top: 8px;
 }
 
+.otp .mobile-bottom-button-container {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: 40px;
+}
+
+.otp .mobile-bottom-button-container .btn {
+  height: 100%;
+  text-transform: uppercase;
+}
+
+.otp .edit-search-button {
+  margin-top: 5px;
+  background-color: #999;
+  color: white;
+  text-transform: uppercase;
+  border: 0px;
+  width: 100px;
+  border-radius: 16px;
+  line-height: 13px;
+  padding-top: 8px;
+  font-size: 12px;
+  letter-spacing: 1px;
+  outline: none;
+}
+
 /* map styling */
 
 .otp .map-container {
@@ -225,7 +314,6 @@
   bottom: 0;
   right: 0;
   left: 0;
-  height: 96px;
 }
 
 .otp .from-stop {
