@@ -2,6 +2,10 @@ $left-width: 60px;
 $line-container-width: 20px;
 $line-padding: 5px;
 
+.otp .options.profile .itin-body {
+  margin-left: -$left-width + 5;
+}
+
 .otp .line-itin {
   margin-bottom: 20px;
 }
