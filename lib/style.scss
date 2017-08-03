@@ -18,6 +18,13 @@
   border:solid 2px #62a038;
 }
 
+@mixin truncate {
+  width: 250px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 /* top-level container styling */
 
 .otp {
@@ -302,18 +309,25 @@
   text-transform: uppercase;
 }
 
+/* locations summary */
+
+.otp .locations-summary .location {
+  @include truncate;
+}
+
+.otp .locations-summary .fa {
+  width: 16px;
+  text-align: center;
+  margin-right: 2px;
+}
+
 .otp .edit-search-button {
-  margin-top: 5px;
-  background-color: #999;
-  color: white;
-  text-transform: uppercase;
-  border: 0px;
-  width: 100px;
-  border-radius: 16px;
-  line-height: 13px;
+  @include secondary-button;
+  margin-top: 4px;
+  width: 80px;
+  line-height: 15px;
   padding-top: 8px;
-  font-size: 12px;
-  letter-spacing: 1px;
+  font-size: 16px;
   outline: none;
 }
 
