@@ -15,11 +15,22 @@ $line-padding: 5px;
 .otp .line-itin > .header {
   background-color: #084C8D;
   color: white;
-  font-weight: 200;
-  padding: 4px 8px;
+  font-weight: 500;
+  font-size: 18px;
+  padding: 4px 8px 2px 8px;
   cursor: pointer;
 }
 
+.otp .desktop-narrative-container .line-itin > .header .itin-header-right {
+  display: none;
+}
+
+.otp .mobile-narrative-container .line-itin > .header .itin-header-right {
+  float: right;
+  font-weight: 200;
+  padding-top: 3px;
+  font-size: 13px;
+}
 /* Itinerary summary */
 
 .otp .line-itin .itin-summary {
