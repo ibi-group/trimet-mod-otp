@@ -347,8 +347,16 @@
   right: 0;
 }
 
+.otp .plan-trip-button-panel {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+
 .otp .plan-trip-button-container {
-  padding: 0px 10px;
+  padding: 10px 10px;
 }
 
 .otp .plan-trip-button {
