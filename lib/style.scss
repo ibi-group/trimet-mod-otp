@@ -422,14 +422,10 @@
 /* clear button */
 
 .clear-button {
-  border: none;
+  @include secondary-button;
   padding: 5px 10px 2px 10px;
   font-size: 12px;
-  text-transform: uppercase;
-  border-radius: 12px;
-  background-color: #e4322f;
-  color: white;
-  letter-spacing: 1px
+  outline: none;
 }
 
 /* spinner */
