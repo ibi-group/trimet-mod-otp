@@ -431,3 +431,16 @@
   color: white;
   letter-spacing: 1px
 }
+
+/* spinner */
+
+.spinner-overlay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  text-align: center;
+  padding-top: 280px;
+  z-index: 10000;
+}
