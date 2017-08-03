@@ -1,5 +1,17 @@
 @import "itinerary.scss";
 
+/* mixins */
+
+@mixin secondary-button {
+  border: solid 1px #eee;
+  border-radius: 5px;
+  font-weight: 600;
+  color: #333;
+  background: #f6f6f6;
+}
+
+/* top-level container styling */
+
 .otp {
   font-family: "Hind";
   font-size: 16px;
@@ -144,18 +156,15 @@
   line-height: 24px;
 }
 
+
+
 .otp .date-time-preview .change-button {
+  @include secondary-button;
+  width: 100px;
   margin-top: 8px;
-  background-color: #e4322f;
-  color: white;
-  text-transform: uppercase;
-  border: 0px;
-  width: 120px;
-  border-radius: 16px;
   line-height: 14px;
   padding-top: 8px;
   font-size: 13px;
-  letter-spacing: 2px;
   outline: none;
 }
 
@@ -177,7 +186,12 @@
 .otp .settings-preview.compressed {
   height: 95px;
   text-transform: uppercase;
-  padding: 10px 15px;
+  text-align: center;
+  padding: 0px 15px;
+}
+
+.otp .settings-preview .selected-modes {
+  padding-top: 8px;
 }
 
 .otp .settings-preview .selected-modes .some-selected-label {
@@ -185,25 +199,30 @@
 }
 
 .otp .settings-preview .selected-modes .all-selected {
-  margin-top: 13px;
+  height: 48px;
+  padding-top: 3px;
 }
 
 .otp .settings-preview.wide .selected-modes .mode-icon {
   fill: white;
 }
 
+.otp .settings-preview.wide .selected-modes {
+  padding-top: 0px;
+}
+
+.otp .settings-preview.wide .selected-modes .all-selected {
+  padding-top: 14px;
+}
+
+
 .otp .settings-preview .settings-button {
+  @include secondary-button;
   margin-top: 8px;
-  background-color: #e4322f;
-  color: white;
-  text-transform: uppercase;
-  border: 0px;
-  width: 120px;
-  border-radius: 16px;
+  width: 100px;
   line-height: 14px;
   padding-top: 8px;
   font-size: 13px;
-  letter-spacing: 2px;
   outline: none;
 }
 
