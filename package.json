@@ -4,6 +4,7 @@
   "description": "TriMet deployment of otp-react-redux",
   "main": "index.js",
   "scripts": {
+    "prestart": "yarn",
     "start": "webpack-dev-server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -15,7 +16,7 @@
     "babel-preset-stage-0": "^6.22.0",
     "css-loader": "^0.28.0",
     "html-webpack-plugin": "^2.28.0",
-    "node-sass": "^4.5.2",
+    "node-sass": "^4.5.3",
     "otp-react-redux": "^0.8.0",
     "react": "^15.4.2",
     "react-bootstrap": "^0.30.7",
