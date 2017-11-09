@@ -25,6 +25,10 @@ geocoder:
       minLat: 45.273
       maxLat: 45.7445
   MAPZEN_KEY: mapzen-PxKLYKc
+  focusPoint:
+    lat: 45.5223452
+    lon: -122.6821804
+  baseUrl: https://ws-st.trimet.org/pelias/v1
 
 modes:
   - TRANSIT,WALK
