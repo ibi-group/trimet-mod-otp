@@ -23,6 +23,7 @@ map:
     tileUrl: https://d2dyq00q2cz8yt.cloudfront.net/{z}_{x}_{y}@2x.png
 
 geocoder:
+  baseUrl: https://search.mapzen.com/v1
   boundary:
     rect:
       minLon: -123.2034
