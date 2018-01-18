@@ -54,47 +54,13 @@
   border-radius: 0;
 }
 
-.otp .navbar .mobile-header {
-  position: fixed;
-  top: 5px;
-  left: 50px;
-  right: 50px;
-  text-align: center;
+.otp .navbar .container {
+  margin-left: 0;
 }
 
 .otp .navbar .mobile-header-text {
-  color: white;
   letter-spacing: 1px;
-  padding-top: 9px;
-  display: inline-block;
-}
-
-.otp .navbar .mobile-header-action {
-  display: inline-block;
-}
-
-.otp .navbar .mobile-header-action > button {
-  color: white;
-}
-
-.otp .navbar .mobile-back {
-  position: fixed;
-  top: 12px;
-  left: 15px;
-  color: white;
-  font-size: 18px;
-}
-
-.otp .navbar .mobile-close {
-  position: fixed;
-  top: 12px;
-  right: 15px;
-  color: white;
-  font-size: 18px;
-}
-
-.otp .navbar-brand {
-  padding: 7px 10px;
+  text-transform: uppercase;
 }
 
 .icon-trimet {
@@ -162,28 +128,7 @@
 /* Date/Time Preview Bar */
 
 .otp .date-time-preview.wide {
-  height: 64px;
   background-color: #222;
-  color: white;
-  padding: 2px 15px;
-  margin-bottom: 10px;
-  padding-top: 8px;
-}
-
-.otp .date-time-preview.compressed {
-  text-align: center;
-}
-
-.otp .date-time-preview .details {
-  text-transform: uppercase;
-  font-size: 14px;
-  line-height: 24px;
-}
-
-.otp .realtime-alert > .content > .toggle-realtime {
-  @include secondary-button;
-  // TODO: align with TriMet style guide
-  // background-color: #fdf8d6
 }
 
 .otp .date-time-preview .change-button {
@@ -199,38 +144,13 @@
 /* Settings (Modes/etc.) Preview Bar */
 
 .otp .settings-preview.wide {
-  height: 64px;
   background-color: #222;
-  color: white;
   text-transform: uppercase;
-  padding: 10px 15px;
-  margin-bottom: 15px;
 }
 
-.otp .settings-preview.compressed {
-  height: 95px;
+.otp .date-time-preview .details {
   text-transform: uppercase;
-  text-align: center;
-  padding: 0px 15px;
 }
-
-.otp .settings-preview .selected-modes .some-selected-label {
-  margin-bottom: 4px;
-}
-
-.otp .settings-preview .selected-modes .all-selected {
-  height: 48px;
-  padding-top: 2px;
-}
-
-.otp .settings-preview.wide .selected-modes .mode-icon {
-  fill: white;
-}
-
-.otp .settings-preview.wide .selected-modes .all-selected {
-  padding-top: 14px;
-}
-
 
 .otp .settings-preview .settings-button {
   @include secondary-button;
@@ -260,7 +180,6 @@
 }
 
 /* Modes Panel */
-
 
 .otp .modes-panel .mode-group-row {
   border-radius: 4px;
@@ -309,14 +228,6 @@
   font-weight: 600;
   font-size: 14px;
   margin-top: 8px;
-}
-
-.otp .mobile-bottom-button-container {
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  height: 40px;
 }
 
 .otp .mobile-bottom-button-container .btn {
@@ -377,7 +288,6 @@
 .otp .plan-trip-button, .view-results-button {
   @include primary-button;
   font-size: 16px;
-  width: 100%;
   padding-bottom: 2px;
 }
 
@@ -454,4 +364,12 @@
   text-align: center;
   padding-top: 280px;
   z-index: 10000;
+}
+
+/* real-time alerts */
+
+.otp .realtime-alert > .content > .toggle-realtime {
+  @include secondary-button;
+  // TODO: align with TriMet style guide
+  // background-color: #fdf8d6
 }
