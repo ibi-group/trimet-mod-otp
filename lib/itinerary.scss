@@ -31,12 +31,19 @@ $line-padding: 5px;
   padding-top: 3px;
   font-size: 13px;
 }
+
 /* Itinerary summary */
 
 .otp .line-itin .itin-summary {
-  position: relative;
-  margin: 15px 10px 0px 10px;
+  padding: 15px 10px 0px 10px;
   height: 60px;
+  display: table;
+  width: 100%;
+}
+
+.otp .line-itin .itin-summary .details {
+  display: table-cell;
+  vertical-align: top;
 }
 
 .otp .line-itin .itin-summary .header {
@@ -50,8 +57,8 @@ $line-padding: 5px;
 }
 
 .otp .line-itin .itin-summary .routes {
-  position: absolute;
-  right: 0;
+  display: table-cell;
+  text-align: right;
 }
 
 .otp .line-itin .itin-summary .routes .route-preview {
@@ -87,8 +94,16 @@ $line-padding: 5px;
   padding: 20px 0px;
 }
 
+.otp .line-itin .place-row {
+  display: table;
+  width: 100%;
+}
+
+
+/* Departure/arrival time (1st column in table) */
+
 .otp .line-itin .time {
-  position: absolute;
+  display: table-cell;
   width: $left-width;
   font-size: 14px;
   color: #999999;
@@ -97,47 +112,33 @@ $line-padding: 5px;
   padding-top: 3px;
 }
 
-/* Place icon */
+/* The place icon and line itself (2nd column in table) */
 
-.otp .line-itin .place-icon-container {
-  position: absolute;
-  left: $left-width + $line-padding;
-  width: 20px;
-  height: 20px;
-  z-index: 20;
+.otp .line-itin .line-container {
+  position: relative;
+  display: table-cell;
+  width: $line-container-width;
+  max-width: $line-container-width;
 }
 
 .otp .line-itin .place-icon-group {
-  font-size: 18px;
-  margin-left: -8px;
-  margin-top: -8px;
-}
-
-/* Place name */
-.otp .line-itin .place-name {
-  margin-left: $left-width + 2 * $line-padding + $line-container-width;
-  font-size: 18px;
-  padding-left: 4px;
-  font-weight: 700;
-}
-
-/* The line itself */
-
-.otp .line-itin .leg-line-container {
   position: absolute;
-  left: $left-width + $line-padding;
-  width: $line-container-width;
-  top: -10px;
+  font-size: 18px;
+  left: -8px;
+  top: -7px;
+  z-index: 20;
+}
+
+.otp .line-itin .leg-line {
+  position: absolute;
+  top: 10px;
   bottom: -10px;
   z-index: 10;
 }
 
 .otp .line-itin .leg-line-walk {
-  position: absolute;
   left: 0.3 * $line-container-width;
   right: 0.3 * $line-container-width;
-  top: 0px;
-  bottom: 0px;
   background: radial-gradient(ellipse at center, #87cefa 40%, transparent 10%);
   background-size: 0.6 * $line-container-width 0.6 * $line-container-width;
   background-repeat: repeat-y;
@@ -145,11 +146,8 @@ $line-padding: 5px;
 }
 
 .otp .line-itin .leg-line-bicycle {
-  position: absolute;
   left: 0.375 * $line-container-width;
   right: 0.375 * $line-container-width;
-  top: 0px;
-  bottom: 0px;
   background: repeating-linear-gradient(
     0deg,
     red,
@@ -160,18 +158,34 @@ $line-padding: 5px;
 }
 
 .otp .line-itin .leg-line-transit {
-  position: absolute;
-  left: 0.2 * $line-container-width;
-  right: 0.2 * $line-container-width;
-  top: 0px;
-  bottom: 0px;
+  left: 0.25 * $line-container-width;
+  right: 0.25 * $line-container-width;
   background-color: gray;
+}
+
+/* Place/Leg details (3rd column in table) */
+
+.otp .line-itin .place-details {
+  display: table-cell;
+}
+
+.otp .line-itin .place-name {
+  font-size: 18px;
+  line-height: 20px;
+  padding-left: 4px;
+  padding-top: 3px;
+  font-weight: 700;
+}
+
+.otp .line-itin .viewer-button-container {
+  font-style: normal;
+  float: right;
+  margin-left: 10px;
 }
 
 /* Leg body general */
 
 .otp .line-itin .leg-body {
-  margin-left: $left-width + 2 * $line-padding + $line-container-width;
   padding: 12px 0px 12px 4px;
   font-size: 14px;
   color: #999999;
@@ -238,7 +252,8 @@ $line-padding: 5px;
 
 .otp .line-itin .leg-body .transit-leg-details .intermediate-stops .stop-marker {
   float: left;
-  margin-left: -$line-container-width - $line-padding + + 0.15 * $line-container-width;
+  margin-left: -17px;
+  font-style: normal;
   color: white;
 }
 
