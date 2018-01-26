@@ -133,8 +133,8 @@ $line-padding: 5px;
 
 .otp .line-itin .leg-line {
   position: absolute;
-  top: 10px;
-  bottom: -10px;
+  top: 11px;
+  bottom: -11px;
   z-index: 10;
 }
 
@@ -177,6 +177,20 @@ $line-padding: 5px;
   padding-left: 4px;
   padding-top: 3px;
   font-weight: 700;
+}
+
+.otp .line-itin .interline-dot {
+  position: relative;
+  float: left;
+  margin-left: -13.5px;
+  z-index: 25;
+  color: #fff;
+}
+
+.otp .line-itin .interline-name {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
 }
 
 .otp .line-itin .viewer-button-container {
