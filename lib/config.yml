@@ -31,21 +31,19 @@ geocoder:
       minLat: 45.273
       maxLat: 45.7445
 
-modes:
-  - TRANSIT,WALK
-  - TRANSIT,BICYCLE
-  - WALK
-  - BICYCLE
-  - BICYCLE_RENT
-
 modeGroups:
   - name: Transit
     modes:
-      - TRAM
       - BUS
-      - GONDOLA
+      - mode: TRAM
+        label: MAX & Streetcar
+      - mode: RAIL
+        label: WES
+      - mode: GONDOLA
+        label: Aerial Tram
   - name: Walk/Bike
     modes:
       - WALK
-      - BICYCLE_RENT
       - BICYCLE
+      - mode: BICYCLE_RENT
+        label: BIKETOWN
