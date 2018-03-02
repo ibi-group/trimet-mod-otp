@@ -47,3 +47,10 @@ modeGroups:
       - BICYCLE
       - mode: BICYCLE_RENT
         label: BIKETOWN
+  - name: Car
+    modes:
+      - CAR
+      - mode: CAR_HAIL
+        label: Lyft
+      - mode: CAR_HAIL
+        label: Uber
