@@ -159,6 +159,18 @@ $line-padding: 5px;
   );
 }
 
+.otp .line-itin .leg-line-car {
+  left: 0.375 * $line-container-width;
+  right: 0.375 * $line-container-width;
+  background: repeating-linear-gradient(
+    0deg,
+    grey,
+    grey 8px,
+    white 8px,
+    white 12.5px
+  );
+}
+
 .otp .line-itin .leg-line-transit {
   left: 0.25 * $line-container-width;
   right: 0.25 * $line-container-width;
