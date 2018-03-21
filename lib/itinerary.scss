@@ -2,6 +2,25 @@ $left-width: 60px;
 $line-container-width: 20px;
 $line-padding: 5px;
 
+@mixin viewer-button {
+  border: none;
+  background: none;
+  padding-left: 5px;
+  margin-left: 5px;
+  border-left: 1px solid black;
+  border-radius: 0;
+  color: #008;
+  outline: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  &:active {
+    box-shadow: none;
+  }
+}
+
 .otp .options.profile .itin-body {
   margin-left: -$left-width + 5;
 }
@@ -34,6 +53,10 @@ $line-padding: 5px;
   font-size: 16px;
 }
 
+.otp .desktop-narrative-container .line-itin > .header {
+  display: none;
+}
+
 /* Itinerary summary */
 
 .otp .line-itin .itin-summary {
@@ -41,6 +64,10 @@ $line-padding: 5px;
   height: 60px;
   display: table;
   width: 100%;
+}
+
+.otp .desktop-narrative-container .line-itin .itin-summary {
+  display: none;
 }
 
 .otp .line-itin .itin-summary .details {
@@ -180,6 +207,7 @@ $line-padding: 5px;
 /* Place/Leg details (3rd column in table) */
 
 .otp .line-itin .place-details {
+  font-size: 13px;
   display: table-cell;
 }
 
@@ -188,7 +216,19 @@ $line-padding: 5px;
   line-height: 20px;
   padding-left: 4px;
   padding-top: 3px;
-  font-weight: 700;
+  font-weight: 500;
+}
+
+.otp .line-itin .stop-details {
+  font-size: 12px;
+  padding-left: 4px;
+  padding-top: 1px;
+  font-weight: 300;
+  color: gray;
+}
+
+.otp .line-itin .view-stop-button {
+  @include viewer-button;
 }
 
 .otp .line-itin .interline-dot {
@@ -214,24 +254,30 @@ $line-padding: 5px;
 /* Leg body general */
 
 .otp .line-itin .leg-body {
-  padding: 12px 0px 12px 4px;
-  font-size: 14px;
+  padding: 12px 0px 18px 4px;
+  font-size: 13px;
   color: #999999;
-  font-style: italic;
 }
 
 .otp .line-itin .leg-body .icon {
-  height: 20px;
-  width: 20px;
+  height: 24px;
+  width: 24px;
   float: left;
   margin-right: 6px;
 }
 
 /* Leg steps (for turn-by-turn) */
 
+.otp .line-itin .leg-body .steps-header {
+  font-size: 13px;
+  margin-top: 10px;
+  color: #999999;
+  font-style: normal;
+}
+
 .otp .line-itin .leg-body .step-row {
-  font-size: 14px;
-  margin-top: 5px;
+  font-size: 13px;
+  margin-top: 4px;
   color: #999999;
   font-style: normal;
 }
@@ -240,35 +286,44 @@ $line-padding: 5px;
 
 .otp .line-itin .leg-body .route-name {
   color: #999999;
-  font-size: 14px;
-  font-style: normal;
+  margin-top: 5px;
 }
 
 .otp .line-itin .leg-body .route-short-name {
   display: inline-block;
   background-color: #0f6aac;
-  padding-top: 2px;
+  padding-top: 3px;
   color: white;
   font-weight: 500;
-  font-size: 13px;
+  font-size: 14px;
   margin-right: 6px;
   text-align: center;
-  width: 22px;
-  height: 22px;
-  border-radius: 11px;
+  width: 24px;
+  height: 24px;
+  border-radius: 12px;
   border: 1px solid white;
   box-shadow: 0 0 0.25em #000;
+  margin-right: 8px;
+}
+
+.otp .line-itin .leg-body .route-long-name {
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: 500;
 }
 
 .otp .line-itin .leg-body .transit-leg-details {
-  margin-top: 4px;
+  margin-top: 10px;
 }
 
 .otp .line-itin .leg-body .transit-leg-details .header {
   cursor: pointer;
   color: #999999;
-  font-style: italic;
-  font-size: 14px;
+  font-size: 13px;
+}
+
+.otp .line-itin .view-trip-button {
+  @include viewer-button;
 }
 
 /* Intermediate stops */
@@ -281,7 +336,6 @@ $line-padding: 5px;
 .otp .line-itin .leg-body .transit-leg-details .intermediate-stops .stop-marker {
   float: left;
   margin-left: -17px;
-  font-style: normal;
   color: white;
 }
 
@@ -289,26 +343,36 @@ $line-padding: 5px;
   color: #999999;
   font-size: 14px;
   margin-top: 3px;
-  font-style: normal;
 }
 
 /* Transit alerts */
+
+.otp .line-itin .leg-body .transit-alerts-toggle {
+  display: inline-block;
+  margin-left: 5px;
+  color: #D14727;
+  font-weight: 400;
+  cursor: pointer;
+}
 
 .otp .line-itin .leg-body .transit-alerts {
   margin-top: 3px;
 }
 
-.otp .line-itin .leg-body .transit-alerts .header {
-  color: #D14727;
-  font-size: 15px;
-  font-weight: bold;
-  font-style: normal;
-  cursor: pointer;
+.otp .line-itin .leg-body .transit-alerts .transit-alert {
+  margin-top: 5px;
+  background-color: #eee;
+  padding: 8px;
+  color: black;
+  border-radius: 4px;
 }
 
-.otp .line-itin .leg-body .transit-alerts .transit-alert {
-  font-size: 14px;
-  margin-top: 5px;
-  color: #999999;
-  font-style: normal;
+.otp .line-itin .leg-body .transit-alerts .transit-alert .alert-icon {
+  float: left;
+  font-size: 18px;
+}
+
+.otp .line-itin .leg-body .transit-alerts .transit-alert .alert-body {
+  font-size: 12px;
+  margin-left: 30px;
 }

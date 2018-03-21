@@ -127,13 +127,12 @@
 
 /* Date/Time Preview Bar */
 
-.otp .date-time-preview.wide {
+/*.otp .date-time-preview.wide {
   background-color: #222;
-}
+}*/
 
 .otp .date-time-preview .change-button {
   @include secondary-button;
-  width: 100px;
   margin-top: 8px;
   line-height: 14px;
   padding-top: 8px;
@@ -141,23 +140,26 @@
   outline: none;
 }
 
+.otp .date-time-preview.compressed {
+  text-align: center;
+}
+
 /* Settings (Modes/etc.) Preview Bar */
 
-.otp .settings-preview.wide {
+/*.otp .settings-preview.wide {
   background-color: #222;
   text-transform: uppercase;
 }
 
 .otp .date-time-preview .details {
   text-transform: uppercase;
-}
+}*/
 
 .otp .settings-preview .settings-button {
   @include secondary-button;
   margin-top: 8px;
-  width: 100px;
   line-height: 14px;
-  padding-top: 8px;
+  /*padding-top: 8px;*/
   font-size: 13px;
   outline: none;
 }
@@ -380,4 +382,14 @@
   @include secondary-button;
   // TODO: align with TriMet style guide
   // background-color: #fdf8d6
+}
+
+/* Trip Details box */
+
+.otp .trip-details {
+  border-radius: 6px;
+  border: none;
+  background-color: #eee;
+  padding: 10px 16px;
+  margin-bottom: 15px;
 }
