@@ -54,3 +54,6 @@ modeGroups:
         label: Lyft
       - mode: CAR_HAIL
         label: Uber
+
+LYFT_CLIENT_ID: SECRET
+UBER_CLIENT_ID: SECRET
