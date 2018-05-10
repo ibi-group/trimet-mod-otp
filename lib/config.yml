@@ -49,8 +49,7 @@ modeGroups:
         label: BIKETOWN
   - name: Car
     modes:
-      - CAR
-      - mode: CAR_HAIL
-        label: Lyft
+      - mode: CAR_PARK
+        label: Park & Ride
       - mode: CAR_HAIL
         label: Uber
