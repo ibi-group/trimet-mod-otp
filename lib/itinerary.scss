@@ -21,7 +21,7 @@ $line-padding: 5px;
   }
 }
 
-.otp .options.profile .itin-body {
+.otp .options.profile .itin-body .place-row {
   margin-left: -$left-width + 5;
 }
 
@@ -53,7 +53,7 @@ $line-padding: 5px;
   font-size: 16px;
 }
 
-.otp .desktop-narrative-container .line-itin > .header {
+.otp .desktop-narrative-container .options.itinerary .line-itin > .header {
   display: none;
 }
 
@@ -66,7 +66,7 @@ $line-padding: 5px;
   width: 100%;
 }
 
-.otp .desktop-narrative-container .line-itin .itin-summary {
+.otp .desktop-narrative-container .options.itinerary .line-itin .itin-summary {
   display: none;
 }
 
