@@ -35,7 +35,8 @@ module.exports = {
     contentBase: path.join(__dirname, '/'),
 
     // match the output `publicPath`
-    publicPath: '/'
+    publicPath: '/',
+    historyApiFallback: true
   },
 
   plugins: [
