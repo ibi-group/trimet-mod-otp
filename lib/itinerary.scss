@@ -259,6 +259,10 @@ $line-padding: 5px;
   color: #999999;
 }
 
+.otp .line-itin .summary {
+  cursor: pointer;
+}
+
 .otp .line-itin .leg-body .icon {
   height: 24px;
   width: 24px;
@@ -349,7 +353,7 @@ $line-padding: 5px;
 
 .otp .line-itin .leg-body .transit-alerts-toggle {
   display: inline-block;
-  margin-left: 5px;
+  margin-top: 8px;
   color: #D14727;
   font-weight: 400;
   cursor: pointer;
