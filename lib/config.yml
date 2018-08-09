@@ -32,15 +32,22 @@ map:
 
   # Base layers for default map
   baseLayers:
-    - name: Carto Light
-      url: https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}@2x.png
-      attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>, &copy; <a href="https://carto.com/attribution">CARTO</a>'
     - name: Streets
-      url: http://tile.stamen.com/terrain/{z}/{x}/{y}.png
+      url: //tile{s}.trimet.org/tilecache/tilecache.py/1.0.0/currentOSM/{z}/{x}/{y}
+      attribution: 'Map tiles: <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>.'
+      maxZoom: 20
+    - name: Aerials
+      url: //tile{s}.trimet.org/tilecache/tilecache.py/1.0.0/hybridOSM/{z}/{x}/{y}
+      attribution: 'Map tiles: <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>.'
+      maxZoom: 20
+    - name: Stamen Streets
+      url: //tile.stamen.com/terrain/{z}/{x}/{y}.png
       attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>.'
+      maxZoom: 17
     - name: Stamen Toner Lite
-      url: http://tile.stamen.com/toner-lite/{z}/{x}/{y}.png
+      url: //tile.stamen.com/toner-lite/{z}/{x}/{y}.png
       attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>.'
+      maxZoom: 18
 
   # The route map overlay
   routesOverlay:
@@ -49,6 +56,13 @@ map:
   # The Zipcar locations overlay
   zipcarOverlay:
     api: https://modbeta.trimet.org/ws/carshare/zipcar/data.json
+
+  # The car2go locations overlay
+  carRentalOverlay:
+    name: car2go Locations
+
+  # Park & ride locations overlay
+  parkAndRideOverlay: true
 
 # Pelias Geocoder config
 # (Note: this format may eventually change to allow other geocoding services)
@@ -92,3 +106,5 @@ modeGroups:
         label: Park & Ride
       - mode: CAR_HAIL
         label: Uber
+      - mode: CAR_RENT
+        label: car2go
