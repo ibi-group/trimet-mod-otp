@@ -1,10 +1,15 @@
+# react-router config, for URL routing (not to be confused with multimodal/OTP routing)
+reactRouter:
+  # If app is to be deployed to a URL subdirectory (e.g. http://foo.bar/app), specify the path here:
+  basename: map
+
 # Default OTP API
 api:
   host: https://trimet-otp.conveyal.com
-  #host: http://localhost:8001 # For testing against a local OTP instance
+  # host: http://localhost:8001 # For testing against a local OTP instance
   path: /otp/routers/default
 
-# Enabled routing types (e.g. interary, profile)
+# Enabled multimodal routing types (e.g. interary, profile)
 routingTypes:
   - key: ITINERARY
     text: Exact Time
