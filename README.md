@@ -18,7 +18,7 @@ git clone https://github.com/conveyal/trimet-mod-otp.git
 yarn install
 ```
 
-4. Update the configuration file, `lib/config.yml`, as needed. This file allows for configuration of the OTP API, map base layers and overlays, enabled travel modes, and other settings. See `config.yml` comments for details.
+4. Update the configuration file, `lib/config.yml`, as needed. This file allows for configuration of the base URL path, OTP API, map base layers and overlays, enabled travel modes, and other settings. See `config.yml` comments for details.
 
 5. If a custom page title is desired, update the `<title>` contents in `lib/index.tpl.html`.
 
@@ -38,4 +38,4 @@ Run the `build` command with Yarn to bundle the application for production deplo
 yarn build
 ```
 
-This will build three files in the `dist/` directory: `index.html`, `bundle.js`, and `styles.css`. These files can then be deployed to any public-facing web server.
+This will build three files in the `dist/` directory: `index.html`, `bundle.js`, and `styles.css`. These files can then be deployed to any public-facing web server. Note: if deploying to a URL subdirectory, the path must match the `reactRouter.basename` property specified in `config.yml`.
