@@ -138,7 +138,8 @@ $line-padding: 5px;
   color: #999999;
   text-align: right;
   padding-right: 4px;
-  padding-top: 3px;
+  padding-top: 1px;
+  vertical-align: top;
 }
 
 /* The place icon and line itself (2nd column in table) */
@@ -209,17 +210,18 @@ $line-padding: 5px;
 .otp .line-itin .place-details {
   font-size: 13px;
   display: table-cell;
+  padding-top: 1px;
 }
 
 .otp .line-itin .place-name {
   font-size: 18px;
   line-height: 20px;
   padding-left: 4px;
-  padding-top: 3px;
   font-weight: 500;
+  color: black;
 }
 
-.otp .line-itin .stop-details {
+.otp .line-itin .place-subheader {
   font-size: 12px;
   padding-left: 4px;
   padding-top: 1px;
@@ -243,12 +245,6 @@ $line-padding: 5px;
   font-size: 14px;
   font-weight: 400;
   line-height: 16px;
-}
-
-.otp .line-itin .viewer-button-container {
-  font-style: normal;
-  float: right;
-  margin-left: 10px;
 }
 
 /* Leg body general */
@@ -296,7 +292,7 @@ $line-padding: 5px;
 .otp .line-itin .leg-body .route-short-name {
   display: inline-block;
   background-color: #0f6aac;
-  padding-top: 3px;
+  padding-top: 1px;
   color: white;
   font-weight: 500;
   font-size: 14px;
