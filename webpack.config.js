@@ -1,4 +1,3 @@
-const webpack = require('webpack')
 const path = require('path')
 
 const HtmlWebpackPlugin = require('html-webpack-plugin')
@@ -38,8 +37,7 @@ module.exports = {
       inject: 'body',
       filename: 'index.html'
     }),
-    new MiniCssExtractPlugin(),
-    new webpack.HotModuleReplacementPlugin()
+    new MiniCssExtractPlugin()
   ],
   optimization: {
     minimizer: [
@@ -49,6 +47,6 @@ module.exports = {
   },
   devServer: {
     contentBase: './',
-    hot: true
+    historyApiFallback: true
   }
 }
