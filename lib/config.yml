@@ -1,12 +1,12 @@
 # react-router config, for URL routing (not to be confused with multimodal/OTP routing)
-reactRouter:
+#reactRouter:
   # If app is to be deployed to a URL subdirectory (e.g. http://foo.bar/app), specify the path here:
-  basename: map
+  #basename: map
 
 # Default OTP API
 api:
   host: https://trimet-otp.conveyal.com
-  # host: http://localhost:8001 # For testing against a local OTP instance
+  #host: http://localhost:8001 # For testing against a local OTP instance
   path: /otp/routers/default
 
 # Enabled multimodal routing types (e.g. interary, profile)
@@ -83,6 +83,8 @@ geocoder:
       minLat: 45.273
       maxLat: 45.7445
 
+  maxNearbyStops: 6
+
 # Enabled travel modes, grouped for display purposes
 modeGroups:
   # Transit modes
@@ -113,3 +115,11 @@ modeGroups:
         label: Uber
       - mode: CAR_RENT
         label: car2go
+
+# Alternate TransitIndex API
+#alternateTransitIndex:
+#  apiRoot: https://modbeta.trimet.org/ws/ti/v0/
+#  services:
+#     - stops
+#     - stops/routes
+#     - routes
