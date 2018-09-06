@@ -13,7 +13,7 @@
     "is-mobile": "^0.2.2",
     "leaflet.polylinemeasure": "ppete2/Leaflet.PolylineMeasure",
     "lodash.isequal": "^4.5.0",
-    "otp-react-redux": "git://github.com/opentripplanner/otp-react-redux/#0ec3eb9",
+    "otp-react-redux": "git://github.com/opentripplanner/otp-react-redux/#5ecbf95",
     "react": "^15.4.2",
     "react-bootstrap": "^0.30.7",
     "react-dom": "^15.4.2",
