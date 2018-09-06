@@ -1,6 +1,27 @@
-@import "itinerary.scss";
-
 /* mixins */
+@mixin link-button {
+  border: none;
+  background: none;
+  border-radius: 0;
+  color: #008;
+  outline: none;
+  height: 14px;
+  padding-top: 0px;
+  line-height: 1;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  &:active {
+    box-shadow: none;
+  }
+}
+
+@mixin viewer-button {
+  @include link-button;
+  margin-left: 5px;
+}
 
 @mixin secondary-button {
   border: solid 1px #eee;
@@ -24,6 +45,10 @@
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
+/* imports */
+
+@import "itinerary.scss";
 
 /* top-level container styling */
 
@@ -392,4 +417,19 @@
   background-color: #eee;
   padding: 10px 16px;
   margin-bottom: 15px;
+}
+
+/* Overlay popup */
+
+.otp .map-overlay-popup {
+  font-family: "Hind";
+}
+
+.otp .set-from-button {
+  @include link-button;
+}
+
+.otp .set-to-button {
+  @include link-button;
+  border-left: 1px solid black;
 }
