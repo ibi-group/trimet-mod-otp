@@ -113,6 +113,8 @@ modeGroups:
         label: Park & Ride
       - mode: CAR_HAIL
         label: Uber
+      - mode: CAR_HAIL
+        label: Lyft
       - mode: CAR_RENT
         label: car2go
 
