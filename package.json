@@ -12,7 +12,7 @@
   "dependencies": {
     "is-mobile": "^0.2.2",
     "lodash.isequal": "^4.5.0",
-    "otp-react-redux": "git://github.com/opentripplanner/otp-react-redux/#3f423c3",
+    "otp-react-redux": "git://github.com/opentripplanner/otp-react-redux/#41754cd",
     "react": "^15.4.2",
     "react-bootstrap": "^0.30.7",
     "react-dom": "^15.4.2",
