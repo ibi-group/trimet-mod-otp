@@ -15,11 +15,11 @@ routingTypes:
     text: Exact Time
 
   # Delete/uncomment the following block to disable profile routing
-  - key: PROFILE
-    text: Time Window
-    api: # Specifies a different API endpoint for profile routing
-      host: https://trimet-modeify.conveyal.com
-      path: /api
+  #- key: PROFILE
+  #  text: Time Window
+  #  api: # Specifies a different API endpoint for profile routing
+  #    host: https://trimet-modeify.conveyal.com
+  #    path: /api
 
 # Map config
 map:
@@ -28,8 +28,8 @@ map:
     - type: DEFAULT
       text: Map View
     # Delete/uncomment the following block to disable the stylized map
-    - type: STYLIZED
-      text: Network View
+    #- type: STYLIZED
+    #  text: Network View
 
   # Default map center
   initLat: 45.52
