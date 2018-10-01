@@ -9,10 +9,14 @@
     "start": "webpack-dev-server --mode=development",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "standard": {
+    "parser": "babel-eslint"
+  },
   "dependencies": {
     "is-mobile": "^0.2.2",
     "lodash.isequal": "^4.5.0",
     "otp-react-redux": "git://github.com/opentripplanner/otp-react-redux/#5f984f0",
+    "prop-types": "^15.6.2",
     "react": "^15.4.2",
     "react-bootstrap": "^0.30.7",
     "react-dom": "^15.4.2",
