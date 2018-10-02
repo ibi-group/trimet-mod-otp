@@ -37,6 +37,10 @@
   font-weight: 400;
   color:#fff;
   border:solid 2px #62a038;
+  // Ensure that disabled state does not default to white background.
+  &:hover {
+    background:#62a038;
+  }
 }
 
 @mixin truncate {
