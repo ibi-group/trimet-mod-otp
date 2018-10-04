@@ -118,6 +118,12 @@ modeGroups:
       - mode: CAR_RENT
         label: car2go
 
+errorMessages:
+  - id: 405
+    msg: Sorry, we couldn’t find any transit or rideshare/carshare options at the time you chose. Please try again later or change the departure/arrival time of your trip.
+    modes:
+      - CAR_HAIL
+
 # Alternate TransitIndex API
 #alternateTransitIndex:
 #  apiRoot: https://modbeta.trimet.org/ws/ti/v0/
