@@ -44,7 +44,6 @@
 }
 
 @mixin truncate {
-  width: 250px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -270,6 +269,7 @@
 
 .otp .locations-summary .location {
   @include truncate;
+  font-weight: 300;
 }
 
 .otp .locations-summary .fa {
