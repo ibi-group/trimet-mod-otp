@@ -2840,8 +2840,8 @@ csso@~2.3.1:
     source-map "^0.5.3"
 
 currency-formatter@^1.4.2:
-  version "1.5.2"
-  resolved "https://registry.yarnpkg.com/currency-formatter/-/currency-formatter-1.5.2.tgz#018673136992cafc9c9cab5e387bbba315633fc2"
+  version "1.5.3"
+  resolved "https://registry.yarnpkg.com/currency-formatter/-/currency-formatter-1.5.3.tgz#e4ebdf1fac7df38acc6080d8ee5119d9d1fb831f"
   dependencies:
     accounting "^0.4.1"
     locale-currency "0.0.2"
@@ -3595,8 +3595,8 @@ find-up@^3.0.0:
     locate-path "^3.0.0"
 
 flatmap-stream@^0.1.0:
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/flatmap-stream/-/flatmap-stream-0.1.0.tgz#ed54e01422cd29281800914fcb968d58b685d5f1"
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/flatmap-stream/-/flatmap-stream-0.1.1.tgz#d34f39ef3b9aa5a2fc225016bd3adf28ac5ae6ea"
 
 flatten@^1.0.2:
   version "1.0.2"
@@ -5774,9 +5774,9 @@ osenv@0, osenv@^0.1.0, osenv@^0.1.4:
     os-homedir "^1.0.0"
     os-tmpdir "^1.0.0"
 
-"otp-react-redux@git://github.com/opentripplanner/otp-react-redux/#3b01767":
+"otp-react-redux@git://github.com/opentripplanner/otp-react-redux/#6953427":
   version "1.0.0-SNAPSHOT"
-  resolved "git://github.com/opentripplanner/otp-react-redux/#3b0176760245a8bddaafe8e988fe43da210c5668"
+  resolved "git://github.com/opentripplanner/otp-react-redux/#6953427001f3a02d00691d479a1192e0eb427f93"
   dependencies:
     "@conveyal/lonlat" "^1.1.0"
     "@mapbox/polyline" "^0.2.0"
