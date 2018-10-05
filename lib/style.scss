@@ -253,6 +253,14 @@
   cursor: pointer;
 }
 
+.otp .location-field .clear-button {
+  border: none;
+  background: none;
+  color: #888;
+  margin: 0;
+  padding: 2px 5px;
+}
+
 .otp .location-field .dropdown-header {
   color: navy;
   font-weight: 600;
