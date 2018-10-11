@@ -124,12 +124,22 @@ $line-padding: 5px;
 }
 
 /* The place icon and line itself (2nd column in table) */
-
-.otp .line-itin .line-container {
+@mixin line-container {
   position: relative;
   display: table-cell;
   width: $line-container-width;
   max-width: $line-container-width;
+}
+
+@mixin leg-line {
+  position: absolute;
+  top: 11px;
+  bottom: -11px;
+  z-index: 10;
+}
+
+.otp .line-itin .line-container {
+  @include line-container
 }
 
 .otp .line-itin .place-icon-group {
@@ -141,10 +151,21 @@ $line-padding: 5px;
 }
 
 .otp .line-itin .leg-line {
-  position: absolute;
-  top: 11px;
-  bottom: -11px;
-  z-index: 10;
+  @include leg-line
+}
+
+// Internet explorer specific media query to apply the below styling to fix
+// rendering issues with table cell display with undefined heights.
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .otp .line-itin .line-container {
+    @include line-container
+    overflow: hidden; // hack for IE to render table cell correctly.
+  }
+
+  .otp .line-itin .leg-line {
+    @include leg-line
+    height: 1000px; // hack for IE to render table cell correctly.
+  }
 }
 
 .otp .line-itin .leg-line-walk {
