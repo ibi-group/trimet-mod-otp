@@ -119,10 +119,18 @@ modeGroups:
         label: car2go
 
 errorMessages:
+  - id: 404
+    msg: Sorry, we couldn’t find any transit or rideshare/carshare options at the time you chose. Please try again later or change the departure/arrival time of your trip.
+    modes:
+      - CAR_HAIL
+      - CAR_RENT
   - id: 405
     msg: Sorry, we couldn’t find any transit or rideshare/carshare options at the time you chose. Please try again later or change the departure/arrival time of your trip.
     modes:
       - CAR_HAIL
+      - CAR_RENT
+  - id: 480
+    msg: No available transit routes or rideshare/carshare service at origin.
 
 # Alternate TransitIndex API
 #alternateTransitIndex:
