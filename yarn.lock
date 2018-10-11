@@ -1916,7 +1916,7 @@ boolbase@^1.0.0, boolbase@~1.0.0:
 
 bootstrap@^3.3.7:
   version "3.3.7"
-  resolved "https://registry.yarnpkg.com/bootstrap/-/bootstrap-3.3.7.tgz#5a389394549f23330875a3b150656574f8a9eb71"
+  resolved "http://registry.npmjs.org/bootstrap/-/bootstrap-3.3.7.tgz#5a389394549f23330875a3b150656574f8a9eb71"
 
 bowser@^1.9.3:
   version "1.9.4"
@@ -2137,8 +2137,8 @@ caniuse-api@^3.0.0:
     lodash.uniq "^4.5.0"
 
 caniuse-db@^1.0.30000529, caniuse-db@^1.0.30000634, caniuse-db@^1.0.30000639:
-  version "1.0.30000889"
-  resolved "https://registry.yarnpkg.com/caniuse-db/-/caniuse-db-1.0.30000889.tgz#f6177927a0c56bbd56ff70f11e4bb28be3889052"
+  version "1.0.30000890"
+  resolved "https://registry.yarnpkg.com/caniuse-db/-/caniuse-db-1.0.30000890.tgz#b406595db8b631975b8dc5fa174f32925c23778b"
 
 caniuse-lite@^1.0.0, caniuse-lite@^1.0.30000884:
   version "1.0.30000887"
@@ -2346,7 +2346,7 @@ color-string@^1.5.2:
 
 color@^0.11.0:
   version "0.11.4"
-  resolved "https://registry.yarnpkg.com/color/-/color-0.11.4.tgz#6d7b5c74fb65e841cd48792ad1ed5e07b904d764"
+  resolved "http://registry.npmjs.org/color/-/color-0.11.4.tgz#6d7b5c74fb65e841cd48792ad1ed5e07b904d764"
   dependencies:
     clone "^1.0.2"
     color-convert "^1.3.0"
@@ -2388,8 +2388,8 @@ commander@2.17.x, commander@~2.17.1:
   resolved "https://registry.yarnpkg.com/commander/-/commander-2.17.1.tgz#bd77ab7de6de94205ceacc72f1716d29f20a77bf"
 
 commander@^2.11.0:
-  version "2.18.0"
-  resolved "https://registry.yarnpkg.com/commander/-/commander-2.18.0.tgz#2bf063ddee7c7891176981a2cc798e5754bc6970"
+  version "2.19.0"
+  resolved "https://registry.yarnpkg.com/commander/-/commander-2.19.0.tgz#f6198aa84e5b83c46054b94ddedbfed5ee9ff12a"
 
 commander@~2.13.0:
   version "2.13.0"
@@ -2629,7 +2629,7 @@ css-declaration-sorter@^3.0.0:
 
 css-loader@^0.23.1:
   version "0.23.1"
-  resolved "https://registry.yarnpkg.com/css-loader/-/css-loader-0.23.1.tgz#9fa23f2b5c0965235910ad5ecef3b8a36390fe50"
+  resolved "http://registry.npmjs.org/css-loader/-/css-loader-0.23.1.tgz#9fa23f2b5c0965235910ad5ecef3b8a36390fe50"
   dependencies:
     css-selector-tokenizer "^0.5.1"
     cssnano ">=2.6.1 <4"
@@ -3194,8 +3194,8 @@ ee-first@1.1.1:
   resolved "https://registry.yarnpkg.com/ee-first/-/ee-first-1.1.1.tgz#590c61156b0ae2f4f0255732a158b266bc56b21d"
 
 electron-to-chromium@^1.2.7:
-  version "1.3.73"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.73.tgz#aa67787067d58cc3920089368b3b8d6fe0fc12f6"
+  version "1.3.77"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.77.tgz#9207a874a21a8fcb665bb4ff1675a11ba65517f4"
 
 electron-to-chromium@^1.3.62:
   version "1.3.70"
@@ -3520,7 +3520,7 @@ fbjs@^0.8.4, fbjs@^0.8.9:
 
 file-loader@^0.8.5:
   version "0.8.5"
-  resolved "https://registry.yarnpkg.com/file-loader/-/file-loader-0.8.5.tgz#9275d031fe780f27d47f5f4af02bd43713cc151b"
+  resolved "http://registry.npmjs.org/file-loader/-/file-loader-0.8.5.tgz#9275d031fe780f27d47f5f4af02bd43713cc151b"
   dependencies:
     loader-utils "~0.2.5"
 
@@ -4736,7 +4736,7 @@ lcid@^2.0.0:
 
 "leaflet.polylinemeasure@github:ppete2/Leaflet.PolylineMeasure":
   version "1.0.0"
-  resolved "https://codeload.github.com/ppete2/Leaflet.PolylineMeasure/tar.gz/107d4b25a638a3312f5b74a8c05ba62414449466"
+  resolved "https://codeload.github.com/ppete2/Leaflet.PolylineMeasure/tar.gz/ba0dc5b62acd3f94c801fbc82bc527e3ef588c56"
 
 leaflet@^1.0.3:
   version "1.3.4"
@@ -5774,9 +5774,9 @@ osenv@0, osenv@^0.1.0, osenv@^0.1.4:
     os-homedir "^1.0.0"
     os-tmpdir "^1.0.0"
 
-"otp-react-redux@git://github.com/opentripplanner/otp-react-redux/#6953427":
+"otp-react-redux@git://github.com/opentripplanner/otp-react-redux/#45397a1":
   version "1.0.0-SNAPSHOT"
-  resolved "git://github.com/opentripplanner/otp-react-redux/#6953427001f3a02d00691d479a1192e0eb427f93"
+  resolved "git://github.com/opentripplanner/otp-react-redux/#45397a19897f99ea655e1d231384749043c6ea15"
   dependencies:
     "@conveyal/lonlat" "^1.1.0"
     "@mapbox/polyline" "^0.2.0"
@@ -6824,7 +6824,7 @@ react-input-autosize@^2.1.2:
 
 react-leaflet@^1.1.0:
   version "1.9.1"
-  resolved "https://registry.yarnpkg.com/react-leaflet/-/react-leaflet-1.9.1.tgz#0a282d8d26f66ea2d719ebb8f4a5fa156b33b8c8"
+  resolved "http://registry.npmjs.org/react-leaflet/-/react-leaflet-1.9.1.tgz#0a282d8d26f66ea2d719ebb8f4a5fa156b33b8c8"
   dependencies:
     lodash "^4.0.0"
     lodash-es "^4.0.0"
@@ -7459,17 +7459,21 @@ semantic-release@^6.3.2:
     run-series "^1.1.3"
     semver "^5.2.0"
 
-"semver@2 >=2.2.1 || 3.x || 4 || 5", "semver@2 || 3 || 4 || 5", semver@^5.0.3, semver@^5.1.0, semver@^5.2.0, semver@^5.3.0, semver@^5.4.1, semver@^5.5.0:
-  version "5.5.1"
-  resolved "https://registry.yarnpkg.com/semver/-/semver-5.5.1.tgz#7dfdd8814bdb7cabc7be0fb1d734cfb66c940477"
+"semver@2 >=2.2.1 || 3.x || 4 || 5", semver@^5.0.3, semver@^5.1.0, semver@^5.2.0:
+  version "5.6.0"
+  resolved "https://registry.yarnpkg.com/semver/-/semver-5.6.0.tgz#7e74256fbaa49c75aa7c7a205cc22799cac80004"
 
 "semver@2 || 3 || 4":
   version "4.3.6"
-  resolved "https://registry.yarnpkg.com/semver/-/semver-4.3.6.tgz#300bc6e0e86374f7ba61068b5b1ecd57fc6532da"
+  resolved "http://registry.npmjs.org/semver/-/semver-4.3.6.tgz#300bc6e0e86374f7ba61068b5b1ecd57fc6532da"
+
+"semver@2 || 3 || 4 || 5", semver@^5.3.0, semver@^5.4.1, semver@^5.5.0:
+  version "5.5.1"
+  resolved "https://registry.yarnpkg.com/semver/-/semver-5.5.1.tgz#7dfdd8814bdb7cabc7be0fb1d734cfb66c940477"
 
 semver@~5.0.1:
   version "5.0.3"
-  resolved "https://registry.yarnpkg.com/semver/-/semver-5.0.3.tgz#77466de589cd5d3c95f138aa78bc569a3cb5d27a"
+  resolved "http://registry.npmjs.org/semver/-/semver-5.0.3.tgz#77466de589cd5d3c95f138aa78bc569a3cb5d27a"
 
 semver@~5.3.0:
   version "5.3.0"
@@ -8751,7 +8755,7 @@ yargs-parser@^10.1.0:
 
 yargs-parser@^4.2.0:
   version "4.2.1"
-  resolved "https://registry.yarnpkg.com/yargs-parser/-/yargs-parser-4.2.1.tgz#29cceac0dc4f03c6c87b4a9f217dd18c9f74871c"
+  resolved "http://registry.npmjs.org/yargs-parser/-/yargs-parser-4.2.1.tgz#29cceac0dc4f03c6c87b4a9f217dd18c9f74871c"
   dependencies:
     camelcase "^3.0.0"
 
