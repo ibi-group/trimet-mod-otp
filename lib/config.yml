@@ -67,7 +67,8 @@ map:
     name: car2go Locations
 
   # Park & ride locations overlay
-  parkAndRideOverlay: true
+  parkAndRideOverlay:
+    maxTransitDistance: 1000
 
 # Pelias Geocoder config
 # (Note: this format may eventually change to allow other geocoding services)
