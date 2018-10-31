@@ -10,38 +10,10 @@ $line-padding: 5px;
   margin-bottom: 20px;
 }
 
-/* Itinerary header bar */
-
-.otp .line-itin > .header {
-  background-color: #084C8D;
-  color: white;
-  font-weight: 500;
-  font-size: 18px;
-  padding: 4px 8px 2px 8px;
-  cursor: pointer;
-}
-
-.otp .line-itin > .header .itin-header-right {
-  float: right;
-  font-weight: 200;
-  padding-top: 3px;
-  font-size: 13px;
-}
-
-.otp .desktop-narrative-container .line-itin > .header .itin-header-right {
-  padding-top: 2px;
-  padding-right: 2px;
-  font-size: 16px;
-}
-
-.otp .desktop-narrative-container .options.itinerary .line-itin > .header {
-  display: none;
-}
-
 /* Itinerary summary */
 
 .otp .line-itin .itin-summary {
-  padding: 15px 10px 0px 10px;
+  padding-right: 5px;
   height: 60px;
   display: table;
   width: 100%;
@@ -59,6 +31,7 @@ $line-padding: 5px;
 .otp .line-itin .itin-summary .header {
   font-weight: bold;
   font-size: 22px;
+  margin-top: -3px;
 }
 
 .otp .line-itin .itin-summary .detail {
@@ -74,6 +47,7 @@ $line-padding: 5px;
 .otp .line-itin .itin-summary .routes .route-preview {
   display: inline-block;
   margin-left: 8px;
+  vertical-align: top;
 }
 
 .otp .line-itin .itin-summary .routes .route-preview .mode-icon {
@@ -87,7 +61,7 @@ $line-padding: 5px;
   text-align: center;
   margin-top: 6px;
   font-size: 15px;
-  padding-top: 4px;
+  padding-top: 2px;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;

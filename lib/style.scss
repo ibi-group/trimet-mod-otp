@@ -349,13 +349,6 @@
   font-weight: 100;
 }
 
-.otp .mobile-narrative-container {
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  left: 0;
-}
-
 .otp .from-stop {
   margin-top: 12px;
 }
@@ -451,4 +444,10 @@
 .otp .set-to-button {
   @include link-button;
   border-left: 1px solid black;
+}
+
+/* Mobile layout */
+
+.otp.mobile .mobile-narrative-header {
+  background-color: #084c8d;
 }
