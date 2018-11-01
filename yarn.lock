@@ -563,6 +563,12 @@
     "@babel/plugin-transform-react-jsx-self" "^7.0.0"
     "@babel/plugin-transform-react-jsx-source" "^7.0.0"
 
+"@babel/runtime@7.0.0":
+  version "7.0.0"
+  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.0.0.tgz#adeb78fedfc855aa05bc041640f3f6f98e85424c"
+  dependencies:
+    regenerator-runtime "^0.12.0"
+
 "@babel/runtime@^7.1.2":
   version "7.1.2"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.1.2.tgz#81c89935f4647706fc54541145e6b4ecfef4b8e3"
@@ -2245,7 +2251,7 @@ class-utils@^0.3.5:
     isobject "^3.0.0"
     static-extend "^0.1.1"
 
-classnames@^2.2.4, classnames@^2.2.5:
+classnames@^2.1.2, classnames@^2.2.4, classnames@^2.2.5:
   version "2.2.6"
   resolved "https://registry.yarnpkg.com/classnames/-/classnames-2.2.6.tgz#43935bffdd291f326dad0a205309b38d00f650ce"
 
@@ -5786,9 +5792,9 @@ osenv@0, osenv@^0.1.0, osenv@^0.1.4:
     os-homedir "^1.0.0"
     os-tmpdir "^1.0.0"
 
-"otp-react-redux@git://github.com/opentripplanner/otp-react-redux/#b705486":
+"otp-react-redux@git://github.com/opentripplanner/otp-react-redux/#f5927fb":
   version "1.0.0-SNAPSHOT"
-  resolved "git://github.com/opentripplanner/otp-react-redux/#b705486365aa2d711b3f159401c2c56546f7b172"
+  resolved "git://github.com/opentripplanner/otp-react-redux/#f5927fbc8219b770e83fc560430fc5f2f7de9b8c"
   dependencies:
     "@conveyal/lonlat" "^1.1.0"
     "@mapbox/polyline" "^0.2.0"
@@ -5824,6 +5830,7 @@ osenv@0, osenv@^0.1.0, osenv@^0.1.4:
     react-resize-detector "^2.1.0"
     react-router-dom "^4.2.2"
     react-select-geocoder "^1.2.1"
+    react-swipeable-bottom-sheet "^1.1.1"
     react-swipeable-views "^0.11.2"
     redux "^3.6.0"
     redux-actions "^1.2.1"
@@ -6816,6 +6823,14 @@ react-event-listener@^0.4.2:
     prop-types "^15.5.4"
     warning "^3.0.0"
 
+react-event-listener@^0.6.0:
+  version "0.6.4"
+  resolved "https://registry.yarnpkg.com/react-event-listener/-/react-event-listener-0.6.4.tgz#d0ea5ed897da1a796616c44b5a8758898140f203"
+  dependencies:
+    "@babel/runtime" "7.0.0"
+    prop-types "^15.6.0"
+    warning "^4.0.1"
+
 react-fontawesome@^1.5.0:
   version "1.6.1"
   resolved "https://registry.yarnpkg.com/react-fontawesome/-/react-fontawesome-1.6.1.tgz#eddce17e7dc731aa09fd4a186688a61793a16c5c"
@@ -6954,12 +6969,26 @@ react-select@^1.0.0-rc.5:
     prop-types "^15.5.8"
     react-input-autosize "^2.1.2"
 
+react-swipeable-bottom-sheet@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/react-swipeable-bottom-sheet/-/react-swipeable-bottom-sheet-1.1.1.tgz#6448ee3c8cfa12277a743c1ab48182280dc9e7da"
+  dependencies:
+    classnames "^2.1.2"
+    react-swipeable-views "^0.12.8"
+
 react-swipeable-views-core@^0.11.1:
   version "0.11.1"
   resolved "https://registry.yarnpkg.com/react-swipeable-views-core/-/react-swipeable-views-core-0.11.1.tgz#61d046799f90725bbf91a0eb3abcab805c774cac"
   dependencies:
     babel-runtime "^6.23.0"
     warning "^3.0.0"
+
+react-swipeable-views-core@^0.12.17:
+  version "0.12.17"
+  resolved "https://registry.yarnpkg.com/react-swipeable-views-core/-/react-swipeable-views-core-0.12.17.tgz#0998f55fd2f8595bcd01bead1c19516dc561c1cf"
+  dependencies:
+    "@babel/runtime" "7.0.0"
+    warning "^4.0.1"
 
 react-swipeable-views-utils@^0.11.1:
   version "0.11.1"
@@ -6971,6 +7000,17 @@ react-swipeable-views-utils@^0.11.1:
     react-event-listener "^0.4.2"
     react-swipeable-views-core "^0.11.1"
 
+react-swipeable-views-utils@^0.12.18:
+  version "0.12.18"
+  resolved "https://registry.yarnpkg.com/react-swipeable-views-utils/-/react-swipeable-views-utils-0.12.18.tgz#6edfcc9d722901f0edaf79c78bc6c4a7cc25da81"
+  dependencies:
+    "@babel/runtime" "7.0.0"
+    fbjs "^0.8.4"
+    keycode "^2.1.7"
+    prop-types "^15.6.0"
+    react-event-listener "^0.6.0"
+    react-swipeable-views-core "^0.12.17"
+
 react-swipeable-views@^0.11.2:
   version "0.11.2"
   resolved "https://registry.yarnpkg.com/react-swipeable-views/-/react-swipeable-views-0.11.2.tgz#9df5a2587e1cc0275f6639ba0070fa6660e700ae"
@@ -6980,6 +7020,17 @@ react-swipeable-views@^0.11.2:
     react-swipeable-views-core "^0.11.1"
     react-swipeable-views-utils "^0.11.1"
     warning "^3.0.0"
+
+react-swipeable-views@^0.12.8:
+  version "0.12.18"
+  resolved "https://registry.yarnpkg.com/react-swipeable-views/-/react-swipeable-views-0.12.18.tgz#3b5d75bbfb826553fe0e42bc04b9c1c4b45acd77"
+  dependencies:
+    "@babel/runtime" "7.0.0"
+    dom-helpers "^3.2.1"
+    prop-types "^15.5.4"
+    react-swipeable-views-core "^0.12.17"
+    react-swipeable-views-utils "^0.12.18"
+    warning "^4.0.1"
 
 react-transition-group@^2.0.0:
   version "2.4.0"
