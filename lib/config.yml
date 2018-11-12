@@ -41,26 +41,40 @@ map:
       url: //tile{s}.trimet.org/tilecache/tilecache.py/1.0.0/currentOSM/{z}/{x}/{y}
       attribution: 'Map tiles: <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>.'
       maxZoom: 20
+
     - name: Aerials
       url: //tile{s}.trimet.org/tilecache/tilecache.py/1.0.0/hybridOSM/{z}/{x}/{y}
       attribution: 'Map tiles: <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>.'
       maxZoom: 20
 
-  # The route map overlay
-  routesOverlay:
-    tileUrl: https://d2dyq00q2cz8yt.cloudfront.net/{z}_{x}_{y}@2x.png
+  overlays:
+    - type: bike-rental
+      name: Biketown Locations
+      modes:
+        - BICYCLE_RENT
 
-  # The Zipcar locations overlay
-  zipcarOverlay:
-    api: https://modbeta.trimet.org/ws/carshare/zipcar/data.json
+    - type: car-rental
+      name: car2go Locations
+      modes:
+        - CAR_RENT
 
-  # The car2go locations overlay
-  carRentalOverlay:
-    name: car2go Locations
+    - type: park-and-ride
+      name: Park & Ride Locations
+      maxTransitDistance: 1000
+      modes:
+        - CAR_PARK
 
-  # Park & ride locations overlay
-  parkAndRideOverlay:
-    maxTransitDistance: 1000
+    - type: stops
+      name: Transit Stops
+      visible: true
+
+    - type: tile
+      name: Transit Routes
+      tileUrl: https://d2dyq00q2cz8yt.cloudfront.net/{z}_{x}_{y}@2x.png
+
+    - type: zipcar
+      name: Zipcar Locations
+      api: https://modbeta.trimet.org/ws/carshare/zipcar/data.json
 
 # Pelias Geocoder config
 # (Note: this format may eventually change to allow other geocoding services)
