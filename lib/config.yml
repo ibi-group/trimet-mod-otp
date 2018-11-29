@@ -92,38 +92,41 @@ geocoder:
 
   maxNearbyStops: 6
 
-# Enabled travel modes, grouped for display purposes
-modeGroups:
-  # Transit modes
-  - name: Transit
-    modes:
-      - BUS
-      - mode: TRAM
-        label: MAX & Streetcar
-      - mode: RAIL
-        label: WES
-      - mode: GONDOLA
-        label: Aerial Tram
+# Mode selector configuration
+modes:
+  transitModes:
+    - mode: BUS
+      label: Bus
+    - mode: TRAM
+      label: MAX & Streetcar
+    - mode: RAIL
+      label: WES
+    - mode: GONDOLA
+      label: Aerial Tram
 
-  # Walk/bike modes
-  - name: Walk/Bike
-    modes:
-      - WALK
-      - BICYCLE
-      - mode: BICYCLE_RENT
-        label: BIKETOWN
+  accessModes:
+    - mode: BICYCLE
+      label: Bike + Transit
+    - mode: BICYCLE_RENT
+      label: Biketown + Transit
+    - mode: CAR_PARK
+      label: Park & Ride
+    - mode: CAR_RENT
+      label: car2go + Transit
+    - mode: CAR_HAIL
+      company: UBER
+      label: Uber + Transit
+    - mode: CAR_HAIL
+      company: LYFT
+      label: Lyft + Transit
 
-  # Driving modes
-  - name: Car
-    modes:
-      - mode: CAR_PARK
-        label: Park & Ride
-      - mode: CAR_HAIL
-        label: Uber
-      - mode: CAR_HAIL
-        label: Lyft
-      - mode: CAR_RENT
-        label: car2go
+  bicycleModes:
+    - mode: BICYCLE
+      label: Own Bike
+      iconWidth: 18
+    - mode: BICYCLE_RENT
+      label: Biketown
+      iconWidth: 36
 
 errorMessages:
   - id: 404
