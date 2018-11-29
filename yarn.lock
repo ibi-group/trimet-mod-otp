@@ -5796,9 +5796,9 @@ osenv@0, osenv@^0.1.0, osenv@^0.1.4:
     os-homedir "^1.0.0"
     os-tmpdir "^1.0.0"
 
-"otp-react-redux@git://github.com/opentripplanner/otp-react-redux/#31dce77":
+"otp-react-redux@git://github.com/opentripplanner/otp-react-redux/#170fce9":
   version "1.0.0-SNAPSHOT"
-  resolved "git://github.com/opentripplanner/otp-react-redux/#31dce773df0f183de8282f34641da2eff58ac1b3"
+  resolved "git://github.com/opentripplanner/otp-react-redux/#170fce964ec238d56822f6e07bac8c912d704deb"
   dependencies:
     "@conveyal/lonlat" "^1.1.0"
     "@mapbox/polyline" "^0.2.0"
