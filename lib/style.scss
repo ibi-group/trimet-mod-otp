@@ -112,7 +112,10 @@
   padding: 10px 10px 0 10px;
 }
 
-.otp .date-time-selector select {
+.otp .dropdown-selector {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
   background: #aaa;
   color: white;
   text-align: center;
