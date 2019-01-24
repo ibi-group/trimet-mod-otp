@@ -116,6 +116,7 @@ modes:
     - mode: CAR_HAIL
       company: UBER
       label: Uber + Transit
+      showWheelchairSetting: true
     - mode: CAR_HAIL
       company: LYFT
       label: Lyft + Transit
