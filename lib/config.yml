@@ -106,20 +106,20 @@ modes:
 
   accessModes:
     - mode: BICYCLE
-      label: Bike + Transit
+      label: Transit + Bike
     - mode: BICYCLE_RENT
-      label: Biketown + Transit
+      label: Transit + Biketown
     - mode: CAR_PARK
       label: Park & Ride
     - mode: CAR_RENT
-      label: car2go + Transit
+      label: Transit + car2go
     - mode: CAR_HAIL
       company: UBER
-      label: Uber + Transit
+      label: Transit + Uber
       showWheelchairSetting: true
     - mode: CAR_HAIL
       company: LYFT
-      label: Lyft + Transit
+      label: Transit + Lyft
 
   bicycleModes:
     - mode: BICYCLE
