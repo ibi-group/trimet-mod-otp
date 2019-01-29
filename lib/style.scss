@@ -116,13 +116,39 @@
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
-  background: #aaa;
-  color: white;
-  text-align: center;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  border-radius: 0px;
-  text-align-last: center;
+  background: none;
+  border-radius: 3px;
+}
+
+.otp .dropdown-selector-container {
+  position: relative;
+}
+
+.otp .dropdown-selector-container:after {
+  content: '\25bc';
+  font-size: 11px;
+  color: #000;
+  right: 8px;
+  top: 10px;
+  position: absolute;
+  pointer-events: none;
+}
+
+.otp .select-button {
+  vertical-align: middle;
+  border: 1px solid rgb(187, 187, 187);
+  border-radius: 3px;
+  color: #000;
+  height: 35px;
+  background-color: transparent;
+  margin-left: 5px;
+  font-size: 12px;
+}
+
+.otp .select-button.active {
+  border: 2px solid #000;
+  font-weight: 500;
+  background-color: rgb(173, 216, 230);
 }
 
 .otp .date-time-selector .date-selector {
