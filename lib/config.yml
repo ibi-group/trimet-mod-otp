@@ -146,6 +146,10 @@ errorMessages:
 reportIssue:
   mailto: gis@trimet.org
 
+analytics:
+  google:
+    globalSiteTag: UA-133677388-1
+
 # Alternate TransitIndex API
 #alternateTransitIndex:
 #  apiRoot: https://modbeta.trimet.org/ws/ti/v0/
