@@ -150,6 +150,12 @@ analytics:
   google:
     globalSiteTag: UA-133677388-1
 
+# Temporary language overrides -- eventually replace w/ I18N language tables
+language:
+  routeViewer: Route Viewer
+  tripViewer: Trip Viewer
+  stopViewer: Stop Viewer
+
 # Alternate TransitIndex API
 #alternateTransitIndex:
 #  apiRoot: https://modbeta.trimet.org/ws/ti/v0/
