@@ -156,6 +156,9 @@ language:
   tripViewer: Trip Viewer
   stopViewer: Stop Viewer
 
+dateTime:
+  timeFormat: h:mm a
+
 # Alternate TransitIndex API
 #alternateTransitIndex:
 #  apiRoot: https://modbeta.trimet.org/ws/ti/v0/
