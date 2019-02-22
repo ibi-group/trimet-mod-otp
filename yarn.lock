@@ -5847,9 +5847,9 @@ osenv@0, osenv@^0.1.0, osenv@^0.1.4:
     os-homedir "^1.0.0"
     os-tmpdir "^1.0.0"
 
-"otp-react-redux@git://github.com/opentripplanner/otp-react-redux/#9fe1ce9":
+"otp-react-redux@git://github.com/opentripplanner/otp-react-redux/#3531262":
   version "1.0.0-SNAPSHOT"
-  resolved "git://github.com/opentripplanner/otp-react-redux/#9fe1ce99c39d164a0d2b8a781f24d5f9b80cd4ff"
+  resolved "git://github.com/opentripplanner/otp-react-redux/#353126201b852a74c2555eacdce3d9ff23346949"
   dependencies:
     "@conveyal/lonlat" "^1.1.0"
     "@mapbox/polyline" "^0.2.0"
@@ -6920,8 +6920,8 @@ react-input-autosize@^2.1.2:
     prop-types "^15.5.8"
 
 react-is@^16.6.0, react-is@^16.7.0, react-is@^16.8.1:
-  version "16.8.2"
-  resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.8.2.tgz#09891d324cad1cb0c1f2d91f70a71a4bee34df0f"
+  version "16.8.3"
+  resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.8.3.tgz#4ad8b029c2a718fc0cfc746c8d4e1b7221e5387d"
 
 react-leaflet@^1.1.0:
   version "1.9.1"
