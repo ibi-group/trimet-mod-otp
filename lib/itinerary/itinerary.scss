@@ -239,6 +239,15 @@ $line-padding: 5px;
   margin-right: 6px;
 }
 
+.otp .line-itin .leg-body .leg-description {
+  display: table;
+}
+
+.otp .line-itin .leg-body .leg-description > div {
+  display: table-cell;
+  vertical-align: middle;
+}
+
 /* Leg steps (for turn-by-turn) */
 
 .otp .line-itin .leg-body .steps-header {
