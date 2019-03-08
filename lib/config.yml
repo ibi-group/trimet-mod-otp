@@ -3,6 +3,8 @@
   # If app is to be deployed to a URL subdirectory (e.g. http://foo.bar/app), specify the path here:
   #basename: map
 
+homeTimezone: America/Los_Angeles
+
 # Default OTP API
 api:
   host: https://trimet-otp.conveyal.com
