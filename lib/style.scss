@@ -49,10 +49,6 @@
   text-overflow: ellipsis;
 }
 
-/* imports */
-
-@import "itinerary/itinerary.scss";
-
 /* top-level container styling */
 
 .otp {
@@ -478,4 +474,26 @@
 
 .otp.mobile .mobile-narrative-header {
   background-color: #084c8d;
+}
+
+/* Line Itinerary styling */
+
+.otp .line-itin .view-stop-button {
+  @include viewer-button;
+  border-left: 1px solid black;
+}
+
+.otp .line-itin .view-trip-button {
+  @include viewer-button;
+  border-left: 1px solid black;
+}
+
+.otp .line-itin .disclaimer {
+  font-size: 12px;
+  padding: 15px;
+}
+
+.otp .line-itin .disclaimer .link-row {
+  margin-top: 10px;
+  text-align: center;
 }
