@@ -23,6 +23,9 @@ routingTypes:
   #    host: https://trimet-modeify.conveyal.com
   #    path: /api
 
+# Show/hide elevation profile chart for walk/bike legs
+elevationProfile: true
+
 # Map config
 map:
   # Enabled map views
