@@ -16,7 +16,7 @@
     "currency-formatter": "^1.5.1",
     "is-mobile": "^0.2.2",
     "lodash.isequal": "^4.5.0",
-    "otp-react-redux": "https://github.com/opentripplanner/otp-react-redux.git#11a56c0cd6456fa89dced53535fe1ee9a0ff40fd",
+    "otp-react-redux": "^0.10.0",
     "prop-types": "^15.6.2",
     "react": "^15.4.2",
     "react-bootstrap": "^0.30.7",
