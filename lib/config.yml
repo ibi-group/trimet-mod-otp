@@ -7,7 +7,7 @@ homeTimezone: America/Los_Angeles
 
 # Default OTP API
 api:
-  host: https://trimet-otp.conveyal.com
+  host: https://trimet-otp.ibi-transit.com
   #host: http://localhost:8001 # For testing against a local OTP instance
   path: /otp/routers/default
 
