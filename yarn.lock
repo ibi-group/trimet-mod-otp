@@ -8084,9 +8084,9 @@ tough-cookie@~2.4.3:
     psl "^1.1.24"
     punycode "^1.4.1"
 
-"transitive-js@git://github.com/conveyal/transitive.js.git#9bceedb":
+"transitive-js@git://github.com/conveyal/transitive.js/#9bceedb":
   version "1.0.0-SNAPSHOT"
-  resolved "git://github.com/conveyal/transitive.js.git#9bceedbdca88428cbff5468eeb55d78406ce02ea"
+  resolved "git://github.com/conveyal/transitive.js/#9bceedbdca88428cbff5468eeb55d78406ce02ea"
   dependencies:
     augment "4.3.0"
     component-each "0.2.6"

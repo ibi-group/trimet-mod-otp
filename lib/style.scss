@@ -23,6 +23,10 @@
   margin-left: 5px;
 }
 
+@mixin left-border {
+  border-left: 1px solid black;
+}
+
 @mixin secondary-button {
   border: solid 1px #eee;
   border-radius: 5px;
@@ -461,13 +465,18 @@
   font-family: "Hind";
 }
 
+.otp .map-overlay-popup .view-stop-button {
+  @include viewer-button;
+  @include left-border;
+}
+
 .otp .set-from-button {
   @include link-button;
 }
 
 .otp .set-to-button {
   @include link-button;
-  border-left: 1px solid black;
+  @include left-border
 }
 
 /* Mobile layout */
@@ -480,12 +489,12 @@
 
 .otp .line-itin .view-stop-button {
   @include viewer-button;
-  border-left: 1px solid black;
+  @include left-border;
 }
 
 .otp .line-itin .view-trip-button {
   @include viewer-button;
-  border-left: 1px solid black;
+  @include left-border;
 }
 
 .otp .line-itin .disclaimer {
