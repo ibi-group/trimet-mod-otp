@@ -65,6 +65,13 @@ map:
       companies:
         - CAR2GO
 
+    - type: vehicle-rental
+      name: Lime eScooter Locations
+      modes:
+        - MICROMOBILITY_RENT
+      companies:
+        - LIME
+
     - type: car-rental
       name: REACH NOW Locations
       modes:
@@ -135,6 +142,9 @@ modes:
       company: UBER
       label: Transit + Uber
       showWheelchairSetting: true
+    - mode: MICROMOBILITY_RENT
+      company: LIME
+      label: Transit + Lime eScooter
 
   bicycleModes:
     - mode: BICYCLE
