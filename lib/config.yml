@@ -8,7 +8,7 @@ homeTimezone: America/Los_Angeles
 # Default OTP API
 api:
   host: https://trimet-otp.ibi-transit.com
-  #host: http://localhost:8001 # For testing against a local OTP instance
+  # host: http://localhost:8001 # For testing against a local OTP instance
   path: /otp/routers/default
 
 # Enabled multimodal routing types (e.g. interary, profile)
@@ -25,6 +25,48 @@ routingTypes:
 
 # Show/hide elevation profile chart for walk/bike legs
 elevationProfile: true
+
+# Provide a list of operators to enhance the user experience for multi-agency
+# implementations. The order of the agencies will dictate the order that routes
+# appear in the route viewer. Also, optionally provide operator logos to appear
+# in narrative itinerary (matched on agency_id). Note: these logos will
+# override the values found in agency.txt#agency_branding_url.
+operators:
+  - id: psc
+    logo: https://d2tyb7byn1fef9.cloudfront.net/psc.png
+  - id: TRIMET
+    name: TriMet
+    logo: http://news.trimet.org/wordpress/wp-content/uploads/2019/04/TriMet-logo-300x300.png
+  - id: TRAM
+    logo: https://d2tyb7byn1fef9.cloudfront.net/tram.png
+  - id: CTRAN
+    name: C-TRAN
+    logo: https://d2tyb7byn1fef9.cloudfront.net/ctran.png
+    order: 9999999
+  - id: '1' # accidentally forgot to add C-TRAN agency_id to routes.
+    name: C-TRAN
+    logo: https://d2tyb7byn1fef9.cloudfront.net/ctran.png
+    order: 9999999
+  - id: '2' # accidentally forgot to add C-TRAN agency_id to routes.
+    name: C-TRAN
+    logo: https://d2tyb7byn1fef9.cloudfront.net/ctran.png
+    defaultRouteColor: ffffff
+    defaultRouteTextColor: '000000'
+    longNameSplitter: ' - '
+    order: 9999999
+
+# Add suggested locations to be shown as options in the form view.
+locations:
+  - id: 'airport'
+    icon: 'plane'
+    name: 'Portland International Airport (PDX)'
+    lat: 45.587579
+    lon: -122.593084
+  - id: 'zoo'
+    icon: building
+    lat: 45.51010444232195
+    lon: -122.71607145667079
+    name: Oregon Zoo, Portland, OR
 
 # Map config
 map:
@@ -43,9 +85,15 @@ map:
   # Base layers for default map
   baseLayers:
     - name: Streets
-      url: //tile{s}.trimet.org/tilecache/tilecache.py/1.0.0/currentOSM/{z}/{x}/{y}
-      attribution: 'Map tiles: <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>.'
+      url: //cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}@2x.png
+      subdomains: 'abcd'
+      attribution: 'Map tiles: &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>, &copy; <a href="https://carto.com/attributions">CARTO</a>'
       maxZoom: 20
+
+    # - name: Streets
+    #   url: //tile{s}.trimet.org/tilecache/tilecache.py/1.0.0/currentOSM/{z}/{x}/{y}
+    #   attribution: 'Map tiles: <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>.'
+    #   maxZoom: 20
 
     - name: Aerials
       url: //tile{s}.trimet.org/tilecache/tilecache.py/1.0.0/hybridOSM/{z}/{x}/{y}
@@ -85,6 +133,7 @@ map:
     - type: tile
       name: Transit Routes
       tileUrl: https://d2dyq00q2cz8yt.cloudfront.net/{z}_{x}_{y}@2x.png
+      visible: true
 
     - type: zipcar
       name: Zipcar Locations
@@ -168,6 +217,7 @@ analytics:
 # Temporary language overrides -- eventually replace w/ I18N language tables
 language:
   routeViewer: Route Viewer
+  routeViewerDetails: Select a route to display it on the map and to view more information about the route.
   tripViewer: Trip Viewer
   stopViewer: Stop Viewer
 
