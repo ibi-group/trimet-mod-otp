@@ -127,24 +127,26 @@ modes:
 
   accessModes:
     - mode: BICYCLE
-      label: Transit + Bike
+      label: Transit + Personal bike
     - mode: BICYCLE_RENT
       label: Transit + Biketown
+      company: BIKETOWN
+    - mode: MICROMOBILITY
+      label: Transit + Personal eScooter
+    - mode: MICROMOBILITY_RENT
+      label: Transit + eScooter rental
+    - mode: CAR_RENT
+      label: Transit + car2go
+      company: CAR2GO
+    - mode: CAR_RENT
+      label: Transit + REACH NOW
+      company: REACHNOW
     - mode: CAR_PARK
       label: Park & Ride
-    - mode: CAR_RENT
-      company: CAR2GO
-      label: Transit + car2go
-    - mode: CAR_RENT
-      company: REACHNOW
-      label: Transit + REACH NOW
     - mode: CAR_HAIL
-      company: UBER
       label: Transit + Uber
+      company: UBER
       showWheelchairSetting: true
-    - mode: MICROMOBILITY_RENT
-      company: LIME
-      label: Transit + Lime eScooter
 
   bicycleModes:
     - mode: BICYCLE
@@ -153,6 +155,46 @@ modes:
     - mode: BICYCLE_RENT
       label: Biketown
       iconWidth: 36
+
+  micromobilityModes:
+    - mode: MICROMOBILITY
+      label: Own eScooter
+      iconWidth: 18
+    - mode: MICROMOBILITY_RENT
+      label: eScooter rental
+      iconWidth: 36
+
+companies:
+  - id: BIKETOWN
+    label: Biketown
+    modes: BICYCLE_RENT
+  - id: BOLT
+    label: Bolt
+    modes: MICROMOBILITY_RENT
+  - id: CAR2GO
+    label: car2go
+    modes: CAR_RENT
+  - id: CLEVR
+    label: Gruv
+    modes: MICROMOBILITY_RENT
+  - id: LIME
+    label: Lime
+    modes: MICROMOBILITY_RENT
+  - id: RAZOR
+    label: Razor
+    modes: MICROMOBILITY_RENT
+  - id: REACH NOW
+    label: REACH NOW
+    modes: CAR_RENT
+  - id: SHARED
+    label: shared
+    modes: MICROMOBILITY_RENT
+  - id: SPIN
+    label: SPIN
+    modes: MICROMOBILITY_RENT
+  - id: UBER
+    label: Uber
+    modes: CAR_HAIL
 
 errorMessages:
   - id: 404
