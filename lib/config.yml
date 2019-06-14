@@ -5,10 +5,12 @@
 
 homeTimezone: America/Los_Angeles
 
+# title: TriMet MOD
+
 # Default OTP API
 api:
-  host: https://trimet-otp.ibi-transit.com
-  # host: http://localhost:8001 # For testing against a local OTP instance
+  # host: https://trimet-otp.ibi-transit.com
+  host: http://localhost:8001 # For testing against a local OTP instance
   path: /otp/routers/default
 
 # Enabled multimodal routing types (e.g. interary, profile)
@@ -56,17 +58,17 @@ operators:
     order: 9999999
 
 # Add suggested locations to be shown as options in the form view.
-locations:
-  - id: 'airport'
-    icon: 'plane'
-    name: 'Portland International Airport (PDX)'
-    lat: 45.587579
-    lon: -122.593084
-  - id: 'zoo'
-    icon: building
-    lat: 45.51010444232195
-    lon: -122.71607145667079
-    name: Oregon Zoo, Portland, OR
+# locations:
+#   - id: 'airport'
+#     icon: 'plane'
+#     name: 'Portland International Airport (PDX)'
+#     lat: 45.587579
+#     lon: -122.593084
+#   - id: 'zoo'
+#     icon: building
+#     lat: 45.51010444232195
+#     lon: -122.71607145667079
+#     name: Oregon Zoo, Portland, OR
 
 # Map config
 map:
@@ -447,6 +449,9 @@ language:
   routeViewerDetails: Select a route to display it on the map and to view more information about the route.
   tripViewer: Trip Viewer
   stopViewer: Stop Viewer
+  # The text to display when a vehicle is less than 60 seconds from
+  # arriving at a stop in the stop viewer.
+  stopViewerArriving: Due
 
 dateTime:
   timeFormat: h:mm a
