@@ -57,13 +57,68 @@ map:
       name: Biketown Locations
       modes:
         - BICYCLE_RENT
+      mapSymbols:
+        - maxZoom: 13
+          minZoom: 0
+          type: circle
+          pixels: 4
+          fillColor: "#FF2E28"
+          dockStrokeColor: "#000000"
+        - maxZoom: 17
+          minZoom: 14
+          type: circle
+          pixels: 6
+          fillColor: "#FF2E28"
+          dockStrokeColor: "#000000"
+        - maxZoom: 999
+          minZoom: 18
+          type: hubAndFloatingBike
 
-    - type: car-rental
-      name: car2go Locations
+    - type: vehicle-rental
+      name: Bolt eScooter Locations
       modes:
-        - CAR_RENT
+        - MICROMOBILITY_RENT
       companies:
-        - CAR2GO
+        - BOLT
+      mapSymbols:
+        - maxZoom: 13
+          minZoom: 0
+          type: circle
+          pixels: 4
+          fillColor: "#FEE502"
+          strokeColor: "#000000"
+        - maxZoom: 17
+          minZoom: 14
+          type: circle
+          pixels: 6
+          fillColor: "#FEE502"
+          strokeColor: "#000000"
+        - maxZoom: 999
+          minZoom: 18
+          type: marker
+
+    - type: vehicle-rental
+      name: Gruv eScooter Locations
+      modes:
+        - MICROMOBILITY_RENT
+      companies:
+        - CLEVR
+      mapSymbols:
+        - maxZoom: 13
+          minZoom: 0
+          type: circle
+          pixels: 4
+          fillColor: "#0171bc"
+          strokeColor: "#CCCCCC"
+        - maxZoom: 17
+          minZoom: 14
+          type: circle
+          pixels: 6
+          fillColor: "#0171bc"
+          strokeColor: "#CCCCCC"
+        - maxZoom: 999
+          minZoom: 18
+          type: marker
 
     - type: vehicle-rental
       name: Lime eScooter Locations
@@ -71,6 +126,112 @@ map:
         - MICROMOBILITY_RENT
       companies:
         - LIME
+      mapSymbols:
+        - maxZoom: 13
+          minZoom: 0
+          type: circle
+          pixels: 4
+          fillColor: "#24D000"
+          strokeColor: "#CCCCCC"
+        - maxZoom: 17
+          minZoom: 14
+          type: circle
+          pixels: 6
+          fillColor: "#24D000"
+          strokeColor: "#CCCCCC"
+        - maxZoom: 999
+          minZoom: 18
+          type: marker
+
+    - type: vehicle-rental
+      name: Razor eScooter Locations
+      modes:
+        - MICROMOBILITY_RENT
+      companies:
+        - RAZOR
+      mapSymbols:
+        - maxZoom: 13
+          minZoom: 0
+          type: circle
+          pixels: 4
+          fillColor: "#EE2D15"
+          strokeColor: "#CCCCCC"
+        - maxZoom: 17
+          minZoom: 14
+          type: circle
+          pixels: 6
+          fillColor: "#EE2D15"
+          strokeColor: "#CCCCCC"
+        - maxZoom: 999
+          minZoom: 18
+          type: marker
+
+    - type: vehicle-rental
+      name: shared eScooter Locations
+      modes:
+        - MICROMOBILITY_RENT
+      companies:
+        - SHARED
+      mapSymbols:
+        - maxZoom: 13
+          minZoom: 0
+          type: circle
+          pixels: 4
+          fillColor: "#F80600"
+          strokeColor: "#CCCCCC"
+        - maxZoom: 17
+          minZoom: 14
+          type: circle
+          pixels: 6
+          fillColor: "#F80600"
+          strokeColor: "#CCCCCC"
+        - maxZoom: 999
+          minZoom: 18
+          type: marker
+
+    - type: vehicle-rental
+      name: Spin eScooter Locations
+      modes:
+        - MICROMOBILITY_RENT
+      companies:
+        - SPIN
+      mapSymbols:
+        - maxZoom: 13
+          minZoom: 0
+          type: circle
+          pixels: 4
+          fillColor: "#FF6D01"
+          strokeColor: "#CCCCCC"
+        - maxZoom: 17
+          minZoom: 14
+          type: circle
+          pixels: 6
+          fillColor: "#FF6D01"
+          strokeColor: "#CCCCCC"
+        - maxZoom: 999
+          minZoom: 18
+          type: marker
+
+    - type: car-rental
+      name: car2go Locations
+      modes:
+        - CAR_RENT
+      companies:
+        - CAR2GO
+      mapSymbols:
+        - maxZoom: 13
+          minZoom: 0
+          type: circle
+          pixels: 4
+          fillColor: "#009cde"
+        - maxZoom: 17
+          minZoom: 14
+          type: circle
+          pixels: 6
+          fillColor: "#009cde"
+        - maxZoom: 999
+          minZoom: 18
+          type: marker
 
     - type: car-rental
       name: REACH NOW Locations
@@ -78,6 +239,20 @@ map:
         - CAR_RENT
       companies:
         - REACHNOW
+      mapSymbols:
+        - maxZoom: 13
+          minZoom: 0
+          type: circle
+          pixels: 4
+          fillColor: "#007fa3"
+        - maxZoom: 17
+          minZoom: 14
+          type: circle
+          pixels: 6
+          fillColor: "#007fa3"
+        - maxZoom: 999
+          minZoom: 18
+          type: marker
 
     - type: park-and-ride
       name: Park & Ride Locations
