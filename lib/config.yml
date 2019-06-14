@@ -56,17 +56,17 @@ operators:
     order: 9999999
 
 # Add suggested locations to be shown as options in the form view.
-locations:
-  - id: 'airport'
-    icon: 'plane'
-    name: 'Portland International Airport (PDX)'
-    lat: 45.587579
-    lon: -122.593084
-  - id: 'zoo'
-    icon: building
-    lat: 45.51010444232195
-    lon: -122.71607145667079
-    name: Oregon Zoo, Portland, OR
+# locations:
+#   - id: 'airport'
+#     icon: 'plane'
+#     name: 'Portland International Airport (PDX)'
+#     lat: 45.587579
+#     lon: -122.593084
+#   - id: 'zoo'
+#     icon: building
+#     lat: 45.51010444232195
+#     lon: -122.71607145667079
+#     name: Oregon Zoo, Portland, OR
 
 # Map config
 map:
@@ -216,6 +216,7 @@ analytics:
 
 # Temporary language overrides -- eventually replace w/ I18N language tables
 language:
+  storageDisclaimer: Any preferences, places, or settings you opt to save will be stored in your browser's local storage only. TriMet will not have access to knowledge about your home, work, or any other location. At any point you can opt to turn off remembering recent places/searches and clear your saved home/work locations and favorite stops.
   routeViewer: Route Viewer
   routeViewerDetails: Select a route to display it on the map and to view more information about the route.
   tripViewer: Trip Viewer
