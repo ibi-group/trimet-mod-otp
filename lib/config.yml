@@ -306,18 +306,16 @@ modes:
     - mode: BICYCLE_RENT
       label: Transit + Biketown
       company: BIKETOWN
-    - mode: MICROMOBILITY
-      label: Transit + Personal eScooter
     - mode: MICROMOBILITY_RENT
       label: Transit + eScooter rental
+    - mode: CAR_PARK
+      label: Park & Ride
     - mode: CAR_RENT
       label: Transit + car2go
       company: CAR2GO
     - mode: CAR_RENT
       label: Transit + REACH NOW
       company: REACHNOW
-    - mode: CAR_PARK
-      label: Park & Ride
     - mode: CAR_HAIL
       label: Transit + Uber
       company: UBER
