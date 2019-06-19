@@ -524,37 +524,37 @@
   color: #007fa3;
 }
 
-@mixin vehicle-rental-icon {
+@mixin micromobility-rental-icon {
   font-size: 24px;
 }
 
 // micromobility rentals
-.otp .vehicle-rental-icon-bolt {
-  @include vehicle-rental-icon
+.otp .micromobility-rental-icon-bolt {
+  @include micromobility-rental-icon
   color: #FEE502;
 }
 
-.otp .vehicle-rental-icon-clevr {
-  @include vehicle-rental-icon
+.otp .micromobility-rental-icon-clevr {
+  @include micromobility-rental-icon
   color: #0171bc;
 }
 
-.otp .vehicle-rental-icon-lime {
-  @include vehicle-rental-icon
+.otp .micromobility-rental-icon-lime {
+  @include micromobility-rental-icon
   color: #24D000;
 }
 
-.otp .vehicle-rental-icon-razor {
-  @include vehicle-rental-icon
+.otp .micromobility-rental-icon-razor {
+  @include micromobility-rental-icon
   color: #EE2D15;
 }
 
-.otp .vehicle-rental-icon-shared {
-  @include vehicle-rental-icon
+.otp .micromobility-rental-icon-shared {
+  @include micromobility-rental-icon
   color: #F80600;
 }
 
-.otp .vehicle-rental-icon-spin {
-  @include vehicle-rental-icon
+.otp .micromobility-rental-icon-spin {
+  @include micromobility-rental-icon
   color: #FF6D01;
 }

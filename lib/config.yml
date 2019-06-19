@@ -74,7 +74,7 @@ map:
           minZoom: 18
           type: hubAndFloatingBike
 
-    - type: vehicle-rental
+    - type: micromobility-rental
       name: Bolt eScooter Locations
       modes:
         - MICROMOBILITY_RENT
@@ -97,7 +97,7 @@ map:
           minZoom: 18
           type: marker
 
-    - type: vehicle-rental
+    - type: micromobility-rental
       name: Gruv eScooter Locations
       modes:
         - MICROMOBILITY_RENT
@@ -120,7 +120,7 @@ map:
           minZoom: 18
           type: marker
 
-    - type: vehicle-rental
+    - type: micromobility-rental
       name: Lime eScooter Locations
       modes:
         - MICROMOBILITY_RENT
@@ -143,7 +143,7 @@ map:
           minZoom: 18
           type: marker
 
-    - type: vehicle-rental
+    - type: micromobility-rental
       name: Razor eScooter Locations
       modes:
         - MICROMOBILITY_RENT
@@ -166,7 +166,7 @@ map:
           minZoom: 18
           type: marker
 
-    - type: vehicle-rental
+    - type: micromobility-rental
       name: shared eScooter Locations
       modes:
         - MICROMOBILITY_RENT
@@ -189,7 +189,7 @@ map:
           minZoom: 18
           type: marker
 
-    - type: vehicle-rental
+    - type: micromobility-rental
       name: Spin eScooter Locations
       modes:
         - MICROMOBILITY_RENT
