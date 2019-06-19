@@ -132,7 +132,7 @@ map:
     - type: tile
       name: Transit Routes
       tileUrl: https://d2dyq00q2cz8yt.cloudfront.net/{z}_{x}_{y}@2x.png
-      visible: true
+      # visible: true
 
     - type: zipcar
       name: Zipcar Locations
