@@ -290,6 +290,7 @@ geocoder:
 
 # Mode selector configuration
 modes:
+  # types of allowable transit modes
   transitModes:
     - mode: BUS
       label: Bus
@@ -300,6 +301,8 @@ modes:
     - mode: GONDOLA
       label: Aerial Tram
 
+  # access to transit modes. These options are all combined with the above
+  # transit modes in the request to OTP
   accessModes:
     - mode: BICYCLE
       label: Transit + Personal bike
@@ -321,6 +324,15 @@ modes:
       company: UBER
       showWheelchairSetting: true
 
+  # which exclusive modes to show. This involves using a single mode and no
+  # transit for the duration of the trip. Further configurations of
+  # `bicycleModes`, `micromobilityModes` and/or `carModes` are needed as
+  # desired, but no extra configuration is needed for a WALK exclusive mode.
+  exclusiveModes:
+    - WALK
+    - BICYCLE
+
+  # button definitions for exclusive bicycle mode options
   bicycleModes:
     - mode: BICYCLE
       label: Own Bike
@@ -329,13 +341,14 @@ modes:
       label: Biketown
       iconWidth: 36
 
-  micromobilityModes:
-    - mode: MICROMOBILITY
-      label: Own eScooter
-      iconWidth: 18
-    - mode: MICROMOBILITY_RENT
-      label: eScooter rental
-      iconWidth: 36
+  # button definitions for exclusive micromobility mode options
+  # micromobilityModes:
+  #   - mode: MICROMOBILITY
+  #     label: Own eScooter
+  #     iconWidth: 18
+  #   - mode: MICROMOBILITY_RENT
+  #     label: eScooter rental
+  #     iconWidth: 36
 
 companies:
   - id: BIKETOWN
