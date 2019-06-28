@@ -402,6 +402,10 @@ modes:
   #     label: eScooter rental
   #     iconWidth: 36
 
+# A list of private transportation operators. These are either companies that
+# provide rental vehicles or transportation network companies. Companies that
+# have multiple modes of transport should have all modes listed as a string with
+# commas. For example: BICYCLE_RENT,MICROMOBILITY_RENT.
 companies:
   - id: BIKETOWN
     label: Biketown
