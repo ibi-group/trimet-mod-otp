@@ -2500,6 +2500,14 @@ connect-history-api-fallback@^1.3.0:
   version "1.5.0"
   resolved "https://registry.yarnpkg.com/connect-history-api-fallback/-/connect-history-api-fallback-1.5.0.tgz#b06873934bc5e344fef611a196a6faae0aee015a"
 
+connected-react-router@^5.0.1:
+  version "5.0.1"
+  resolved "https://registry.yarnpkg.com/connected-react-router/-/connected-react-router-5.0.1.tgz#8379854fad7e027b1e27652c00ad534f8ad244b3"
+  integrity sha512-0QwWYPRGZQ7f284lmqc5kwC4T3iW3zrAH3zzi6uUMzTOxbA+mn38tAgMOoVo9m3pbskvONFtXiajgVkCElE9EQ==
+  dependencies:
+    immutable "^3.8.1"
+    seamless-immutable "^7.1.3"
+
 console-browserify@^1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/console-browserify/-/console-browserify-1.1.0.tgz#f0241c45730a9fc6323b206dbf38edc741d0bb10"
@@ -4008,6 +4016,15 @@ hash-base@^3.0.0:
     inherits "^2.0.1"
     safe-buffer "^5.0.1"
 
+hash-obj@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/hash-obj/-/hash-obj-2.0.0.tgz#dc50b5ef9f724cface4985dcec98dd98dacd103e"
+  integrity sha512-A+HRqvu8VeDDiSn0KyhMff12RrN8VkvLEkvyPVteTiqUKoKYsIaNo2oeu0l6nehhiTWjkzsCfvi7ZOIUgr9wjw==
+  dependencies:
+    is-obj "^2.0.0"
+    sort-keys "^3.0.0"
+    type-fest "^0.4.1"
+
 hash.js@^1.0.0, hash.js@^1.0.3:
   version "1.1.5"
   resolved "https://registry.yarnpkg.com/hash.js/-/hash.js-1.1.5.tgz#e38ab4b85dfb1e0c40fe9265c0e9b54854c23812"
@@ -4224,6 +4241,11 @@ immutability-helper@^2.1.1:
   integrity sha512-r/RmRG8xO06s/k+PIaif2r5rGc3j4Yhc01jSBfwPCXDLYZwp/yxralI37Df1mwmuzcCsen/E/ITKcTEvc1PQmQ==
   dependencies:
     invariant "^2.2.0"
+
+immutable@^3.8.1:
+  version "3.8.2"
+  resolved "https://registry.yarnpkg.com/immutable/-/immutable-3.8.2.tgz#c2439951455bb39913daf281376f1530e104adf3"
+  integrity sha1-wkOZUUVbs5kT2vKBN28VMOEErfM=
 
 import-local@^2.0.0:
   version "2.0.0"
@@ -4502,6 +4524,11 @@ is-obj@^1.0.0:
   version "1.0.1"
   resolved "http://registry.npmjs.org/is-obj/-/is-obj-1.0.1.tgz#3e4729ac1f5fde025cd7d83a896dab9f4f67db0f"
 
+is-obj@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/is-obj/-/is-obj-2.0.0.tgz#473fb05d973705e3fd9620545018ca8e22ef4982"
+  integrity sha512-drqDG3cbczxxEJRoOXcOjtdp1J/lyp1mNn0xaznRs8+muBhgQcrnbspox5X5fOw0HnMnbfDzvnEMEtqDEJEo8w==
+
 is-path-cwd@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/is-path-cwd/-/is-path-cwd-1.0.0.tgz#d225ec23132e89edd38fda767472e62e65f1106d"
@@ -4522,6 +4549,11 @@ is-plain-obj@^1.0.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/is-plain-obj/-/is-plain-obj-1.1.0.tgz#71a50c8429dfca773c92a390a4a03b39fcd51d3e"
   integrity sha1-caUMhCnfync8kqOQpKA7OfzVHT4=
+
+is-plain-obj@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/is-plain-obj/-/is-plain-obj-2.0.0.tgz#7fd1a7f1b69e160cde9181d2313f445c68aa2679"
+  integrity sha512-EYisGhpgSCwspmIuRHGjROWTon2Xp8Z7U03Wubk/bTL5TTRC5R1rGVgyjzBrk9+ULdH6cRD06KRcw/xfqhVYKQ==
 
 is-plain-object@^2.0.1, is-plain-object@^2.0.3, is-plain-object@^2.0.4:
   version "2.0.4"
@@ -5738,23 +5770,26 @@ osenv@0, osenv@^0.1.4:
     os-homedir "^1.0.0"
     os-tmpdir "^1.0.0"
 
-otp-react-redux@^0.10.1:
-  version "0.10.1"
-  resolved "https://registry.yarnpkg.com/otp-react-redux/-/otp-react-redux-0.10.1.tgz#2da8bfcf604d3c00c834d732e0b5b4785b61a513"
-  integrity sha512-xOKMQSwLkxZU/IjYASNN+pebKUM3vGWHbIyNVqeEkBx9VNDDLpq4Vq+daed95NBKaQCt9JGOQpdfNhN6c30f4w==
+otp-react-redux@^0.11.0:
+  version "0.11.0"
+  resolved "https://registry.yarnpkg.com/otp-react-redux/-/otp-react-redux-0.11.0.tgz#0eff2cd1187dc37c90ba2142c45d16031a5e4daf"
+  integrity sha512-KjbM0giEMrwN4xIjgekj3KH+ukxs4DucaR798ddz7XDLIgrmEJzrIeAj6Ju+vkqDIClDoWzXp+XO9xHxaLgn5Q==
   dependencies:
     "@conveyal/lonlat" "^1.1.0"
     "@mapbox/polyline" "^0.2.0"
     bootstrap "^3.3.7"
     bowser "^1.9.3"
     clone "^2.1.0"
+    connected-react-router "^5.0.1"
     copy-to-clipboard "^3.0.8"
     currency-formatter "^1.4.2"
     d3-selection "^1.3.0"
     d3-zoom "^1.7.1"
     deep-equal "^1.0.1"
     font-awesome "^4.7.0"
+    hash-obj "^2.0.0"
     haversine "^1.1.0"
+    history "^4.7.2"
     immutability-helper "^2.1.1"
     isomorphic-fetch "^2.2.1"
     isomorphic-mapzen-search "1.4.1"
@@ -5776,7 +5811,7 @@ otp-react-redux@^0.10.1:
     react-leaflet "^1.1.0"
     react-redux "^5.0.2"
     react-resize-detector "^2.1.0"
-    react-router-dom "^4.2.2"
+    react-router "^4.3.1"
     react-select-geocoder "^1.2.1"
     react-swipeable-views "^0.11.2"
     redux "^3.6.0"
@@ -5784,7 +5819,7 @@ otp-react-redux@^0.10.1:
     redux-logger "^2.7.4"
     redux-thunk "^2.2.0"
     throttle-debounce "^2.0.1"
-    transitive-js "git://github.com/conveyal/transitive.js/#9bceedb"
+    transitive-js "^0.13.0"
     turf-along "^3.0.12"
     velocity-react "^1.3.3"
 
@@ -6913,18 +6948,6 @@ react-resize-detector@^2.1.0:
     prop-types "^15.6.0"
     resize-observer-polyfill "^1.5.0"
 
-react-router-dom@^4.2.2:
-  version "4.3.1"
-  resolved "https://registry.yarnpkg.com/react-router-dom/-/react-router-dom-4.3.1.tgz#4c2619fc24c4fa87c9fd18f4fb4a43fe63fbd5c6"
-  integrity sha512-c/MlywfxDdCp7EnB7YfPMOfMD3tOtIjrQlj/CKfNMBxdmpJP8xcz5P/UAFn3JbnQCNUxsHyVVqllF9LhgVyFCA==
-  dependencies:
-    history "^4.7.2"
-    invariant "^2.2.4"
-    loose-envify "^1.3.1"
-    prop-types "^15.6.1"
-    react-router "^4.3.1"
-    warning "^4.0.1"
-
 react-router@^4.3.1:
   version "4.3.1"
   resolved "https://registry.yarnpkg.com/react-router/-/react-router-4.3.1.tgz#aada4aef14c809cb2e686b05cee4742234506c4e"
@@ -7457,6 +7480,11 @@ scss-tokenizer@^0.2.3:
     js-base64 "^2.1.8"
     source-map "^0.4.2"
 
+seamless-immutable@^7.1.3:
+  version "7.1.4"
+  resolved "https://registry.yarnpkg.com/seamless-immutable/-/seamless-immutable-7.1.4.tgz#6e9536def083ddc4dea0207d722e0e80d0f372f8"
+  integrity sha512-XiUO1QP4ki4E2PHegiGAlu6r82o5A+6tRh7IkGGTVg/h+UoeX4nFBeCGPOhb4CYjvkqsfm/TUtvOMYC1xmV30A==
+
 select-hose@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/select-hose/-/select-hose-2.0.0.tgz#625d8658f865af43ec962bfc376a37359a4994ca"
@@ -7647,6 +7675,13 @@ sort-keys@^1.0.0:
   integrity sha1-RBttTTRnmPG05J6JIK37oOVD+a0=
   dependencies:
     is-plain-obj "^1.0.0"
+
+sort-keys@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/sort-keys/-/sort-keys-3.0.0.tgz#fa751737e3da363ef80632d4fd78e324d661fe9a"
+  integrity sha512-77XUKMiZN5LvQXZ9sgWfJza19AvYIDwaDGwGiULM+B5XYru8Z90Oh06JvqDlJczvjjYvssrV0aK1GI6+YXvn5A==
+  dependencies:
+    is-plain-obj "^2.0.0"
 
 source-list-map@^0.1.4:
   version "0.1.8"
@@ -8096,9 +8131,10 @@ tough-cookie@~2.4.3:
     psl "^1.1.24"
     punycode "^1.4.1"
 
-"transitive-js@git://github.com/conveyal/transitive.js/#9bceedb":
-  version "1.0.0-SNAPSHOT"
-  resolved "git://github.com/conveyal/transitive.js/#9bceedbdca88428cbff5468eeb55d78406ce02ea"
+transitive-js@^0.13.0:
+  version "0.13.0"
+  resolved "https://registry.yarnpkg.com/transitive-js/-/transitive-js-0.13.0.tgz#443e734c011171d25f5591bc013b12fb61a6e88d"
+  integrity sha512-Ydhsc6y6CW35wH34+Fapb6KKT4gkZXe50WwKydUImlpN02pxlOa4jzXzuNgM5ayLAVWka3S5VMwJE0hZNVSZgg==
   dependencies:
     augment "4.3.0"
     component-each "0.2.6"
@@ -8186,6 +8222,11 @@ turf-invariant@^3.0.12:
 tweetnacl@^0.14.3, tweetnacl@~0.14.0:
   version "0.14.5"
   resolved "https://registry.yarnpkg.com/tweetnacl/-/tweetnacl-0.14.5.tgz#5ae68177f192d4456269d108afa93ff8743f4f64"
+
+type-fest@^0.4.1:
+  version "0.4.1"
+  resolved "https://registry.yarnpkg.com/type-fest/-/type-fest-0.4.1.tgz#8bdf77743385d8a4f13ba95f610f5ccd68c728f8"
+  integrity sha512-IwzA/LSfD2vC1/YDYMv/zHP4rDF1usCwllsDpbolT3D4fUepIO7f9K70jjmUewU/LmGUKJcwcVtDCpnKk4BPMw==
 
 type-is@~1.6.15, type-is@~1.6.16:
   version "1.6.16"
