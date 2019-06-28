@@ -18,6 +18,10 @@ module.exports = {
         use: ['babel-loader']
       },
       {
+        test: /\.(yml|yaml)$/,
+        loader: ['json-loader', 'yaml-loader']
+      },
+      {
         test: /\.(sc|c)ss$/,
         use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader']
       }
