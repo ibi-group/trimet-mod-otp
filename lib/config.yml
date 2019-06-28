@@ -108,6 +108,160 @@ map:
       name: Biketown Locations
       modes:
         - BICYCLE_RENT
+      mapSymbols:
+        - maxZoom: 13
+          minZoom: 0
+          type: circle
+          pixels: 4
+          fillColor: "#FF2E28"
+          dockStrokeColor: "#000000"
+        - maxZoom: 17
+          minZoom: 14
+          type: circle
+          pixels: 6
+          fillColor: "#FF2E28"
+          dockStrokeColor: "#000000"
+        - maxZoom: 999
+          minZoom: 18
+          type: hubAndFloatingBike
+
+    - type: micromobility-rental
+      name: Bolt eScooter Locations
+      modes:
+        - MICROMOBILITY_RENT
+      companies:
+        - BOLT
+      mapSymbols:
+        - maxZoom: 13
+          minZoom: 0
+          type: circle
+          pixels: 4
+          fillColor: "#FEE502"
+          strokeColor: "#000000"
+        - maxZoom: 17
+          minZoom: 14
+          type: circle
+          pixels: 6
+          fillColor: "#FEE502"
+          strokeColor: "#000000"
+        - maxZoom: 999
+          minZoom: 18
+          type: marker
+
+    - type: micromobility-rental
+      name: Gruv eScooter Locations
+      modes:
+        - MICROMOBILITY_RENT
+      companies:
+        - CLEVR
+      mapSymbols:
+        - maxZoom: 13
+          minZoom: 0
+          type: circle
+          pixels: 4
+          fillColor: "#0171bc"
+          strokeColor: "#CCCCCC"
+        - maxZoom: 17
+          minZoom: 14
+          type: circle
+          pixels: 6
+          fillColor: "#0171bc"
+          strokeColor: "#CCCCCC"
+        - maxZoom: 999
+          minZoom: 18
+          type: marker
+
+    - type: micromobility-rental
+      name: Lime eScooter Locations
+      modes:
+        - MICROMOBILITY_RENT
+      companies:
+        - LIME
+      mapSymbols:
+        - maxZoom: 13
+          minZoom: 0
+          type: circle
+          pixels: 4
+          fillColor: "#24D000"
+          strokeColor: "#CCCCCC"
+        - maxZoom: 17
+          minZoom: 14
+          type: circle
+          pixels: 6
+          fillColor: "#24D000"
+          strokeColor: "#CCCCCC"
+        - maxZoom: 999
+          minZoom: 18
+          type: marker
+
+    - type: micromobility-rental
+      name: Razor eScooter Locations
+      modes:
+        - MICROMOBILITY_RENT
+      companies:
+        - RAZOR
+      mapSymbols:
+        - maxZoom: 13
+          minZoom: 0
+          type: circle
+          pixels: 4
+          fillColor: "#EE2D15"
+          strokeColor: "#CCCCCC"
+        - maxZoom: 17
+          minZoom: 14
+          type: circle
+          pixels: 6
+          fillColor: "#EE2D15"
+          strokeColor: "#CCCCCC"
+        - maxZoom: 999
+          minZoom: 18
+          type: marker
+
+    - type: micromobility-rental
+      name: shared eScooter Locations
+      modes:
+        - MICROMOBILITY_RENT
+      companies:
+        - SHARED
+      mapSymbols:
+        - maxZoom: 13
+          minZoom: 0
+          type: circle
+          pixels: 4
+          fillColor: "#F80600"
+          strokeColor: "#CCCCCC"
+        - maxZoom: 17
+          minZoom: 14
+          type: circle
+          pixels: 6
+          fillColor: "#F80600"
+          strokeColor: "#CCCCCC"
+        - maxZoom: 999
+          minZoom: 18
+          type: marker
+
+    - type: micromobility-rental
+      name: Spin eScooter Locations
+      modes:
+        - MICROMOBILITY_RENT
+      companies:
+        - SPIN
+      mapSymbols:
+        - maxZoom: 13
+          minZoom: 0
+          type: circle
+          pixels: 4
+          fillColor: "#FF6D01"
+          strokeColor: "#CCCCCC"
+        - maxZoom: 17
+          minZoom: 14
+          type: circle
+          pixels: 6
+          fillColor: "#FF6D01"
+          strokeColor: "#CCCCCC"
+        - maxZoom: 999
+          minZoom: 18
+          type: marker
 
     - type: car-rental
       name: car2go Locations
@@ -115,6 +269,20 @@ map:
         - CAR_RENT
       companies:
         - CAR2GO
+      mapSymbols:
+        - maxZoom: 13
+          minZoom: 0
+          type: circle
+          pixels: 4
+          fillColor: "#009cde"
+        - maxZoom: 17
+          minZoom: 14
+          type: circle
+          pixels: 6
+          fillColor: "#009cde"
+        - maxZoom: 999
+          minZoom: 18
+          type: marker
 
     - type: car-rental
       name: REACH NOW Locations
@@ -122,6 +290,20 @@ map:
         - CAR_RENT
       companies:
         - REACHNOW
+      mapSymbols:
+        - maxZoom: 13
+          minZoom: 0
+          type: circle
+          pixels: 4
+          fillColor: "#007fa3"
+        - maxZoom: 17
+          minZoom: 14
+          type: circle
+          pixels: 6
+          fillColor: "#007fa3"
+        - maxZoom: 999
+          minZoom: 18
+          type: marker
 
     - type: park-and-ride
       name: Park & Ride Locations
@@ -160,6 +342,7 @@ geocoder:
 
 # Mode selector configuration
 modes:
+  # types of allowable transit modes
   transitModes:
     - mode: BUS
       label: Bus
@@ -170,24 +353,38 @@ modes:
     - mode: GONDOLA
       label: Aerial Tram
 
+  # access to transit modes. These options are all combined with the above
+  # transit modes in the request to OTP
   accessModes:
     - mode: BICYCLE
-      label: Transit + Bike
+      label: Transit + Personal bike
     - mode: BICYCLE_RENT
       label: Transit + Biketown
+      company: BIKETOWN
+    - mode: MICROMOBILITY_RENT
+      label: Transit + eScooter rental
     - mode: CAR_PARK
       label: Park & Ride
     - mode: CAR_RENT
-      company: CAR2GO
       label: Transit + car2go
+      company: CAR2GO
     - mode: CAR_RENT
-      company: REACHNOW
       label: Transit + REACH NOW
+      company: REACHNOW
     - mode: CAR_HAIL
-      company: UBER
       label: Transit + Uber
+      company: UBER
       showWheelchairSetting: true
 
+  # which exclusive modes to show. This involves using a single mode and no
+  # transit for the duration of the trip. Further configurations of
+  # `bicycleModes`, `micromobilityModes` and/or `carModes` are needed as
+  # desired, but no extra configuration is needed for a WALK exclusive mode.
+  exclusiveModes:
+    - WALK
+    - BICYCLE
+
+  # button definitions for exclusive bicycle mode options
   bicycleModes:
     - mode: BICYCLE
       label: Own Bike
@@ -195,6 +392,51 @@ modes:
     - mode: BICYCLE_RENT
       label: Biketown
       iconWidth: 36
+
+  # button definitions for exclusive micromobility mode options
+  # micromobilityModes:
+  #   - mode: MICROMOBILITY
+  #     label: Own eScooter
+  #     iconWidth: 18
+  #   - mode: MICROMOBILITY_RENT
+  #     label: eScooter rental
+  #     iconWidth: 36
+
+# A list of private transportation operators. These are either companies that
+# provide rental vehicles or transportation network companies. Companies that
+# have multiple modes of transport should have all modes listed as a string with
+# commas. For example: BICYCLE_RENT,MICROMOBILITY_RENT.
+companies:
+  - id: BIKETOWN
+    label: Biketown
+    modes: BICYCLE_RENT
+  - id: BOLT
+    label: Bolt
+    modes: MICROMOBILITY_RENT
+  - id: CAR2GO
+    label: car2go
+    modes: CAR_RENT
+  - id: CLEVR
+    label: Gruv
+    modes: MICROMOBILITY_RENT
+  - id: LIME
+    label: Lime
+    modes: MICROMOBILITY_RENT
+  - id: RAZOR
+    label: Razor
+    modes: MICROMOBILITY_RENT
+  - id: REACH NOW
+    label: REACH NOW
+    modes: CAR_RENT
+  - id: SHARED
+    label: shared
+    modes: MICROMOBILITY_RENT
+  - id: SPIN
+    label: SPIN
+    modes: MICROMOBILITY_RENT
+  - id: UBER
+    label: Uber
+    modes: CAR_HAIL
 
 errorMessages:
   - id: 404

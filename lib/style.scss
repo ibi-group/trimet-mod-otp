@@ -506,3 +506,55 @@
   margin-top: 10px;
   text-align: center;
 }
+
+/** Company specific styling **/
+
+@mixin car-rental-icon {
+  font-size: 24px;
+}
+
+// car rentals
+.otp .car-rental-icon-car2go {
+  @include car-rental-icon
+  color: #009cde;
+}
+
+.otp .car-rental-icon-reachnow {
+  @include car-rental-icon
+  color: #007fa3;
+}
+
+@mixin micromobility-rental-icon {
+  font-size: 24px;
+}
+
+// micromobility rentals
+.otp .micromobility-rental-icon-bolt {
+  @include micromobility-rental-icon
+  color: #FEE502;
+}
+
+.otp .micromobility-rental-icon-clevr {
+  @include micromobility-rental-icon
+  color: #0171bc;
+}
+
+.otp .micromobility-rental-icon-lime {
+  @include micromobility-rental-icon
+  color: #24D000;
+}
+
+.otp .micromobility-rental-icon-razor {
+  @include micromobility-rental-icon
+  color: #EE2D15;
+}
+
+.otp .micromobility-rental-icon-shared {
+  @include micromobility-rental-icon
+  color: #F80600;
+}
+
+.otp .micromobility-rental-icon-spin {
+  @include micromobility-rental-icon
+  color: #FF6D01;
+}
