@@ -5779,10 +5779,10 @@ osenv@0, osenv@^0.1.4:
     os-homedir "^1.0.0"
     os-tmpdir "^1.0.0"
 
-otp-react-redux@^0.11.0:
-  version "0.11.0"
-  resolved "https://registry.yarnpkg.com/otp-react-redux/-/otp-react-redux-0.11.0.tgz#0eff2cd1187dc37c90ba2142c45d16031a5e4daf"
-  integrity sha512-KjbM0giEMrwN4xIjgekj3KH+ukxs4DucaR798ddz7XDLIgrmEJzrIeAj6Ju+vkqDIClDoWzXp+XO9xHxaLgn5Q==
+otp-react-redux@^0.11.1:
+  version "0.11.1"
+  resolved "https://registry.yarnpkg.com/otp-react-redux/-/otp-react-redux-0.11.1.tgz#863c61a5b010f41ae2d5a7555fc6c84d2866d830"
+  integrity sha512-S0jwcMfHzrbatmrLDhb428bMesAWPUQaM+NsokigGd4Y3AtOiYx4JpZVoJ7qcbOSHLK4mSycAJQeAiU5NbwukQ==
   dependencies:
     "@conveyal/lonlat" "^1.1.0"
     "@mapbox/polyline" "^0.2.0"
