@@ -6,7 +6,7 @@
   "scripts": {
     "build": "webpack --mode=production",
     "prestart": "yarn",
-    "start": "webpack-dev-server --mode=development --host 0.0.0.0",
+    "start": "webpack-dev-server --hot --mode=development --host 0.0.0.0",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "standard": {
@@ -14,23 +14,16 @@
   },
   "dependencies": {
     "connected-react-router": "^5.0.1",
-    "currency-formatter": "^1.5.1",
     "history": "^4.7.2",
-    "is-mobile": "^0.2.2",
-    "lodash.isequal": "^4.5.0",
     "otp-react-redux": "^0.11.2",
-    "prop-types": "^15.6.2",
     "react": "^15.4.2",
     "react-bootstrap": "^0.30.7",
     "react-dom": "^15.4.2",
     "react-ga": "^2.5.7",
-    "react-hot-loader": "next",
     "react-redux": "^5.0.3",
     "redux": "^3.6.0",
     "redux-logger": "^2.8.1",
-    "redux-thunk": "^2.2.0",
-    "velocity-react": "^1.2.2",
-    "yaml-loader": "^0.5.0"
+    "redux-thunk": "^2.2.0"
   },
   "devDependencies": {
     "@babel/core": "^7.1.0",
@@ -41,16 +34,19 @@
     "@babel/preset-react": "^7.0.0",
     "babel-loader": "^8.0.2",
     "babel-preset-stage-0": "^6.24.1",
+    "css-hot-loader": "^1.4.4",
     "css-loader": "^1.0.0",
     "html-webpack-plugin": "^3.2.0",
     "mini-css-extract-plugin": "^0.4.1",
     "node-sass": "^4.9.2",
     "optimize-css-assets-webpack-plugin": "^5.0.0",
+    "react-hot-loader": "^4.11.1",
     "sass-loader": "^6.0.3",
     "style-loader": "^0.22.0",
     "uglifyjs-webpack-plugin": "^1.2.7",
     "webpack": "4.16.5",
     "webpack-cli": "^3.1.0",
-    "webpack-dev-server": "^3.1.5"
+    "webpack-dev-server": "^3.1.5",
+    "yaml-loader": "^0.5.0"
   }
 }
