@@ -481,9 +481,9 @@ dateTime:
   longDateFormat: MMMM D, YYYY
 
 # Alternate TransitIndex API
-#alternateTransitIndex:
-#  apiRoot: https://modbeta.trimet.org/ws/ti/v0/
-#  services:
-#     - stops
-#     - stops/routes
-#     - routes
+alternateTransitIndex:
+ apiRoot: https://modbeta.trimet.org/ws/ti/v0/
+ services:
+    - stops
+    - stops/routes
+    - routes
