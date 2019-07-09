@@ -154,6 +154,7 @@ map:
           strokeColor: "#000000"
         - maxZoom: 999
           minZoom: 18
+          fillColor: "#FEE502"
           type: marker
 
     - type: micromobility-rental
@@ -177,6 +178,7 @@ map:
           strokeColor: "#CCCCCC"
         - maxZoom: 999
           minZoom: 18
+          fillColor: "#0171bc"
           type: marker
 
     - type: micromobility-rental
@@ -200,6 +202,7 @@ map:
           strokeColor: "#CCCCCC"
         - maxZoom: 999
           minZoom: 18
+          fillColor: "#24D000"
           type: marker
 
     - type: micromobility-rental
@@ -223,6 +226,7 @@ map:
           strokeColor: "#CCCCCC"
         - maxZoom: 999
           minZoom: 18
+          fillColor: "#EE2D15"
           type: marker
 
     - type: micromobility-rental
@@ -246,6 +250,7 @@ map:
           strokeColor: "#CCCCCC"
         - maxZoom: 999
           minZoom: 18
+          fillColor: "#F80600"
           type: marker
 
     - type: micromobility-rental
@@ -269,6 +274,7 @@ map:
           strokeColor: "#CCCCCC"
         - maxZoom: 999
           minZoom: 18
+          fillColor: "#FF6D01"
           type: marker
 
     - type: car-rental
@@ -290,6 +296,7 @@ map:
           fillColor: "#009cde"
         - maxZoom: 999
           minZoom: 18
+          fillColor: "#009cde"
           type: marker
 
     - type: car-rental
@@ -311,6 +318,7 @@ map:
           fillColor: "#007fa3"
         - maxZoom: 999
           minZoom: 18
+          fillColor: "#007fa3"
           type: marker
 
     - type: park-and-ride
