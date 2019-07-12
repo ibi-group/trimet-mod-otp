@@ -441,7 +441,7 @@ companies:
   - id: RAZOR
     label: Razor
     modes: MICROMOBILITY_RENT
-  - id: REACH NOW
+  - id: REACHNOW
     label: REACH NOW
     modes: CAR_RENT
   - id: SHARED
