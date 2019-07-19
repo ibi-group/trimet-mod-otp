@@ -366,6 +366,12 @@
   padding-bottom: 2px;
 }
 
+.otp .plan-trip-button:disabled {
+  background-color: #999;
+  border-color: #999;
+  color: #ddd;
+}
+
 /* narrative styling */
 
 .otp .options > .header {
