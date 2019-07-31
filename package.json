@@ -15,6 +15,7 @@
   "dependencies": {
     "connected-react-router": "^5.0.1",
     "core-js": "2",
+    "es6-math": "^1.0.0",
     "history": "^4.7.2",
     "otp-react-redux": "^0.11.4",
     "react": "^15.4.2",
