@@ -25,7 +25,7 @@ routingTypes:
   #    path: /api
 
 # Show/hide elevation profile chart for walk/bike legs
-elevationProfile: true
+# elevationProfile: true
 
 # Map config
 map:
@@ -61,23 +61,9 @@ map:
 
   overlays:
     - type: bike-rental
-      name: Biketown Locations
+      name: BCycle Locations
       modes:
         - BICYCLE_RENT
-
-    - type: car-rental
-      name: car2go Locations
-      modes:
-        - CAR_RENT
-      companies:
-        - CAR2GO
-
-    - type: car-rental
-      name: REACH NOW Locations
-      modes:
-        - CAR_RENT
-      companies:
-        - REACHNOW
 
     - type: park-and-ride
       name: Park & Ride Locations
@@ -94,9 +80,9 @@ map:
     #   tileUrl: https://d2dyq00q2cz8yt.cloudfront.net/{z}_{x}_{y}@2x.png
     #   visible: true
 
-    - type: zipcar
-      name: Zipcar Locations
-      api: https://modbeta.trimet.org/ws/carshare/zipcar/data.json
+    # - type: zipcar
+    #   name: Zipcar Locations
+    #   api: https://modbeta.trimet.org/ws/carshare/zipcar/data.json
 
 # Pelias Geocoder config
 # (Note: this format may eventually change to allow other geocoding services)
@@ -112,6 +98,42 @@ geocoder:
 
   maxNearbyStops: 6
 
+# A list of private transportation operators. These are either companies that
+# provide rental vehicles or transportation network companies. Companies that
+# have multiple modes of transport should have all modes listed as a string with
+# commas. For example: BICYCLE_RENT,MICROMOBILITY_RENT.
+companies:
+  - id: BCYCLE
+    label: BCycle
+    modes: BICYCLE_RENT
+  # - id: BOLT
+  #   label: Bolt
+  #   modes: MICROMOBILITY_RENT
+  # - id: CAR2GO
+  #   label: car2go
+  #   modes: CAR_RENT
+  # - id: CLEVR
+  #   label: Gruv
+  #   modes: MICROMOBILITY_RENT
+  # - id: LIME
+  #   label: Lime
+  #   modes: MICROMOBILITY_RENT
+  # - id: RAZOR
+  #   label: Razor
+  #   modes: MICROMOBILITY_RENT
+  # - id: REACHNOW
+  #   label: REACH NOW
+  #   modes: CAR_RENT
+  # - id: SHARED
+  #   label: shared
+  #   modes: MICROMOBILITY_RENT
+  # - id: SPIN
+  #   label: SPIN
+  #   modes: MICROMOBILITY_RENT
+  # - id: UBER
+  #   label: Uber
+  #   modes: CAR_HAIL
+
 # Mode selector configuration
 modes:
   transitModes:
@@ -120,30 +142,34 @@ modes:
     - mode: TRAM
       label: METRORail
 
+  # access to transit modes. These options are all combined with the above
+  # transit modes in the request to OTP
   accessModes:
     - mode: BICYCLE
-      label: Transit + Bike
+      label: Transit + Personal bike
     - mode: BICYCLE_RENT
-      label: Transit + Biketown
-    - mode: CAR_PARK
-      label: Park & Ride
-    - mode: CAR_RENT
-      company: CAR2GO
-      label: Transit + car2go
-    - mode: CAR_RENT
-      company: REACHNOW
-      label: Transit + REACH NOW
-    - mode: CAR_HAIL
-      company: UBER
-      label: Transit + Uber
-      showWheelchairSetting: true
+      label: Transit + BCycle
+      company: BCYCLE
+    # - mode: MICROMOBILITY_RENT
+    #   label: Transit + eScooter rental
+    # - mode: CAR_HAIL
+    #   label: Transit + Uber
+    #   company: UBER
+    #   showWheelchairSetting: true
+  # which exclusive modes to show. This involves using a single mode and no
+  # transit for the duration of the trip. Further configurations of
+  # `bicycleModes`, `micromobilityModes` and/or `carModes` are needed as
+  # desired, but no extra configuration is needed for a WALK exclusive mode.
+  exclusiveModes:
+    - WALK
+    - BICYCLE
 
   bicycleModes:
     - mode: BICYCLE
       label: Own Bike
       iconWidth: 18
     - mode: BICYCLE_RENT
-      label: Biketown
+      label: BCycle
       iconWidth: 36
 
 errorMessages:
@@ -161,11 +187,12 @@ errorMessages:
     msg: No available transit routes or rideshare/carshare service at origin.
 
 reportIssue:
-  mailto: gis@trimet.org
+  mailto: webmaster@ridemetro.org
 
-analytics:
-  google:
-    globalSiteTag: UA-133677388-1
+# TODO: Add GA
+# analytics:
+#   google:
+#     globalSiteTag: UA-XXXXXXX
 
 # Temporary language overrides -- eventually replace w/ I18N language tables
 language:
