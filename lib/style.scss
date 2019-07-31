@@ -1,3 +1,11 @@
+// Variables
+
+// This is the color for the nav bar and various row bars throughout the app.
+// Override this value for a quick "re-branding".
+// TODO specify this color using a separate configurable variables file?
+$base-color: #084c8d;
+// $base-color: black;
+
 /* mixins */
 @mixin link-button {
   border: none;
@@ -52,14 +60,6 @@
   overflow: hidden;
   text-overflow: ellipsis;
 }
-
-// Variables
-
-// This is the color for the nav bar and various row bars throughout the app.
-// Override this value for a quick "re-branding".
-// TODO specify this color using a separate configurable variables file?
-$base-color: #084c8d;
-// $base-color: black;
 
 /* top-level container styling */
 

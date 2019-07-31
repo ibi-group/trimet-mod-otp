@@ -84,8 +84,6 @@ map:
     #   name: Zipcar Locations
     #   api: https://modbeta.trimet.org/ws/carshare/zipcar/data.json
 
-# Pelias Geocoder config
-# (Note: this format may eventually change to allow other geocoding services)
 geocoder:
   type: ARCGIS
   # Geocoding search bounds
