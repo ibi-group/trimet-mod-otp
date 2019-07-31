@@ -1,0 +1,187 @@
+# react-router config, for URL routing (not to be confused with multimodal/OTP routing)
+#reactRouter:
+  # If app is to be deployed to a URL subdirectory (e.g. http://foo.bar/app), specify the path here:
+  #basename: map
+branding: ibi
+title: Houston Regional Trip Planner
+homeTimezone: America/Chicago
+
+# Default OTP API
+api:
+  host: https://otp.ibi-transit.com
+  # host: http://localhost:8001 # For testing against a local OTP instance
+  path: /otp/routers/default
+
+# Enabled multimodal routing types (e.g. interary, profile)
+routingTypes:
+  - key: ITINERARY
+    text: Exact Time
+
+  # Delete/uncomment the following block to disable profile routing
+  #- key: PROFILE
+  #  text: Time Window
+  #  api: # Specifies a different API endpoint for profile routing
+  #    host: https://trimet-modeify.conveyal.com
+  #    path: /api
+
+# Show/hide elevation profile chart for walk/bike legs
+elevationProfile: true
+
+# Map config
+map:
+  # Enabled map views
+  views:
+    - type: DEFAULT
+      text: Map View
+    # Delete/uncomment the following block to disable the stylized map
+    #- type: STYLIZED
+    #  text: Network View
+
+  # Default map center
+  initLat: 29.7604
+  initLon: -95.3698
+
+  # Base layers for default map
+  baseLayers:
+    - name: Streets
+      url: //cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}@2x.png
+      subdomains: 'abcd'
+      attribution: 'Map tiles: &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>, &copy; <a href="https://carto.com/attributions">CARTO</a>'
+      maxZoom: 20
+
+    # - name: Streets
+    #   url: //tile{s}.trimet.org/tilecache/tilecache.py/1.0.0/currentOSM/{z}/{x}/{y}
+    #   attribution: 'Map tiles: <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>.'
+    #   maxZoom: 20
+
+    # - name: Aerials
+    #   url: //tile{s}.trimet.org/tilecache/tilecache.py/1.0.0/hybridOSM/{z}/{x}/{y}
+    #   attribution: 'Map tiles: <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>.'
+    #   maxZoom: 20
+
+  overlays:
+    - type: bike-rental
+      name: Biketown Locations
+      modes:
+        - BICYCLE_RENT
+
+    - type: car-rental
+      name: car2go Locations
+      modes:
+        - CAR_RENT
+      companies:
+        - CAR2GO
+
+    - type: car-rental
+      name: REACH NOW Locations
+      modes:
+        - CAR_RENT
+      companies:
+        - REACHNOW
+
+    - type: park-and-ride
+      name: Park & Ride Locations
+      maxTransitDistance: 1000
+      modes:
+        - CAR_PARK
+
+    - type: stops
+      name: Transit Stops
+      visible: true
+
+    # - type: tile
+    #   name: Transit Routes
+    #   tileUrl: https://d2dyq00q2cz8yt.cloudfront.net/{z}_{x}_{y}@2x.png
+    #   visible: true
+
+    - type: zipcar
+      name: Zipcar Locations
+      api: https://modbeta.trimet.org/ws/carshare/zipcar/data.json
+
+# Pelias Geocoder config
+# (Note: this format may eventually change to allow other geocoding services)
+geocoder:
+  type: ARCGIS
+  # Geocoding search bounds
+  boundary:
+    rect:
+      minLon: -97.4197
+      maxLon: -93.2674
+      minLat: 28.6093
+      maxLat: 30.9685
+
+  maxNearbyStops: 6
+
+# Mode selector configuration
+modes:
+  transitModes:
+    - mode: BUS
+      label: Bus
+    - mode: TRAM
+      label: METRORail
+
+  accessModes:
+    - mode: BICYCLE
+      label: Transit + Bike
+    - mode: BICYCLE_RENT
+      label: Transit + Biketown
+    - mode: CAR_PARK
+      label: Park & Ride
+    - mode: CAR_RENT
+      company: CAR2GO
+      label: Transit + car2go
+    - mode: CAR_RENT
+      company: REACHNOW
+      label: Transit + REACH NOW
+    - mode: CAR_HAIL
+      company: UBER
+      label: Transit + Uber
+      showWheelchairSetting: true
+
+  bicycleModes:
+    - mode: BICYCLE
+      label: Own Bike
+      iconWidth: 18
+    - mode: BICYCLE_RENT
+      label: Biketown
+      iconWidth: 36
+
+errorMessages:
+  - id: 404
+    msg: Sorry, we couldn't find any transit or rideshare/carshare options at the time and/or location you chose. Please try again later, or change the settings of your trip.
+    modes:
+      - CAR_HAIL
+      - CAR_RENT
+  - id: 405
+    msg: Sorry, we couldn't find any transit or rideshare/carshare options at the time and/or location you chose. Please try again later, or change the settings of your trip.
+    modes:
+      - CAR_HAIL
+      - CAR_RENT
+  - id: 480
+    msg: No available transit routes or rideshare/carshare service at origin.
+
+reportIssue:
+  mailto: gis@trimet.org
+
+analytics:
+  google:
+    globalSiteTag: UA-133677388-1
+
+# Temporary language overrides -- eventually replace w/ I18N language tables
+language:
+  routeViewer: Route Viewer
+  tripViewer: Trip Viewer
+  stopViewer: Stop Viewer
+
+dateTime:
+  timeFormat: h:mm a
+  dateFormat: MM/DD/YYYY
+  longDateFormat: MMMM D, YYYY
+
+# Alternate TransitIndex API
+#alternateTransitIndex:
+#  apiRoot: https://modbeta.trimet.org/ws/ti/v0/
+#  services:
+#     - stops
+#     - stops/routes
+#     - routes
