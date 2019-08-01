@@ -6581,10 +6581,10 @@ osenv@0, osenv@^0.1.4:
     os-homedir "^1.0.0"
     os-tmpdir "^1.0.0"
 
-otp-react-redux@^0.12.0:
-  version "0.12.0"
-  resolved "https://registry.yarnpkg.com/otp-react-redux/-/otp-react-redux-0.12.0.tgz#89c78f82c5f6eb3b0aa738eff2e466ed7b021b2b"
-  integrity sha512-dExHYNqzpbwp5ukCgGSx3hbAOBmpZQycX/+k3qjryI04BMovbFNVUTbwQKft3IVoYJG6JOIXDZDAdTmmCgdu/Q==
+otp-react-redux@^0.12.1:
+  version "0.12.1"
+  resolved "https://registry.yarnpkg.com/otp-react-redux/-/otp-react-redux-0.12.1.tgz#c75d164dc6f7c4ea32c48d6e12589a011badee68"
+  integrity sha512-Qg3a/3/ndllc7XSkIKVGbMaFPWsAV56ahId1szQeePIJXQMcEvM5+JIU1xR/SOaLLOonZp7xJMC+bKpBRn61Mw==
   dependencies:
     "@conveyal/geocoder-arcgis-geojson" "^0.0.2"
     "@conveyal/lonlat" "^1.1.0"
