@@ -355,6 +355,7 @@ geocoder:
       maxLat: 45.7445
 
   maxNearbyStops: 6
+  type: PELIAS
 
 # Mode selector configuration
 modes:
