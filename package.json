@@ -8,7 +8,8 @@
     "lint": "mastarm lint lib",
     "prestart": "yarn",
     "start": "webpack-dev-server --hot --mode=development --host 0.0.0.0 --disableHostCheck=true",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "yarn run lint && yarn run test-e2e-ie11",
+    "test-e2e-ie10": "mastarm test"
   },
   "standard": {
     "parser": "babel-eslint"
@@ -38,6 +39,7 @@
     "@babel/preset-react": "^7.0.0",
     "babel-loader": "^8.0.2",
     "babel-preset-stage-0": "^6.24.1",
+    "browserstack-local": "^1.4.2",
     "css-hot-loader": "^1.4.4",
     "css-loader": "^1.0.0",
     "html-webpack-plugin": "^3.2.0",
@@ -47,6 +49,7 @@
     "optimize-css-assets-webpack-plugin": "^5.0.0",
     "react-hot-loader": "React 16.9",
     "sass-loader": "^6.0.3",
+    "selenium-webdriver": "^4.0.0-alpha.5",
     "style-loader": "^0.22.0",
     "uglifyjs-webpack-plugin": "^1.2.7",
     "webpack": "4.16.5",
