@@ -277,6 +277,30 @@ map:
           fillColor: "#FF6D01"
           type: marker
 
+    - type: micromobility-rental
+      name: Bird eScooter Locations
+      modes:
+        - MICROMOBILITY_RENT
+      companies:
+        - BIRD
+      mapSymbols:
+        - maxZoom: 13
+          minZoom: 0
+          type: circle
+          pixels: 4
+          fillColor: "#000000"
+          strokeColor: "#CCCCCC"
+        - maxZoom: 17
+          minZoom: 14
+          type: circle
+          pixels: 6
+          fillColor: "#000000"
+          strokeColor: "#CCCCCC"
+        - maxZoom: 999
+          minZoom: 18
+          fillColor: "#000000"
+          type: marker
+
     - type: car-rental
       name: car2go Locations
       modes:
@@ -454,6 +478,9 @@ companies:
   - id: UBER
     label: Uber
     modes: CAR_HAIL
+  - id: BIRD
+    label: Bird
+    modes: MICROMOBILITY_RENT
 
 errorMessages:
   - id: 404
