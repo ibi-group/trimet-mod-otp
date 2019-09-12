@@ -134,7 +134,7 @@ map:
           type: hubAndFloatingBike
 
     - type: micromobility-rental
-      name: Bolt eScooter Locations
+      name: Bolt E-scooter Locations
       modes:
         - MICROMOBILITY_RENT
       companies:
@@ -158,7 +158,7 @@ map:
           type: marker
 
     - type: micromobility-rental
-      name: Gruv eScooter Locations
+      name: Gruv E-scooter Locations
       modes:
         - MICROMOBILITY_RENT
       companies:
@@ -182,7 +182,7 @@ map:
           type: marker
 
     - type: micromobility-rental
-      name: Lime eScooter Locations
+      name: Lime E-scooter Locations
       modes:
         - MICROMOBILITY_RENT
       companies:
@@ -206,7 +206,7 @@ map:
           type: marker
 
     - type: micromobility-rental
-      name: Razor eScooter Locations
+      name: Razor E-scooter Locations
       modes:
         - MICROMOBILITY_RENT
       companies:
@@ -230,7 +230,7 @@ map:
           type: marker
 
     - type: micromobility-rental
-      name: shared eScooter Locations
+      name: shared E-scooter Locations
       modes:
         - MICROMOBILITY_RENT
       companies:
@@ -254,7 +254,7 @@ map:
           type: marker
 
     - type: micromobility-rental
-      name: Spin eScooter Locations
+      name: Spin E-scooter Locations
       modes:
         - MICROMOBILITY_RENT
       companies:
@@ -278,7 +278,7 @@ map:
           type: marker
 
     - type: micromobility-rental
-      name: Bird eScooter Locations
+      name: Bird E-scooter Locations
       modes:
         - MICROMOBILITY_RENT
       companies:
@@ -403,7 +403,7 @@ modes:
       label: Transit + Biketown
       company: BIKETOWN
     - mode: MICROMOBILITY_RENT
-      label: Transit + eScooter rental
+      label: Transit + E-scooter rental
     - mode: CAR_PARK
       label: Park & Ride
     - mode: CAR_RENT
@@ -437,10 +437,10 @@ modes:
   # button definitions for exclusive micromobility mode options
   # micromobilityModes:
   #   - mode: MICROMOBILITY
-  #     label: Own eScooter
+  #     label: Own E-scooter
   #     iconWidth: 18
   #   - mode: MICROMOBILITY_RENT
-  #     label: eScooter rental
+  #     label: E-scooter rental
   #     iconWidth: 36
 
 # A list of private transportation operators. These are either companies that
