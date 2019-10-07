@@ -44,10 +44,10 @@ map:
   # Base layers for default map
   baseLayers:
     - name: Streets
-      url: //cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}@2x.png
-      subdomains: 'abcd'
-      attribution: 'Map tiles: &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>, &copy; <a href="https://carto.com/attributions">CARTO</a>'
+      url: //api.tiles.mapbox.com/v4/mapbox.streets/{z}/{x}/{y}@2x.png?access_token=pk.eyJ1IjoiaWJpLXRyYW5zaXQtZGF0YS10ZWFtIiwiYSI6ImNqeTV6ZDF5bzBiMzUzbms5dTlxajY0ZTkifQ.aMf9Ly3DKfx_m1-Ba_yTSA
+      attribution: 'Street Map <a href="https://mapbox.com/about/maps">Terms & Feedback</a>'
       maxZoom: 20
+      hasRetinaSupport: true
 
     # - name: Streets
     #   url: //tile{s}.trimet.org/tilecache/tilecache.py/1.0.0/currentOSM/{z}/{x}/{y}
