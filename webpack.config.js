@@ -52,7 +52,7 @@ module.exports = env => {
       new webpack.DefinePlugin({
         // Optionally override the default config file location with some other
         // file.
-        OTP_CONFIG: JSON.stringify(env.OTP_CONFIG || './config.yml')
+        OTP_CONFIG: JSON.stringify(env && env.OTP_CONFIG || './config.yml')
       })
     ],
     optimization: {
