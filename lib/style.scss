@@ -92,6 +92,16 @@ $base-color: #084c8d;
 
 .otp .navbar .container {
   margin-left: 0;
+  width: auto; // overrides bootsrap media queries
+}
+
+// bootstrap overrides
+.tab-pane {
+  margin: 10px;
+}
+
+.example td {
+  padding: 5px;
 }
 
 .otp .navbar .mobile-header-text {
