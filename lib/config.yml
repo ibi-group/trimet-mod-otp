@@ -80,7 +80,7 @@ modes:
   transitModes:
     - mode: BUS
       label: Bus
-    - mode: TRAIN
+    - mode: RAIL
       label: AMTRAK
 
   # access to transit modes. These options are all combined with the above
