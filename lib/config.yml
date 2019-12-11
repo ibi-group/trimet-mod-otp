@@ -80,8 +80,6 @@ modes:
   transitModes:
     - mode: BUS
       label: Bus
-    - mode: RAIL
-      label: AMTRAK
 
   # access to transit modes. These options are all combined with the above
   # transit modes in the request to OTP
