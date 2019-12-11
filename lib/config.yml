@@ -38,9 +38,9 @@ map:
     #  text: Network View
 
   # Default map center
-  initLat: 37.709229
-  initLon: -122.075596
-  initZoom: 10
+  initLat: 43.676922
+  initLon: -70.250656
+  initZoom: 12
 
   # Base layers for default map
   baseLayers:
@@ -85,9 +85,9 @@ modes:
 
   # access to transit modes. These options are all combined with the above
   # transit modes in the request to OTP
-  # accessModes:
-  #  - mode: BICYCLE
-  #    label: Transit + Personal bike
+  accessModes:
+   - mode: BICYCLE
+     label: Transit + Personal bike
   #  - mode: BICYCLE_RENT
   #    label: Transit + BayWheels
   #    company: BayWheels
