@@ -13,7 +13,7 @@ module.exports = async env => {
   // temporary folder within this project so that the file will be able to
   // use the node_modules from this project
   let customJsFile = './config.js'
-  if (env.JS_CONFIG) {
+  if (env && env.JS_CONFIG) {
     const splitPath = env.JS_CONFIG.split(path.sep)
     customJsFile = `../tmp/${splitPath[splitPath.length - 1]}`
     await fs.copy(env.JS_CONFIG, customJsFile)
