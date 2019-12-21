@@ -5,7 +5,6 @@
 
 branding: trimet
 homeTimezone: America/Los_Angeles
-jsConfigFile: ./config.js
 
 # Default OTP API
 api:

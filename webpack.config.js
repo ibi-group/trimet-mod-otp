@@ -1,4 +1,6 @@
 const path = require('path')
+
+const fs = require('fs-extra')
 const webpack = require('webpack')
 
 const HtmlWebpackPlugin = require('html-webpack-plugin')
@@ -6,7 +8,16 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin')
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
 
-module.exports = env => {
+module.exports = async env => {
+  // resolve the custom js file. If it is present, copy the file to a
+  // temporary folder within this project so that the file will be able to
+  // use the node_modules from this project
+  let customJsFile = './config.js'
+  if (env.JS_CONFIG) {
+    const splitPath = env.JS_CONFIG.split(path.sep)
+    customJsFile = `../tmp/${splitPath[splitPath.length - 1]}`
+    await fs.copy(env.JS_CONFIG, customJsFile)
+  }
   return {
     entry: [
       './lib/main.js',
@@ -52,7 +63,8 @@ module.exports = env => {
       new webpack.DefinePlugin({
         // Optionally override the default config file location with some other
         // file.
-        OTP_CONFIG: JSON.stringify(env && env.OTP_CONFIG || './config.yml')
+        YAML_CONFIG: JSON.stringify(env && env.YAML_CONFIG || './config.yml'),
+        JS_CONFIG: JSON.stringify(customJsFile)
       })
     ],
     optimization: {
