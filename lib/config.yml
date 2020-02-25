@@ -3,6 +3,7 @@
   # If app is to be deployed to a URL subdirectory (e.g. http://foo.bar/app), specify the path here:
   #basename: map
 
+branding: trimet
 homeTimezone: America/Los_Angeles
 
 # Default OTP API
@@ -481,6 +482,36 @@ companies:
   - id: BIRD
     label: Bird
     modes: MICROMOBILITY_RENT
+
+# These represent a list of application-specific custom icons that are needed.
+# Each key identifies the icon and the value is the name of the React component
+# in the `lib/icons` folder of the trimet-mod-otp repo that should be used to
+# display an icon for the given key.
+#
+# Note: there are also default icons that are loaded from the otp-react-redux
+# library that are used when there is not a match in these custom icons. Any
+# icon defined in here will override the icon that would otherwise be used by
+# default from the otp-react-redux library.
+customIcons:
+  BICYCLE: bike-icon
+  BIKETOWN: biketown-icon
+  BOLT: bolt-icon
+  BUS: bus-icon
+  CAR2GO: car2go-icon
+  CLEVR: gruv-icon
+  GONDOLA: gondola-icon
+  LIME: lime-icon
+  LYFT: lyft-icon
+  RAIL: rail-icon
+  RAZOR: razor-icon
+  REACHNOW: reachnow-icon
+  SHARED: shared-icon
+  SPIN: spin-icon
+  STREETCAR: streetcar-icon
+  TRAM: tram-icon
+  TRANSIT: transit-icon
+  UBER: uber-icon
+  WALK: walk-icon
 
 errorMessages:
   - id: 404
