@@ -16,7 +16,8 @@ module.exports = async env => {
   if (env && env.JS_CONFIG) {
     const splitPath = env.JS_CONFIG.split(path.sep)
     customJsFile = `../tmp/${splitPath[splitPath.length - 1]}`
-    await fs.copy(env.JS_CONFIG, customJsFile)
+    // copy location is relative to root, while js file for app is relative to lib
+    await fs.copy(env.JS_CONFIG, `./tmp/${splitPath[splitPath.length - 1]}`)
   }
   return {
     entry: [
