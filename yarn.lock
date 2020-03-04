@@ -5419,10 +5419,10 @@ isomorphic-fetch@^2.1.1, isomorphic-fetch@^2.2.1:
     node-fetch "^1.0.1"
     whatwg-fetch ">=0.10.0"
 
-isomorphic-mapzen-search@^1.4.1:
-  version "1.4.1"
-  resolved "https://registry.yarnpkg.com/isomorphic-mapzen-search/-/isomorphic-mapzen-search-1.4.1.tgz#914b85d16c23ac0d1e8fb0c90c3ff12503b1c577"
-  integrity sha512-5OMaWf3DOU/e2mzU6Q5yCRP9KxMoEX2+tfeZwTWyi3NTKB8pl2nf/dR1XjJ5DpCPlpLWwv8CoBiigeyP7ShmZw==
+isomorphic-mapzen-search@^1.5.1:
+  version "1.5.1"
+  resolved "https://registry.yarnpkg.com/isomorphic-mapzen-search/-/isomorphic-mapzen-search-1.5.1.tgz#5ac0214cec436fb550e8ef362cf8d11b17de8e9c"
+  integrity sha512-38GcjidOqjVQkUzDovx+ceUXHwOliIoFq+qJ/zUzaZwn2h8qEANLMTjaZkFvYN2XdSGB65zBOH5n/iP/Vs1ejA==
   dependencies:
     "@conveyal/lonlat" "^1.1.2"
     isomorphic-fetch "^2.2.1"
@@ -6693,10 +6693,10 @@ osenv@0, osenv@^0.1.4:
     os-homedir "^1.0.0"
     os-tmpdir "^1.0.0"
 
-otp-react-redux@^0.13.2:
-  version "0.13.2"
-  resolved "https://registry.yarnpkg.com/otp-react-redux/-/otp-react-redux-0.13.2.tgz#290aed378da2df380e149e10e4f7acf0d74d2bab"
-  integrity sha512-yRELxXakHf572DxYcn/lQ3eAA51XzZynuU1mfNJ3+FidwzrqDsLTAaj1V4W9EPaLgiU3eR3KKh/TE2JzadIFpg==
+otp-react-redux@^0.13.5:
+  version "0.13.5"
+  resolved "https://registry.yarnpkg.com/otp-react-redux/-/otp-react-redux-0.13.5.tgz#0410b9750f4c6e59fd92f85b5cd93589d2dd3697"
+  integrity sha512-wuKEFowkYBBdgtjjMlWUFYGJDc/ynAfcO1QAiT58BAYP8dpTO6fzPreSieVhdzQ2OtZc1IduAzpLN1YhJvG3BQ==
   dependencies:
     "@conveyal/geocoder-arcgis-geojson" "^0.0.2"
     "@conveyal/lonlat" "^1.1.0"
@@ -6715,7 +6715,7 @@ otp-react-redux@^0.13.2:
     history "^4.7.2"
     immutability-helper "^2.1.1"
     isomorphic-fetch "^2.2.1"
-    isomorphic-mapzen-search "^1.4.1"
+    isomorphic-mapzen-search "^1.5.1"
     leaflet "^1.5.1"
     leaflet.polylinemeasure "github:ppete2/Leaflet.PolylineMeasure"
     lodash.debounce "^4.0.8"
