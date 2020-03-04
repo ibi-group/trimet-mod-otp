@@ -3,6 +3,7 @@
   # If app is to be deployed to a URL subdirectory (e.g. http://foo.bar/app), specify the path here:
   #basename: map
 
+branding: trimet
 homeTimezone: America/Los_Angeles
 
 # Default OTP API
@@ -93,6 +94,10 @@ map:
   initLat: 45.52
   initLon: -122.682
 
+  # closer-in zoom levels don't have any tiles that could be rendered by
+  # TriMet's tile service
+  maxZoom: 19
+
   # Base layers for default map
   baseLayers:
     - name: Streets
@@ -134,7 +139,7 @@ map:
           type: hubAndFloatingBike
 
     - type: micromobility-rental
-      name: Bolt eScooter Locations
+      name: Bolt E-scooter Locations
       modes:
         - MICROMOBILITY_RENT
       companies:
@@ -158,7 +163,7 @@ map:
           type: marker
 
     - type: micromobility-rental
-      name: Gruv eScooter Locations
+      name: Gruv E-scooter Locations
       modes:
         - MICROMOBILITY_RENT
       companies:
@@ -182,7 +187,7 @@ map:
           type: marker
 
     - type: micromobility-rental
-      name: Lime eScooter Locations
+      name: Lime E-scooter Locations
       modes:
         - MICROMOBILITY_RENT
       companies:
@@ -206,7 +211,7 @@ map:
           type: marker
 
     - type: micromobility-rental
-      name: Razor eScooter Locations
+      name: Razor E-scooter Locations
       modes:
         - MICROMOBILITY_RENT
       companies:
@@ -230,7 +235,7 @@ map:
           type: marker
 
     - type: micromobility-rental
-      name: shared eScooter Locations
+      name: shared E-scooter Locations
       modes:
         - MICROMOBILITY_RENT
       companies:
@@ -254,7 +259,7 @@ map:
           type: marker
 
     - type: micromobility-rental
-      name: Spin eScooter Locations
+      name: Spin E-scooter Locations
       modes:
         - MICROMOBILITY_RENT
       companies:
@@ -278,7 +283,7 @@ map:
           type: marker
 
     - type: micromobility-rental
-      name: Bird eScooter Locations
+      name: Bird E-scooter Locations
       modes:
         - MICROMOBILITY_RENT
       companies:
@@ -403,7 +408,7 @@ modes:
       label: Transit + Biketown
       company: BIKETOWN
     - mode: MICROMOBILITY_RENT
-      label: Transit + eScooter rental
+      label: Transit + E-scooter rental
     - mode: CAR_PARK
       label: Park & Ride
     - mode: CAR_RENT
@@ -437,10 +442,10 @@ modes:
   # button definitions for exclusive micromobility mode options
   # micromobilityModes:
   #   - mode: MICROMOBILITY
-  #     label: Own eScooter
+  #     label: Own E-scooter
   #     iconWidth: 18
   #   - mode: MICROMOBILITY_RENT
-  #     label: eScooter rental
+  #     label: E-scooter rental
   #     iconWidth: 36
 
 # A list of private transportation operators. These are either companies that
@@ -481,6 +486,36 @@ companies:
   - id: BIRD
     label: Bird
     modes: MICROMOBILITY_RENT
+
+# These represent a list of application-specific custom icons that are needed.
+# Each key identifies the icon and the value is the name of the React component
+# in the `lib/icons` folder of the trimet-mod-otp repo that should be used to
+# display an icon for the given key.
+#
+# Note: there are also default icons that are loaded from the otp-react-redux
+# library that are used when there is not a match in these custom icons. Any
+# icon defined in here will override the icon that would otherwise be used by
+# default from the otp-react-redux library.
+customIcons:
+  BICYCLE: bike-icon
+  BIKETOWN: biketown-icon
+  BOLT: bolt-icon
+  BUS: bus-icon
+  CAR2GO: car2go-icon
+  CLEVR: gruv-icon
+  GONDOLA: gondola-icon
+  LIME: lime-icon
+  LYFT: lyft-icon
+  RAIL: rail-icon
+  RAZOR: razor-icon
+  REACHNOW: reachnow-icon
+  SHARED: shared-icon
+  SPIN: spin-icon
+  STREETCAR: streetcar-icon
+  TRAM: tram-icon
+  TRANSIT: transit-icon
+  UBER: uber-icon
+  WALK: walk-icon
 
 errorMessages:
   - id: 404
