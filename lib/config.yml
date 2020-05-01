@@ -553,7 +553,7 @@ dateTime:
 
 # Alternate TransitIndex API
 alternateTransitIndex:
- apiRoot: https://modbeta.trimet.org/ws/ti/v0/
+ apiRoot: https://newplanner.trimet.org/ws/ti/v0/
  services:
     - stops
     - stops/routes
