@@ -29,7 +29,7 @@ persistence:
     domain: fdot.auth0.com
     clientId: nQrAyaKjehXZWNaoraXogUEFI3X4hhnJ
   otp_middleware:
-    apiBaseUrl: http://localhost:4567
+    apiBaseUrl: https://nnxedhtje2.execute-api.us-east-1.amazonaws.com/dev
     apiKey: 7DYpF82oyI3e2mzfZAqCR276qiadM72j4lPImgpC
 
 # Map config
