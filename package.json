@@ -6,13 +6,34 @@
   "scripts": {
     "build": "webpack --mode=production",
     "prestart": "yarn",
-    "start": "webpack-dev-server --hot --mode=development --host 0.0.0.0 --disableHostCheck=true",
+    "start": "webpack-dev-server --hot --mode=development --host localhost --port 9966 --disableHostCheck=true",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "standard": {
     "parser": "babel-eslint"
   },
   "dependencies": {
+    "@conveyal/lonlat": "^1.1.0",
+    "@mapbox/polyline": "^0.2.0",
+    "@opentripplanner/base-map": "^0.0.20",
+    "@opentripplanner/core-utils": "^0.0.20",
+    "@opentripplanner/endpoints-overlay": "^0.0.20",
+    "@opentripplanner/from-to-location-picker": "^0.0.20",
+    "@opentripplanner/geocoder": "^0.0.20",
+    "@opentripplanner/icons": "^0.0.20",
+    "@opentripplanner/location-field": "^0.0.20",
+    "@opentripplanner/location-icon": "^0.0.20",
+    "@opentripplanner/park-and-ride-overlay": "^0.0.20",
+    "@opentripplanner/printable-itinerary": "^0.0.20",
+    "@opentripplanner/route-viewer-overlay": "^0.0.20",
+    "@opentripplanner/stop-viewer-overlay": "^0.0.20",
+    "@opentripplanner/stops-overlay": "^0.0.20",
+    "@opentripplanner/transitive-overlay": "^0.0.20",
+    "@opentripplanner/trip-details": "^0.0.20",
+    "@opentripplanner/trip-form": "^0.0.20",
+    "@opentripplanner/trip-viewer-overlay": "^0.0.20",
+    "@opentripplanner/vehicle-rental-overlay": "^0.0.20",
+    "@turf/along": "^6.0.1",
     "connected-react-router": "^6.5.2",
     "core-js": "2",
     "es6-math": "^1.0.0",
@@ -27,7 +48,8 @@
     "redux": "^4.0.4",
     "redux-logger": "^2.8.1",
     "redux-thunk": "^2.3.0",
-    "regenerator-runtime": "^0.13.2"
+    "regenerator-runtime": "^0.13.2",
+    "use-auth0-hooks": "^0.7.0"
   },
   "devDependencies": {
     "@babel/core": "^7.1.0",
@@ -46,6 +68,7 @@
     "optimize-css-assets-webpack-plugin": "^5.0.0",
     "react-hot-loader": "React 16.9",
     "sass-loader": "^6.0.3",
+    "styled-components": "^5.0.1",
     "style-loader": "^0.22.0",
     "uglifyjs-webpack-plugin": "^1.2.7",
     "webpack": "4.16.5",
