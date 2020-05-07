@@ -29,8 +29,12 @@ persistence:
     domain: fdot.auth0.com
     clientId: nQrAyaKjehXZWNaoraXogUEFI3X4hhnJ
   otp_middleware:
+    # The server below must have CORS (cross-origin calls) enabled
+    # (i.e. proper headers while sending response for GET and OPTIONS methods).
+    # If apiBaseUrl is an AWS API, you an use the API resource editor
+    # to set all applicable resources for CORS (remember to redeploy API when done).
     apiBaseUrl: https://nnxedhtje2.execute-api.us-east-1.amazonaws.com/dev
-    apiKey: 7DYpF82oyI3e2mzfZAqCR276qiadM72j4lPImgpC
+    apiKey: 76BzrlWozs7RRfKapCykt4sNO4tW4fVl1RcTDOnT
 
 # Map config
 map:
