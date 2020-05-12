@@ -496,26 +496,8 @@ companies:
 # library that are used when there is not a match in these custom icons. Any
 # icon defined in here will override the icon that would otherwise be used by
 # default from the otp-react-redux library.
-# customIcons:
-#   BICYCLE: bike-icon
-#   BIKETOWN: biketown-icon
-#   BOLT: bolt-icon
-#   BUS: bus-icon
-#   CAR2GO: car2go-icon
-#   CLEVR: gruv-icon
-#   GONDOLA: gondola-icon
-#   LIME: lime-icon
-#   LYFT: lyft-icon
-#   RAIL: rail-icon
-#   RAZOR: razor-icon
-#   REACHNOW: reachnow-icon
-#   SHARED: shared-icon
-#   SPIN: spin-icon
-#   STREETCAR: streetcar-icon
-#   TRAM: tram-icon
-#   TRANSIT: transit-icon
-#   UBER: uber-icon
-#   WALK: walk-icon
+customIcons:
+  BUS: example
 
 errorMessages:
   - id: 404
