@@ -6776,10 +6776,10 @@ osenv@0, osenv@^0.1.4:
     os-homedir "^1.0.0"
     os-tmpdir "^1.0.0"
 
-otp-react-redux@^0.13.7:
-  version "0.13.7"
-  resolved "https://registry.yarnpkg.com/otp-react-redux/-/otp-react-redux-0.13.7.tgz#c3926a48f711e774412aa09f68ecec8a213b65a5"
-  integrity sha512-5nFIGey4UwLPr9HYKH/FYVwPi2UF5bCtFmLI4Yor40DqOinYxJxCMVo2KXHdlKI4r50Ooc1JZQGHnPMsvDl5Gg==
+otp-react-redux@^0.13.9:
+  version "0.13.9"
+  resolved "https://registry.yarnpkg.com/otp-react-redux/-/otp-react-redux-0.13.9.tgz#beaaa1db98c8bc29c3a9e6fd9d10206e595518ec"
+  integrity sha512-xsSCwhQt2rcH6x1aC8GnawsxJu8jeoiajnN0veiYOKne1ZGMUJ6PkVJbM8GoVGPY75b7IXwl2fVmtyNJ2KiDYQ==
   dependencies:
     "@conveyal/geocoder-arcgis-geojson" "^0.0.2"
     "@conveyal/lonlat" "^1.1.0"
@@ -6826,7 +6826,7 @@ otp-react-redux@^0.13.7:
     redux-logger "^2.7.4"
     redux-thunk "^2.3.0"
     throttle-debounce "^2.0.1"
-    transitive-js "^0.13.2"
+    transitive-js "^0.13.3"
     turf-along "^3.0.12"
     velocity-react "^1.3.3"
 
@@ -9473,10 +9473,10 @@ tough-cookie@~2.4.3:
     psl "^1.1.24"
     punycode "^1.4.1"
 
-transitive-js@^0.13.2:
-  version "0.13.2"
-  resolved "https://registry.yarnpkg.com/transitive-js/-/transitive-js-0.13.2.tgz#ca8adde4ccf5c1fb02623df287ac3c91499c566a"
-  integrity sha512-2r6uoA7pCOyMeecTOWgT+MJMa+gVmLlBR2+s1YKYxBYmusS5Lx24ICqc3RVA2+yE36k9fe+ReMBOcBCoK2mY6w==
+transitive-js@^0.13.3:
+  version "0.13.3"
+  resolved "https://registry.yarnpkg.com/transitive-js/-/transitive-js-0.13.3.tgz#4c1671628a65551d7b70b53362300d7017fc0ac9"
+  integrity sha512-vm3v3HuCcmoL+64pew5MHltOabN+ONhs/IonHqf6sRWFUcpVgrUBc9OWLzkJpi1DDPiLjZa6KP27WuoZ1Mk/Fg==
   dependencies:
     augment "4.3.0"
     component-each "0.2.6"
