@@ -11,7 +11,13 @@ api:
   host: https://trimet-otp.ibi-transit.com
   # host: http://localhost:8001 # For testing against a local OTP instance
   path: /otp/routers/default
-
+# Alternate TransitIndex API
+alternateTransitIndex:
+ apiRoot: https://newplanner.trimet.org/ws/ti/v0/
+ services:
+    - stops
+    - stops/routes
+    - routes
 # Enabled multimodal routing types (e.g. interary, profile)
 routingTypes:
   - key: ITINERARY
@@ -550,11 +556,3 @@ dateTime:
   timeFormat: h:mm a
   dateFormat: MM/DD/YYYY
   longDateFormat: MMMM D, YYYY
-
-# Alternate TransitIndex API
-alternateTransitIndex:
- apiRoot: https://modbeta.trimet.org/ws/ti/v0/
- services:
-    - stops
-    - stops/routes
-    - routes
