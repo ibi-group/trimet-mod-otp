@@ -38,7 +38,7 @@ elevationProfile: true
 # appear in the route viewer. Also, optionally provide operator logos to appear
 # in narrative itinerary (matched on agency_id). Note: these logos will
 # override the values found in agency.txt#agency_branding_url.
-operators:
+transitOperators:
   - id: psc
     logo: https://d2tyb7byn1fef9.cloudfront.net/psc.png
   - id: TRIMET
