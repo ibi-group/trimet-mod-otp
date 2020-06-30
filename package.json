@@ -18,7 +18,6 @@
     "es6-math": "^1.0.0",
     "history": "^4.7.2",
     "leaflet": "^1.6.0",
-    "leaflet.polylinemeasure": "github:ppete2/Leaflet.PolylineMeasure",
     "otp-react-redux": "^1.0.0-beta.0",
     "react": "^16.9.0",
     "react-bootstrap": "^0.32.1",

@@ -6362,10 +6362,6 @@ lcid@^2.0.0:
   dependencies:
     invert-kv "^2.0.0"
 
-"leaflet.polylinemeasure@github:ppete2/Leaflet.PolylineMeasure":
-  version "1.0.0"
-  resolved "https://codeload.github.com/ppete2/Leaflet.PolylineMeasure/tar.gz/b85a4b9d3541e4339f9b25ca2264f5af8b42344d"
-
 leaflet@^1.6.0:
   version "1.6.0"
   resolved "https://registry.yarnpkg.com/leaflet/-/leaflet-1.6.0.tgz#aecbb044b949ec29469eeb31c77a88e2f448f308"
