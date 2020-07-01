@@ -9,6 +9,10 @@ const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin')
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
 
 module.exports = async env => {
+  // Gather the CSS, HTML, YAML, and JS override files.
+  const CUSTOM_CSS = env && env.CUSTOM_CSS || './lib/style.scss'
+  const HTML_FILE = env && env.HTML_FILE || 'lib/index.tpl.html'
+  const YAML_CONFIG = env && env.YAML_CONFIG || './config.yml'
   // resolve the custom js file. If it is present, copy the file to a
   // temporary folder within this project so that the file will be able to
   // use the node_modules from this project
@@ -22,7 +26,7 @@ module.exports = async env => {
   return {
     entry: [
       './lib/main.js',
-      './lib/style.scss'
+      CUSTOM_CSS
     ],
     module: {
       rules: [
@@ -56,15 +60,15 @@ module.exports = async env => {
     },
     plugins: [
       new HtmlWebpackPlugin({
-        template: 'lib/index.tpl.html',
+        template: HTML_FILE,
         inject: 'body',
         filename: 'index.html'
       }),
       new MiniCssExtractPlugin(),
       new webpack.DefinePlugin({
-        // Optionally override the default config file location with some other
-        // file.
-        YAML_CONFIG: JSON.stringify(env && env.YAML_CONFIG || './config.yml'),
+        // Optionally override the default config files with some other
+        // files.
+        YAML_CONFIG: JSON.stringify(YAML_CONFIG),
         JS_CONFIG: JSON.stringify(customJsFile)
       })
     ],
