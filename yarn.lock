@@ -7589,7 +7589,7 @@ osenv@0, osenv@^0.1.4:
     os-homedir "^1.0.0"
     os-tmpdir "^1.0.0"
 
-otp-react-redux@^v1.0.0-alpha.1:
+otp-react-redux@^v1.0.0-alpha.2:
   version "1.0.0-beta.1"
   resolved "https://registry.yarnpkg.com/otp-react-redux/-/otp-react-redux-1.0.0-beta.1.tgz#b2e9924393d11bcc4578141ac819c8a68333ad36"
   integrity sha512-WhgK86kg/dxQLPw0gj+ObtimE0hF+4enD73AZLdA5n1rPVPzjPEKswWxUDXOiMyDMJwqqBl8AUgpUYZSY+HQEQ==
