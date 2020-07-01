@@ -169,30 +169,6 @@ map:
           type: marker
 
     - type: micromobility-rental
-      name: Gruv E-scooter Locations
-      modes:
-        - MICROMOBILITY_RENT
-      companies:
-        - CLEVR
-      mapSymbols:
-        - maxZoom: 13
-          minZoom: 0
-          type: circle
-          pixels: 4
-          fillColor: "#0171bc"
-          strokeColor: "#CCCCCC"
-        - maxZoom: 17
-          minZoom: 14
-          type: circle
-          pixels: 6
-          fillColor: "#0171bc"
-          strokeColor: "#CCCCCC"
-        - maxZoom: 999
-          minZoom: 18
-          fillColor: "#0171bc"
-          type: marker
-
-    - type: micromobility-rental
       name: Lime E-scooter Locations
       modes:
         - MICROMOBILITY_RENT
@@ -468,9 +444,6 @@ companies:
   - id: CAR2GO
     label: car2go
     modes: CAR_RENT
-  - id: CLEVR
-    label: Gruv
-    modes: MICROMOBILITY_RENT
   - id: LIME
     label: Lime
     modes: MICROMOBILITY_RENT
