@@ -8,6 +8,14 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin')
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
 
+/**
+ * Webpack can be passed a few environment variables to override the default
+ * files used to run this project. The environment variables are CUSTOM_CSS,
+ * HTML_FILE, YAML_CONFIG, and JS_CONFIG. They must each be passed in the
+ * format --env.*=/path/to/file. For example:
+ *
+ *    yarn start --env.YAML_CONFIG=/absolute/path/to/config.yml
+ */
 module.exports = async env => {
   // Gather the CSS, HTML, YAML, and JS override files.
   const CUSTOM_CSS = env && env.CUSTOM_CSS || './lib/style.scss'
