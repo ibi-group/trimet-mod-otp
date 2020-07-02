@@ -382,11 +382,3 @@ dateTime:
   timeFormat: h:mm a
   dateFormat: MM/DD/YYYY
   longDateFormat: MMMM D, YYYY
-
-# Alternate TransitIndex API
-alternateTransitIndex:
-  apiRoot: https://newplanner.trimet.org/ws/ti/v0/
-  services:
-     - stops
-     - stops/routes
-     - routes
