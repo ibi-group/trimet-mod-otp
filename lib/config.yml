@@ -5,6 +5,7 @@
 
 branding: trimet
 homeTimezone: America/Los_Angeles
+title: TriMet MOD OTP Demo
 
 # Default OTP API
 api:
