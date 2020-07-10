@@ -6,7 +6,7 @@ const webpack = require('webpack')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin')
-const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
+const TerserPlugin = require('terser-webpack-plugin')
 
 /**
  * Webpack can be passed a few environment variables to override the default
@@ -82,7 +82,7 @@ module.exports = async env => {
     ],
     optimization: {
       minimizer: [
-        new UglifyJsPlugin({}),
+        new TerserPlugin(),
         new OptimizeCSSAssetsPlugin({})
       ]
     },

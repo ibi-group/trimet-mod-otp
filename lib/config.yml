@@ -39,7 +39,7 @@ elevationProfile: true
 # appear in the route viewer. Also, optionally provide operator logos to appear
 # in narrative itinerary (matched on agency_id). Note: these logos will
 # override the values found in agency.txt#agency_branding_url.
-operators:
+transitOperators:
   - id: psc
     logo: https://d2tyb7byn1fef9.cloudfront.net/psc.png
   - id: TRIMET
@@ -124,74 +124,67 @@ map:
       maxZoom: 20
 
   overlays:
+    # real-time vehicles config
+    - type: vehicles
+      name: Real-Time Buses and Trains
+      api: https://maps.trimet.org/gtfs/rt/vehicles
+      #pauseAnimationOnZoom: false # note: when true, MOD+vehicles has issues with multiple (additive) ws calls
+      refresh: 5
+      default: 'all'
+
+
+    - type: zipcar
+      name: Zipcar Locations
+      api: https://newplanner.trimet.org/ws/carshare/zipcar/data.json
+
     - type: bike-rental
-      name: Biketown Locations
+      name: BIKETOWN Locations
       modes:
         - BICYCLE_RENT
       mapSymbols:
-        - maxZoom: 13
+        - maxZoom: 12
           minZoom: 0
           type: circle
-          pixels: 4
+          pixels: 3
           fillColor: "#FF2E28"
           dockStrokeColor: "#000000"
-        - maxZoom: 17
-          minZoom: 14
+        - maxZoom: 15
+          minZoom: 13
           type: circle
-          pixels: 6
+          pixels: 5
           fillColor: "#FF2E28"
           dockStrokeColor: "#000000"
-        - maxZoom: 999
-          minZoom: 18
+        - maxZoom: 20
+          minZoom: 16
+          fillColor: "#FF2E28"
+          dockStrokeColor: "#000000"
           type: hubAndFloatingBike
 
     - type: micromobility-rental
-      name: Bolt E-scooter Locations
+      name: Bird E-scooter Locations
       modes:
         - MICROMOBILITY_RENT
       companies:
-        - BOLT
+        - BIRD
       mapSymbols:
-        - maxZoom: 13
+        - maxZoom: 12
           minZoom: 0
           type: circle
-          pixels: 4
-          fillColor: "#FEE502"
-          strokeColor: "#000000"
-        - maxZoom: 17
-          minZoom: 14
+          pixels: 3
+          fillColor: "#656565"
+          strokeColor: "#CCCCCC"
+        - maxZoom: 15
+          minZoom: 13
           type: circle
-          pixels: 6
-          fillColor: "#FEE502"
-          strokeColor: "#000000"
-        - maxZoom: 999
-          minZoom: 18
-          fillColor: "#FEE502"
+          pixels: 5
+          fillColor: "#656565"
+          strokeColor: "#CCCCCC"
+        - maxZoom: 20
+          minZoom: 16
+          fillColor: "#656565"
           type: marker
 
-    - type: micromobility-rental
-      name: Gruv E-scooter Locations
-      modes:
-        - MICROMOBILITY_RENT
-      companies:
-        - CLEVR
-      mapSymbols:
-        - maxZoom: 13
-          minZoom: 0
-          type: circle
-          pixels: 4
-          fillColor: "#0171bc"
-          strokeColor: "#CCCCCC"
-        - maxZoom: 17
-          minZoom: 14
-          type: circle
-          pixels: 6
-          fillColor: "#0171bc"
-          strokeColor: "#CCCCCC"
-        - maxZoom: 999
-          minZoom: 18
-          fillColor: "#0171bc"
-          type: marker
+
 
     - type: micromobility-rental
       name: Lime E-scooter Locations
@@ -200,21 +193,21 @@ map:
       companies:
         - LIME
       mapSymbols:
-        - maxZoom: 13
+        - maxZoom: 12
           minZoom: 0
           type: circle
-          pixels: 4
-          fillColor: "#24D000"
+          pixels: 3
+          fillColor: "#656565"
           strokeColor: "#CCCCCC"
-        - maxZoom: 17
-          minZoom: 14
+        - maxZoom: 15
+          minZoom: 13
           type: circle
-          pixels: 6
-          fillColor: "#24D000"
+          pixels: 5
+          fillColor: "#656565"
           strokeColor: "#CCCCCC"
-        - maxZoom: 999
-          minZoom: 18
-          fillColor: "#24D000"
+        - maxZoom: 20
+          minZoom: 16
+          fillColor: "#656565"
           type: marker
 
     - type: micromobility-rental
@@ -224,46 +217,23 @@ map:
       companies:
         - RAZOR
       mapSymbols:
-        - maxZoom: 13
+        - maxZoom: 12
           minZoom: 0
           type: circle
-          pixels: 4
-          fillColor: "#EE2D15"
+          pixels: 3
+          fillColor: "#656565"
           strokeColor: "#CCCCCC"
-        - maxZoom: 17
-          minZoom: 14
+        - maxZoom: 15
+          minZoom: 13
           type: circle
-          pixels: 6
-          fillColor: "#EE2D15"
+          pixels: 5
+          fillColor: "#656565"
           strokeColor: "#CCCCCC"
-        - maxZoom: 999
-          minZoom: 18
-          fillColor: "#EE2D15"
+        - maxZoom: 20
+          minZoom: 16
+          fillColor: "#656565"
           type: marker
 
-    - type: micromobility-rental
-      name: shared E-scooter Locations
-      modes:
-        - MICROMOBILITY_RENT
-      companies:
-        - SHARED
-      mapSymbols:
-        - maxZoom: 13
-          minZoom: 0
-          type: circle
-          pixels: 4
-          fillColor: "#F80600"
-          strokeColor: "#CCCCCC"
-        - maxZoom: 17
-          minZoom: 14
-          type: circle
-          pixels: 6
-          fillColor: "#F80600"
-          strokeColor: "#CCCCCC"
-        - maxZoom: 999
-          minZoom: 18
-          fillColor: "#F80600"
-          type: marker
 
     - type: micromobility-rental
       name: Spin E-scooter Locations
@@ -272,89 +242,21 @@ map:
       companies:
         - SPIN
       mapSymbols:
-        - maxZoom: 13
+        - maxZoom: 12
           minZoom: 0
           type: circle
-          pixels: 4
-          fillColor: "#FF6D01"
+          pixels: 3
+          fillColor: "#656565"
           strokeColor: "#CCCCCC"
-        - maxZoom: 17
-          minZoom: 14
+        - maxZoom: 15
+          minZoom: 13
           type: circle
-          pixels: 6
-          fillColor: "#FF6D01"
+          pixels: 5
+          fillColor: "#656565"
           strokeColor: "#CCCCCC"
-        - maxZoom: 999
-          minZoom: 18
-          fillColor: "#FF6D01"
-          type: marker
-
-    - type: micromobility-rental
-      name: Bird E-scooter Locations
-      modes:
-        - MICROMOBILITY_RENT
-      companies:
-        - BIRD
-      mapSymbols:
-        - maxZoom: 13
-          minZoom: 0
-          type: circle
-          pixels: 4
-          fillColor: "#000000"
-          strokeColor: "#CCCCCC"
-        - maxZoom: 17
-          minZoom: 14
-          type: circle
-          pixels: 6
-          fillColor: "#000000"
-          strokeColor: "#CCCCCC"
-        - maxZoom: 999
-          minZoom: 18
-          fillColor: "#000000"
-          type: marker
-
-    - type: car-rental
-      name: car2go Locations
-      modes:
-        - CAR_RENT
-      companies:
-        - CAR2GO
-      mapSymbols:
-        - maxZoom: 13
-          minZoom: 0
-          type: circle
-          pixels: 4
-          fillColor: "#009cde"
-        - maxZoom: 17
-          minZoom: 14
-          type: circle
-          pixels: 6
-          fillColor: "#009cde"
-        - maxZoom: 999
-          minZoom: 18
-          fillColor: "#009cde"
-          type: marker
-
-    - type: car-rental
-      name: REACH NOW Locations
-      modes:
-        - CAR_RENT
-      companies:
-        - REACHNOW
-      mapSymbols:
-        - maxZoom: 13
-          minZoom: 0
-          type: circle
-          pixels: 4
-          fillColor: "#007fa3"
-        - maxZoom: 17
-          minZoom: 14
-          type: circle
-          pixels: 6
-          fillColor: "#007fa3"
-        - maxZoom: 999
-          minZoom: 18
-          fillColor: "#007fa3"
+        - maxZoom: 20
+          minZoom: 16
+          fillColor: "#656565"
           type: marker
 
     - type: park-and-ride
@@ -367,22 +269,12 @@ map:
       name: Transit Stops
       visible: true
 
-    - type: tile
-      name: Transit Routes
-      tileUrl: https://d2dyq00q2cz8yt.cloudfront.net/{z}_{x}_{y}@2x.png
-      # visible: true
 
-    - type: zipcar
-      name: Zipcar Locations
-      api: https://modbeta.trimet.org/ws/carshare/zipcar/data.json
 
-# Pelias Geocoder config
-# (Note: this format may eventually change to allow other geocoding services)
 geocoder:
-  # Pelias API endpoint
-  baseUrl: https://ws-st.trimet.org/pelias/v1
-
-  # Geocoding search bounds
+  baseUrl: https://ws-st.trimet.org/peliaswrap/v1
+  maxNearbyStops: 6
+  type: PELIAS
   boundary:
     rect:
       minLon: -123.2034
@@ -390,12 +282,9 @@ geocoder:
       minLat: 45.273
       maxLat: 45.7445
 
-  maxNearbyStops: 6
-  type: PELIAS
 
 # Mode selector configuration
 modes:
-  # types of allowable transit modes
   transitModes:
     - mode: BUS
       label: Bus
@@ -406,28 +295,20 @@ modes:
     - mode: GONDOLA
       label: Aerial Tram
 
-  # access to transit modes. These options are all combined with the above
-  # transit modes in the request to OTP
   accessModes:
     - mode: BICYCLE
       label: Transit + Personal bike
     - mode: BICYCLE_RENT
-      label: Transit + Biketown
+      label: Transit + BIKETOWN
       company: BIKETOWN
     - mode: MICROMOBILITY_RENT
-      label: Transit + E-scooter rental
+      label: Transit + E-scooter
     - mode: CAR_PARK
       label: Park & Ride
-    - mode: CAR_RENT
-      label: Transit + car2go
-      company: CAR2GO
-    - mode: CAR_RENT
-      label: Transit + REACH NOW
-      company: REACHNOW
     - mode: CAR_HAIL
       label: Transit + Uber
       company: UBER
-      showWheelchairSetting: true
+      showWheelchairSetting: false
 
   # which exclusive modes to show. This involves using a single mode and no
   # transit for the duration of the trip. Further configurations of
@@ -437,23 +318,13 @@ modes:
     - WALK
     - BICYCLE
 
-  # button definitions for exclusive bicycle mode options
   bicycleModes:
     - mode: BICYCLE
       label: Own Bike
       iconWidth: 18
     - mode: BICYCLE_RENT
-      label: Biketown
+      label: BIKETOWN
       iconWidth: 36
-
-  # button definitions for exclusive micromobility mode options
-  # micromobilityModes:
-  #   - mode: MICROMOBILITY
-  #     label: Own E-scooter
-  #     iconWidth: 18
-  #   - mode: MICROMOBILITY_RENT
-  #     label: E-scooter rental
-  #     iconWidth: 36
 
 # A list of private transportation operators. These are either companies that
 # provide rental vehicles or transportation network companies. Companies that
@@ -461,16 +332,14 @@ modes:
 # commas. For example: BICYCLE_RENT,MICROMOBILITY_RENT.
 companies:
   - id: BIKETOWN
-    label: Biketown
+    label: BIKETOWN
     modes: BICYCLE_RENT
-  - id: BOLT
-    label: Bolt
-    modes: MICROMOBILITY_RENT
-  - id: CAR2GO
-    label: car2go
-    modes: CAR_RENT
-  - id: CLEVR
-    label: Gruv
+  - id: UBER
+    label: Uber
+    modes: CAR_HAIL
+
+  - id: BIRD
+    label: Bird
     modes: MICROMOBILITY_RENT
   - id: LIME
     label: Lime
@@ -478,51 +347,9 @@ companies:
   - id: RAZOR
     label: Razor
     modes: MICROMOBILITY_RENT
-  - id: REACHNOW
-    label: REACH NOW
-    modes: CAR_RENT
-  - id: SHARED
-    label: shared
-    modes: MICROMOBILITY_RENT
   - id: SPIN
-    label: SPIN
+    label: Spin
     modes: MICROMOBILITY_RENT
-  - id: UBER
-    label: Uber
-    modes: CAR_HAIL
-  - id: BIRD
-    label: Bird
-    modes: MICROMOBILITY_RENT
-
-# These represent a list of application-specific custom icons that are needed.
-# Each key identifies the icon and the value is the name of the React component
-# in the `lib/icons` folder of the trimet-mod-otp repo that should be used to
-# display an icon for the given key.
-#
-# Note: there are also default icons that are loaded from the otp-react-redux
-# library that are used when there is not a match in these custom icons. Any
-# icon defined in here will override the icon that would otherwise be used by
-# default from the otp-react-redux library.
-customIcons:
-  BICYCLE: bike-icon
-  BIKETOWN: biketown-icon
-  BOLT: bolt-icon
-  BUS: bus-icon
-  CAR2GO: car2go-icon
-  CLEVR: gruv-icon
-  GONDOLA: gondola-icon
-  LIME: lime-icon
-  LYFT: lyft-icon
-  RAIL: rail-icon
-  RAZOR: razor-icon
-  REACHNOW: reachnow-icon
-  SHARED: shared-icon
-  SPIN: spin-icon
-  STREETCAR: streetcar-icon
-  TRAM: tram-icon
-  TRANSIT: transit-icon
-  UBER: uber-icon
-  WALK: walk-icon
 
 errorMessages:
   - id: 404
@@ -539,19 +366,18 @@ errorMessages:
     msg: No available transit routes or rideshare/carshare service at origin.
 
 reportIssue:
-  mailto: gis@trimet.org
+  mailto: hello@trimet.org
 
 analytics:
   google:
     globalSiteTag: UA-133677388-1
 
-# Temporary language overrides -- eventually replace w/ I18N language tables
 language:
-  storageDisclaimer: Any preferences, places, or settings you opt to save will be stored in your browser's local storage only. TriMet will not have access to knowledge about your home, work, or any other location. At any point you can opt to turn off remembering recent places/searches and clear your saved home/work locations and favorite stops.
+  storageDisclaimer: Any preferences, places, or settings you opt to save will be stored in the local storage of your browser. TriMet will not have access to knowledge about your home, work, or any other location. At any point you can opt to turn off remembering recent places/searches and clear your saved home/work locations and favorite stops.
   routeViewer: Route Viewer
   routeViewerDetails: Select a route to display it on the map and to view more information about the route.
   tripViewer: Trip Viewer
-  stopViewer: Stop Viewer
+  stopViewer: TransitTracker
 
 dateTime:
   timeFormat: h:mm a
