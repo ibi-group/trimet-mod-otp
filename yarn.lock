@@ -7734,10 +7734,10 @@ osenv@0, osenv@^0.1.4:
     os-homedir "^1.0.0"
     os-tmpdir "^1.0.0"
 
-otp-react-redux@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/otp-react-redux/-/otp-react-redux-1.0.1.tgz#3bb0323b5a13eb4713c89349268c528a8ec605b7"
-  integrity sha512-vLjLe5RW1wlAG2UWZx+se1xxER9+QxjSLWwgtttt2fWz8uavJ76+gRXjdEc4w5JfkaJNkmX7yzPod88FkTJGYA==
+otp-react-redux@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/otp-react-redux/-/otp-react-redux-1.0.2.tgz#3631b40817704c88a38c0893139f5cb74d23df4a"
+  integrity sha512-aifXw/yZE/aC9VZL/3ECAQ7mV+k/ORcQKZo1g/vfIQ9tB++NPzgVyPznp52038v0qvPgLLQu5spIMCAigAOTlA==
   dependencies:
     "@opentripplanner/base-map" "^1.0.1"
     "@opentripplanner/core-utils" "^1.2.0"
