@@ -921,10 +921,10 @@
     "@opentripplanner/core-utils" "^1.2.0"
     prop-types "^15.7.2"
 
-"@opentripplanner/core-utils@^1.2.0":
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/@opentripplanner/core-utils/-/core-utils-1.2.0.tgz#000eaa57605b73c522ad6243fc27bbb1f182dd7b"
-  integrity sha512-8FeJFywuuWlLnNHqLIu4ZejApVwVKFTJHX2KHMw2Cv+tmNUMvNfmESqZXQ5cMyEjSCdFtdT980/MB5GND+Fy8Q==
+"@opentripplanner/core-utils@^1.2.0", "@opentripplanner/core-utils@^1.2.1":
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/@opentripplanner/core-utils/-/core-utils-1.2.2.tgz#c943983d92c67b1aba2ad7b47f199fb46bbedc02"
+  integrity sha512-xISq454TA/mTu5wjMVvNRszHmeAKppS+jk5E3LRl+TaMWas5ovaNdKwlOXU62djGb41VOty4KYTnECliDPYDJw==
   dependencies:
     "@mapbox/polyline" "^1.1.0"
     "@turf/along" "^6.0.1"
@@ -1076,10 +1076,10 @@
     styled-icons "^9.1.0"
     velocity-react "^1.4.3"
 
-"@opentripplanner/trip-form@^1.0.1":
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/@opentripplanner/trip-form/-/trip-form-1.0.1.tgz#c100fcda5af6f162aca1a8575babb8c54d63e074"
-  integrity sha512-JM8cEPey07NQaSzsibjgR+EtJrLgHNH2G/PwTcQEwDUDz2etT8AhhxlgOzTlK2qp0kw3rLOUx9rCpgoU5YO8OA==
+"@opentripplanner/trip-form@^1.0.2":
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@opentripplanner/trip-form/-/trip-form-1.0.2.tgz#1283dcb92ed5295dbb055c0ab99cc5fe55b90b30"
+  integrity sha512-RPS3JBNUN5gMXVebDgMwdjMCiU8tb2s9+8sy1gGGFHDNiesNKEVdLXmUAqpg//gxNriLDQ0UtKfBZnHQpagPqw==
   dependencies:
     "@opentripplanner/core-utils" "^1.2.0"
     "@opentripplanner/icons" "^1.0.0"
@@ -7724,13 +7724,13 @@ osenv@0, osenv@^0.1.4:
     os-homedir "^1.0.0"
     os-tmpdir "^1.0.0"
 
-otp-react-redux@^1.0.2:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/otp-react-redux/-/otp-react-redux-1.0.2.tgz#3631b40817704c88a38c0893139f5cb74d23df4a"
-  integrity sha512-aifXw/yZE/aC9VZL/3ECAQ7mV+k/ORcQKZo1g/vfIQ9tB++NPzgVyPznp52038v0qvPgLLQu5spIMCAigAOTlA==
+otp-react-redux@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/otp-react-redux/-/otp-react-redux-1.0.3.tgz#27d663e050de99c34d4a4a65302a6df50a7fffba"
+  integrity sha512-N+mK5UjK7LUOphuQvBXA41OYF0sP6GonbAQqvE6ObniNT6pl9gAcfdOp2i8HVFHHzok3GxMOwoPdm0jOyBfkFQ==
   dependencies:
     "@opentripplanner/base-map" "^1.0.1"
-    "@opentripplanner/core-utils" "^1.2.0"
+    "@opentripplanner/core-utils" "^1.2.1"
     "@opentripplanner/endpoints-overlay" "^1.0.1"
     "@opentripplanner/from-to-location-picker" "^1.0.1"
     "@opentripplanner/geocoder" "^1.0.2"
@@ -7746,7 +7746,7 @@ otp-react-redux@^1.0.2:
     "@opentripplanner/stops-overlay" "^1.0.1"
     "@opentripplanner/transitive-overlay" "^1.0.2"
     "@opentripplanner/trip-details" "^1.1.1"
-    "@opentripplanner/trip-form" "^1.0.1"
+    "@opentripplanner/trip-form" "^1.0.2"
     "@opentripplanner/trip-viewer-overlay" "^1.0.1"
     "@opentripplanner/vehicle-rental-overlay" "^1.0.1"
     bootstrap "^3.3.7"
