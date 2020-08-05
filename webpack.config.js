@@ -6,9 +6,21 @@ const webpack = require('webpack')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin')
-// const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
+const TerserPlugin = require('terser-webpack-plugin')
 
+/**
+ * Webpack can be passed a few environment variables to override the default
+ * files used to run this project. The environment variables are CUSTOM_CSS,
+ * HTML_FILE, YAML_CONFIG, and JS_CONFIG. They must each be passed in the
+ * format --env.*=/path/to/file. For example:
+ *
+ *    yarn start --env.YAML_CONFIG=/absolute/path/to/config.yml
+ */
 module.exports = async env => {
+  // Gather the CSS, HTML, YAML, and JS override files.
+  const CUSTOM_CSS = env && env.CUSTOM_CSS || './lib/style.scss'
+  const HTML_FILE = env && env.HTML_FILE || 'lib/index.tpl.html'
+  const YAML_CONFIG = env && env.YAML_CONFIG || './config.yml'
   // resolve the custom js file. If it is present, copy the file to a
   // temporary folder within this project so that the file will be able to
   // use the node_modules from this project
@@ -22,7 +34,7 @@ module.exports = async env => {
   return {
     entry: [
       './lib/main.js',
-      './lib/style.scss'
+      CUSTOM_CSS
     ],
     module: {
       rules: [
@@ -56,21 +68,21 @@ module.exports = async env => {
     },
     plugins: [
       new HtmlWebpackPlugin({
-        template: 'lib/index.tpl.html',
+        template: HTML_FILE,
         inject: 'body',
         filename: 'index.html'
       }),
       new MiniCssExtractPlugin(),
       new webpack.DefinePlugin({
-        // Optionally override the default config file location with some other
-        // file.
-        YAML_CONFIG: JSON.stringify(env && env.YAML_CONFIG || './config.yml'),
+        // Optionally override the default config files with some other
+        // files.
+        YAML_CONFIG: JSON.stringify(YAML_CONFIG),
         JS_CONFIG: JSON.stringify(customJsFile)
       })
     ],
     optimization: {
       minimizer: [
-        // new UglifyJsPlugin({}),
+        new TerserPlugin(),
         new OptimizeCSSAssetsPlugin({})
       ]
     },
