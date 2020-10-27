@@ -32,6 +32,7 @@ module.exports = async env => {
     await fs.copy(env.JS_CONFIG, `./tmp/${splitPath[splitPath.length - 1]}`)
   }
   return {
+    devtool: 'source-map',
     entry: [
       './lib/main.js',
       CUSTOM_CSS
