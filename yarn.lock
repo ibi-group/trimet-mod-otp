@@ -7599,10 +7599,10 @@ osenv@0:
     os-homedir "^1.0.0"
     os-tmpdir "^1.0.0"
 
-otp-react-redux@^1.5.0:
-  version "1.5.0"
-  resolved "https://registry.yarnpkg.com/otp-react-redux/-/otp-react-redux-1.5.0.tgz#63df73ea42e6357764c77fe799f2e4625c8233e5"
-  integrity sha512-xLp+djKpQal0ToO+IhiYj1X4qnedMpCjKQtom3DJCpWWErCuAX7D81s/Q4XSrVcEzL1joisC36FtlNDK+ojL1Q==
+otp-react-redux@^1.5.1:
+  version "1.5.1"
+  resolved "https://registry.yarnpkg.com/otp-react-redux/-/otp-react-redux-1.5.1.tgz#7f172578957a611cbf5ebf6d1005a4735587df0b"
+  integrity sha512-2yKUYjlNehxYZKWmMyk9qAEeUt24tQeBz5q6J1yIhyNFKxzesBzDJK0+O/squ54+IhOyXFCnfOU+CJRTZcp4Uw==
   dependencies:
     "@auth0/auth0-react" "^1.1.0"
     "@opentripplanner/base-map" "^1.0.2"
@@ -7666,7 +7666,7 @@ otp-react-redux@^1.5.0:
     redux-actions "^1.2.1"
     redux-logger "^2.7.4"
     redux-thunk "^2.3.0"
-    transitive-js "^0.13.3"
+    transitive-js "^0.13.4"
     velocity-react "^1.3.3"
     yup "^0.29.3"
 
@@ -10554,10 +10554,10 @@ tough-cookie@~2.4.3:
     psl "^1.1.24"
     punycode "^1.4.1"
 
-transitive-js@^0.13.3:
-  version "0.13.3"
-  resolved "https://registry.yarnpkg.com/transitive-js/-/transitive-js-0.13.3.tgz#4c1671628a65551d7b70b53362300d7017fc0ac9"
-  integrity sha512-vm3v3HuCcmoL+64pew5MHltOabN+ONhs/IonHqf6sRWFUcpVgrUBc9OWLzkJpi1DDPiLjZa6KP27WuoZ1Mk/Fg==
+transitive-js@^0.13.3, transitive-js@^0.13.4:
+  version "0.13.4"
+  resolved "https://registry.yarnpkg.com/transitive-js/-/transitive-js-0.13.4.tgz#2ef9b57f4c0f4ec594f84664300d91a46dfde820"
+  integrity sha512-26lcurtKYJAZJY0kWo3DelTO2ADIZz6uNxrCRUT0hvAcq/lnTLV3WR/vSmR8vsIWRQ10dokJ80VXK0Y3461Jag==
   dependencies:
     augment "4.3.0"
     component-each "0.2.6"
