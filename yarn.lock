@@ -5708,6 +5708,11 @@ https-browserify@^1.0.0:
   resolved "https://registry.yarnpkg.com/https-browserify/-/https-browserify-1.0.0.tgz#ec06c10e0a34c0f2faf199f7fd7fc78fffd03c73"
   integrity sha1-7AbBDgo0wPL68Zn3/X/Hj//QPHM=
 
+humanize-duration@^3.25.2:
+  version "3.26.0"
+  resolved "https://registry.yarnpkg.com/humanize-duration/-/humanize-duration-3.26.0.tgz#4d77f6b3d2fe0ca1ff14623ccc2b2f8b48ab1aaf"
+  integrity sha512-SddekX3p5ApvPY6bbAYppGKe874jP6iFZXYtrQToDV4R0j2UpTYPqwTFM2QpXpuw9DhS/eXTUnKYTF9TbXAJ6A==
+
 iconv-lite@0.4.24, iconv-lite@~0.4.13:
   version "0.4.24"
   resolved "https://registry.yarnpkg.com/iconv-lite/-/iconv-lite-0.4.24.tgz#2022b4b25fbddc21d2f524974a474aafe733908b"
@@ -7576,10 +7581,10 @@ osenv@0:
     os-homedir "^1.0.0"
     os-tmpdir "^1.0.0"
 
-otp-react-redux@^3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/otp-react-redux/-/otp-react-redux-3.0.0.tgz#c64e067c00994c999223cbcccbaa0536b27c4abf"
-  integrity sha512-TTxbCAjl52yggNNgH7HQ5Sdsz1tmvGX6VXRv4fkBfAXC4acaDv5R6U0HD9sH1xzLofrXKP9tEs/TDO4kHU0zkA==
+otp-react-redux@^3.0.1:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/otp-react-redux/-/otp-react-redux-3.0.1.tgz#08852d0f5b6efa81ccfba5bebbc37fe94dc12e84"
+  integrity sha512-q+unxKeeStViW0qs14WsEoO07aZk7XT2X8G4xnNE/4Ca7NIM5jGZ0wsipI4+FiziQSR6OgikG/AexTGJ8IQfZw==
   dependencies:
     "@auth0/auth0-react" "^1.1.0"
     "@opentripplanner/base-map" "^1.0.5"
@@ -7615,6 +7620,7 @@ otp-react-redux@^3.0.0:
     formik-error-focus "^1.1.0"
     haversine "^1.1.0"
     history "^4.7.2"
+    humanize-duration "^3.25.2"
     immutability-helper "^2.1.1"
     immutable "^3.8.1"
     isomorphic-fetch "^2.2.1"
@@ -7646,6 +7652,7 @@ otp-react-redux@^3.0.0:
     redux-actions "^1.2.1"
     redux-logger "^2.7.4"
     redux-thunk "^2.3.0"
+    reselect "^4.0.0"
     seamless-immutable "^7.1.3"
     styled-components "^5.0.0"
     transitive-js "^0.13.4"
@@ -9445,6 +9452,11 @@ requires-port@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/requires-port/-/requires-port-1.0.0.tgz#925d2601d39ac485e091cf0da5c6e694dc3dcaff"
   integrity sha1-kl0mAdOaxIXgkc8NpcbmlNw9yv8=
+
+reselect@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/reselect/-/reselect-4.0.0.tgz#f2529830e5d3d0e021408b246a206ef4ea4437f7"
+  integrity sha512-qUgANli03jjAyGlnbYVAV5vvnOmJnODyABz51RdBN7M4WaVu8mecZWgyQNkG8Yqe3KRGRt0l4K4B3XVEULC4CA==
 
 resize-observer-polyfill@^1.5.0, resize-observer-polyfill@^1.5.1:
   version "1.5.1"
