@@ -39,6 +39,13 @@ module.exports = async env => {
     ],
     module: {
       rules: [
+        // Adapted from https://github.com/blikblum/pdfkit-webpack-example/blob/master/webpack.config.js
+        { enforce: 'post', test: /pdfkit[/\\]index.js$/, loader: "transform-loader?brfs" },
+        { enforce: 'post', test: /brotli[/\\]index.js$/, loader: "transform-loader?brfs" },
+        { enforce: 'post', test: /png-js[/\\]index.js$/, loader: "transform-loader?brfs" },
+        { enforce: 'post', test: /fontkit[/\\]index.js$/, loader: "transform-loader?brfs" },
+        { enforce: 'post', test: /unicode-properties[/\\]index.js$/, loader: "transform-loader?brfs" },
+        { enforce: 'post', test: /linebreak[/\\]src[/\\]linebreaker.js/, loader: "transform-loader?brfs" },
         {
           test: /\.(js|jsx)$/,
           exclude: /node_modules/,
@@ -60,6 +67,9 @@ module.exports = async env => {
       ]
     },
     resolve: {
+      alias: {
+        fs: 'pdfkit/js/virtual-fs.js'
+      },
       extensions: ['*', '.js', '.jsx']
     },
     output: {

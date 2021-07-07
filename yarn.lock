@@ -11033,6 +11033,13 @@ tough-cookie@~2.4.3:
     psl "^1.1.24"
     punycode "^1.4.1"
 
+transform-loader@^0.2.4:
+  version "0.2.4"
+  resolved "https://registry.yarnpkg.com/transform-loader/-/transform-loader-0.2.4.tgz#e5c87877ba96d51d3f225368587b46e226d1cec9"
+  integrity sha1-5ch4d7qW1R0/IlNoWHtG4ibRzsk=
+  dependencies:
+    loader-utils "^1.0.2"
+
 transitive-js@^0.13.7:
   version "0.13.8"
   resolved "https://registry.yarnpkg.com/transitive-js/-/transitive-js-0.13.8.tgz#da06b459c53f8248ef861d913bb847a2c7e92071"
