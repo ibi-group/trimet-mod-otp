@@ -39,13 +39,18 @@ module.exports = async env => {
     ],
     module: {
       rules: [
-        // Adapted from https://github.com/blikblum/pdfkit-webpack-example/blob/master/webpack.config.js
-        { enforce: 'post', test: /pdfkit[/\\]index.js$/, loader: "transform-loader?brfs" },
-        { enforce: 'post', test: /brotli[/\\]index.js$/, loader: "transform-loader?brfs" },
-        { enforce: 'post', test: /png-js[/\\]index.js$/, loader: "transform-loader?brfs" },
-        { enforce: 'post', test: /fontkit[/\\]index.js$/, loader: "transform-loader?brfs" },
-        { enforce: 'post', test: /unicode-properties[/\\]index.js$/, loader: "transform-loader?brfs" },
-        { enforce: 'post', test: /linebreak[/\\]src[/\\]linebreaker.js/, loader: "transform-loader?brfs" },
+        // Loaders below are so that OTP-RR's pdfkit dependency works with webpack.
+        // Adapted from https://github.com/foliojs/pdfkit/issues/659 and
+        // https://github.com/blikblum/pdfkit-webpack-example/blob/master/webpack.config.js.
+        {
+          test: /(pdfkit|brotli|fontkit|png-js|unicode-properties)\/index.js$/,
+          loader: 'transform-loader?brfs',
+        },
+        {
+          test: /linebreak\/src\/linebreaker.js/,
+          loader: 'transform-loader?brfs'
+        },
+        // Loaders for regular files.
         {
           test: /\.(js|jsx)$/,
           exclude: /node_modules/,
