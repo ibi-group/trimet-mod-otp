@@ -931,10 +931,10 @@
   dependencies:
     mkdirp "^1.0.4"
 
-"@opentripplanner/base-map@^1.0.5":
-  version "1.0.5"
-  resolved "https://registry.yarnpkg.com/@opentripplanner/base-map/-/base-map-1.0.5.tgz#b4f92e4e848f340e30b1ed5c6d3a2338d6b8e017"
-  integrity sha512-4Ra/BPWV0laCiYLuqEPZaI5xQtfNbYbPl8bcysoD82m1ED3uqS/b8CW7i14ZsVVdfoXOZoI3b6QVAXfPzfxM1A==
+"@opentripplanner/base-map@^1.1.0":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@opentripplanner/base-map/-/base-map-1.1.0.tgz#7426c1f68db4e11e6e36f27a4ca34a88964e0392"
+  integrity sha512-tSPSfzv92IaS3LLWUQfsDSSOE6PyCrccMmungfZwbfbeZFgflNTT9Z5WS/Jju6KEbPJKI8NRX6Qi8/DI5ZWXOg==
   dependencies:
     "@opentripplanner/core-utils" "^3.0.4"
     prop-types "^15.7.2"
@@ -1128,10 +1128,10 @@
     "@opentripplanner/core-utils" "^3.0.4"
     prop-types "^15.7.2"
 
-"@opentripplanner/vehicle-rental-overlay@^1.0.6":
-  version "1.0.6"
-  resolved "https://registry.yarnpkg.com/@opentripplanner/vehicle-rental-overlay/-/vehicle-rental-overlay-1.0.6.tgz#95f894181070c64fa176918cd6a6dd6b122e3d19"
-  integrity sha512-Ued2Q1S0CT5ZHDAYtO+B1rqX0p63KdFN6noDshaDtHc3y37XYQuI6mzFTUrkkRDRlWWOxu8qDB1ZdSYj5tJCKw==
+"@opentripplanner/vehicle-rental-overlay@^1.1.2":
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/@opentripplanner/vehicle-rental-overlay/-/vehicle-rental-overlay-1.1.2.tgz#04c670da35205c94786118cd5a8610190c26d71c"
+  integrity sha512-d36c79zj37Y9M+gDW5fE7RU3nVlGh68mIaKxAU3zlqY/jDsPHMjMltp+KRJwAhFVV19vnfMzriqjU6epRqBhwQ==
   dependencies:
     "@opentripplanner/core-utils" "^3.0.4"
     "@opentripplanner/from-to-location-picker" "^1.0.3"
@@ -8202,13 +8202,13 @@ osenv@0:
     os-homedir "^1.0.0"
     os-tmpdir "^1.0.0"
 
-otp-react-redux@^3.2.0:
-  version "3.2.0"
-  resolved "https://registry.yarnpkg.com/otp-react-redux/-/otp-react-redux-3.2.0.tgz#0c5fd2dca007fbeb38c0cd6ec22f177e7965b4dd"
-  integrity sha512-XzIOAtjgxvAR8caod70MMuuJbW+wIacgKinsW8qf3UV1U8ZZrjWmq5vU6g0zTvwM0yqjW8HpdO4cC/qxKwgczQ==
+otp-react-redux@^3.3.0:
+  version "3.3.0"
+  resolved "https://registry.yarnpkg.com/otp-react-redux/-/otp-react-redux-3.3.0.tgz#cc8c638446cabf8197805c96b1e5f54d3d90551a"
+  integrity sha512-YyHK0hPVGO1gGa3D3C5/LEhvPRfVolCE3Bt5cYDhF0fKPRPpH/D38IA2E+zQ5kg9CFN2Up0ue+4a3iPEfvY6rA==
   dependencies:
     "@auth0/auth0-react" "^1.1.0"
-    "@opentripplanner/base-map" "^1.0.5"
+    "@opentripplanner/base-map" "^1.1.0"
     "@opentripplanner/core-utils" "^3.2.2"
     "@opentripplanner/endpoints-overlay" "^1.0.6"
     "@opentripplanner/from-to-location-picker" "^1.0.4"
@@ -8228,7 +8228,7 @@ otp-react-redux@^3.2.0:
     "@opentripplanner/trip-details" "^1.1.4"
     "@opentripplanner/trip-form" "^1.0.5"
     "@opentripplanner/trip-viewer-overlay" "^1.0.4"
-    "@opentripplanner/vehicle-rental-overlay" "^1.0.6"
+    "@opentripplanner/vehicle-rental-overlay" "^1.1.2"
     blob-stream "^0.1.3"
     bootstrap "^3.3.7"
     bowser "^1.9.3"
