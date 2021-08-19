@@ -8132,10 +8132,10 @@ osenv@0:
     os-homedir "^1.0.0"
     os-tmpdir "^1.0.0"
 
-otp-react-redux@^3.4.0:
-  version "3.4.0"
-  resolved "https://registry.yarnpkg.com/otp-react-redux/-/otp-react-redux-3.4.0.tgz#faac146785755142fe9d5a5dffec6af532e3de51"
-  integrity sha512-RLXr83yLvdb/gGO4AxYkyLK1RnMomnD5XfK2dfJN0rX2z9Ce270RpBn1S1sGETzFaaplPoW+da3t5BMwBtvv/g==
+otp-react-redux@^3.4.1:
+  version "3.4.1"
+  resolved "https://registry.yarnpkg.com/otp-react-redux/-/otp-react-redux-3.4.1.tgz#f710ab5f8c8bd24c4259adf1a03ab3bc8d6199b0"
+  integrity sha512-dNlkjNCxroAiz3XtG9jpDmafINMyl8BFXAe1osTZzocsw6XVcfzuOyXI4LxOT+G4gXP/wPyKFGP+Zvu8GzuMww==
   dependencies:
     "@auth0/auth0-react" "^1.1.0"
     "@opentripplanner/base-map" "^1.2.0"
